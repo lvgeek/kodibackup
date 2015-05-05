@@ -1,0 +1,30 @@
+<settings>
+    <setting id="adsize" value="272" />
+    <setting id="autoplay" value="true" />
+    <setting id="cache" value="special://userdata/addon_data/plugin.audio.pandoki/Cache" />
+    <setting id="delay" value="5" />
+    <setting id="history" value="10" />
+    <setting id="library" value="special://userdata/addon_data/plugin.audio.pandoki/Pandoki" />
+    <setting id="mode" value="0" />
+    <setting id="one0" value="false" />
+    <setting id="one1" value="false" />
+    <setting id="one2" value="false" />
+    <setting id="password0" value="zaq11qaz" />
+    <setting id="password1" value="" />
+    <setting id="password2" value="" />
+    <setting id="prof" value="0" />
+    <setting id="proxy" value="1" />
+    <setting id="proxy_host" value="" />
+    <setting id="proxy_pass" value="" />
+    <setting id="proxy_port" value="" />
+    <setting id="proxy_user" value="" />
+    <setting id="quality" value="1" />
+    <setting id="rating" value="0" />
+    <setting id="skip" value="false" />
+    <setting id="sni" value="false" />
+    <setting id="sort" value="0" />
+    <setting id="station0" value="5158" />
+    <setting id="username0" value="dave@lvengineering.com" />
+    <setting id="username1" value="" />
+    <setting id="username2" value="" />
+</settings>

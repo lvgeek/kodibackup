@@ -1,0 +1,16 @@
+<settings>
+    <setting id="LastStation" value="2362042871187965158" />
+    <setting id="firstrun" value="false" />
+    <setting id="logo" value="true" />
+    <setting id="pandoraone" value="false" />
+    <setting id="password" value="zaq11qaz" />
+    <setting id="proxy_enable" value="false" />
+    <setting id="proxy_pass" value="" />
+    <setting id="proxy_port" value="" />
+    <setting id="proxy_server" value="" />
+    <setting id="proxy_user" value="" />
+    <setting id="quality" value="0" />
+    <setting id="skin" value="Default" />
+    <setting id="thumbnailArtwork" value="0" />
+    <setting id="username" value="dave@lvengineering.com" />
+</settings>
