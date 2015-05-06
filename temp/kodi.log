@@ -1,902 +1,620 @@
-﻿14:57:48 T:140234713102272  NOTICE: special://profile/ is mapped to: special://masterprofile/
-14:57:48 T:140234713102272  NOTICE: -----------------------------------------------------------------------
-14:57:48 T:140234713102272  NOTICE: Starting Kodi (14.2 Git:7cc53a9). Platform: Linux x86 64-bit
-14:57:48 T:140234713102272  NOTICE: Using Release Kodi x64 build
-14:57:48 T:140234713102272  NOTICE: Kodi compiled Mar 27 2015 by GCC 4.8.2 for Linux x86 64-bit version 3.13.11 (199947)
-14:57:48 T:140234713102272  NOTICE: Running on Ubuntu 14.04.2 LTS, kernel: Linux x86 64-bit version 3.13.0-51-generic
-14:57:48 T:140234713102272  NOTICE: FFmpeg statically linked, version: 2.4.6-xbmc-2.4.6-Helix
-14:57:48 T:140234713102272  NOTICE: Host CPU: Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz, 8 cores available
-14:57:48 T:140234713102272  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
-14:57:48 T:140234713102272  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/kodi
-14:57:48 T:140234713102272  NOTICE: special://masterprofile/ is mapped to: /home/dave/.kodi/userdata
-14:57:48 T:140234713102272  NOTICE: special://home/ is mapped to: /home/dave/.kodi
-14:57:48 T:140234713102272  NOTICE: special://temp/ is mapped to: /home/dave/.kodi/temp
-14:57:48 T:140234713102272  NOTICE: The executable running is: /usr/lib/kodi/kodi.bin
-14:57:48 T:140234713102272  NOTICE: Local hostname: HPFreeman
-14:57:48 T:140234713102272  NOTICE: Log File is located: /home/dave/.kodi/temp/kodi.log
-14:57:48 T:140234713102272  NOTICE: -----------------------------------------------------------------------
-14:57:48 T:140234713102272  NOTICE: load settings...
-14:57:48 T:140234713102272  NOTICE: Found 1 Lists of Devices
-14:57:48 T:140234713102272  NOTICE: Enumerated PULSE devices:
-14:57:48 T:140234713102272  NOTICE:     Device 1
-14:57:48 T:140234713102272  NOTICE:         m_deviceName      : Default
-14:57:48 T:140234713102272  NOTICE:         m_displayName     : Default
-14:57:48 T:140234713102272  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
-14:57:48 T:140234713102272  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-14:57:48 T:140234713102272  NOTICE:         m_channels        : FL,FR
-14:57:48 T:140234713102272  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-14:57:48 T:140234713102272  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-14:57:48 T:140234713102272  NOTICE:     Device 2
-14:57:48 T:140234713102272  NOTICE:         m_deviceName      : alsa_output.pci-0000_01_00.1.hdmi-stereo
-14:57:48 T:140234713102272  NOTICE:         m_displayName     : GK107 HDMI Audio Controller Digital Stereo (HDMI)
-14:57:48 T:140234713102272  NOTICE:         m_displayNameExtra: HDMI / DisplayPort (PULSEAUDIO)
-14:57:48 T:140234713102272  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-14:57:48 T:140234713102272  NOTICE:         m_channels        : FL,FR
-14:57:48 T:140234713102272  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-14:57:48 T:140234713102272  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-14:57:48 T:140234713102272  NOTICE:     Device 3
-14:57:48 T:140234713102272  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_1b.0.analog-stereo
-14:57:48 T:140234713102272  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
-14:57:48 T:140234713102272  NOTICE:         m_displayNameExtra: Headphones (PULSEAUDIO)
-14:57:48 T:140234713102272  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-14:57:48 T:140234713102272  NOTICE:         m_channels        : FL,FR
-14:57:48 T:140234713102272  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-14:57:48 T:140234713102272  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-14:57:48 T:140234713102272  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
-14:57:48 T:140234713102272  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
-14:57:48 T:140234713102272  NOTICE: Default DVD Player: dvdplayer
-14:57:48 T:140234713102272  NOTICE: Default Video Player: dvdplayer
-14:57:48 T:140234713102272  NOTICE: Default Audio Player: paplayer
-14:57:48 T:140234713102272  NOTICE: Disabled debug logging due to GUI setting. Level 0.
-14:57:48 T:140234713102272  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
-14:57:48 T:140234713102272  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
-14:57:48 T:140234713102272  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
-14:57:48 T:140234713102272  NOTICE: Loaded playercorefactory configuration
-14:57:48 T:140234713102272  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
-14:57:48 T:140234713102272  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
-14:57:48 T:140234237953792  NOTICE: Thread ActiveAE start, auto delete: false
-14:57:48 T:140234297849600  NOTICE: Thread AESink start, auto delete: false
-14:57:48 T:140234297849600  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
-14:57:48 T:140234713102272  NOTICE: Running database version Addons16
-14:57:48 T:140234713102272  NOTICE: ADDONS: Using repository repository.xbmc.org
-14:57:48 T:140234271848192  NOTICE: Thread PeripBusCEC start, auto delete: false
-14:57:49 T:140234263455488  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
-14:57:49 T:140234713102272  NOTICE: Setup SDL
-14:57:49 T:140234713102272  NOTICE: Checking resolution 15
-14:57:49 T:140234713102272  NOTICE: Using visual 0x17a
-14:57:49 T:140234713102272  NOTICE: GL_VENDOR = nouveau
-14:57:49 T:140234713102272  NOTICE: GL_RENDERER = Gallium 0.4 on NVE7
-14:57:49 T:140234713102272  NOTICE: GL_VERSION = 3.0 Mesa 10.1.3
-14:57:49 T:140234713102272  NOTICE: GL_SHADING_LANGUAGE_VERSION = 1.30
-14:57:49 T:140234713102272  NOTICE: GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_fog_distance GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_mirror_clamp GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_ATI_texture_mirror_once GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_compression_latc GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_AMD_seamless_cubemap_per_texture GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_texture_cube_map_array GL_ARB_texture_multisample GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_NV_texture_barrier GL_ARB_get_program_binary GL_ARB_robustness GL_ARB_shader_bit_encoding GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_NV_vdpau_interop GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_base_instance GL_ARB_conservative_depth GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_ARB_transform_feedback_instanced GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_shader_trinary_minmax GL_ARB_clear_buffer_object GL_ARB_invalidate_subdata GL_ARB_texture_storage_multisample GL_ARB_vertex_attrib_binding GL_KHR_debug GL_ARB_texture_mirror_clamp_to_edge
-14:57:49 T:140234713102272  NOTICE: Running database version Addons16
-14:57:49 T:140234713102272  NOTICE: Running database version ViewModes6
-14:57:49 T:140234713102272  NOTICE: Running database version Textures13
-14:57:49 T:140234713102272  NOTICE: Running database version MyMusic48
-14:57:49 T:140234713102272  NOTICE: Running database version MyVideos90
-14:57:49 T:140234713102272  NOTICE: Running database version TV26
-14:57:49 T:140234713102272  NOTICE: Running database version Epg8
-14:57:49 T:140234713102272  NOTICE: start dvd mediatype detection
-14:57:49 T:140234711602944  NOTICE: Thread DetectDVDMedia start, auto delete: false
-14:57:49 T:140234713102272 WARNING: JSONRPC: Could not parse type "PVR.Details.Channel"
-14:57:49 T:140234713102272 WARNING: JSONRPC: Could not parse type "PVR.Details.ChannelGroup.Extended"
-14:57:49 T:140234713102272 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
-14:57:49 T:140234713102272 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
-14:57:49 T:140233853761280  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:57:49 T:140234713102272  NOTICE: initialize done
-14:57:49 T:140234713102272  NOTICE: Running the application...
-14:57:49 T:140233853761280  NOTICE: -->Python Interpreter Initialized<--
-14:57:49 T:140233635002112  NOTICE: Thread JobWorker start, auto delete: true
-14:57:49 T:140233626609408  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:57:49 T:140234713102272  NOTICE: starting zeroconf publishing
-14:57:49 T:140234713102272  NOTICE: Webserver: Starting...
-14:57:49 T:140233609824000  NOTICE: Thread JobWorker start, auto delete: true
-14:57:49 T:140234713102272  NOTICE: WebServer: Started the webserver
-14:57:49 T:140234713102272  NOTICE: ES: Starting event server
-14:57:49 T:140233584645888  NOTICE: Thread EventServer start, auto delete: false
-14:57:49 T:140233584645888  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
-14:57:49 T:140233584645888  NOTICE: UDP: Listening on port 9777
-14:57:49 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-14:57:49 T:140233156847360  NOTICE: Thread TCPServer start, auto delete: false
-14:57:49 T:140233140061952  NOTICE: Thread AirPlayServer start, auto delete: false
-14:57:49 T:140233626609408  NOTICE: -->Python Interpreter Initialized<--
-14:57:49 T:140233626609408 WARNING: CPythonInvoker(1): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:57:49 T:140233626609408  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:57:49 T:140233626609408  NOTICE: -->Python Interpreter Initialized<--
-14:57:51 T:140234713102272   ERROR: RunAddon: unknown add-on id 'plugin.program.navigation', or unexpected add-on type (not a script or plugin).
-14:58:16 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-14:58:16 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-14:58:16 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-14:58:16 T:140233853761280  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:16 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-14:58:16 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-14:58:16 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-14:58:16 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-14:58:16 T:140233853761280  NOTICE: -->Python Interpreter Initialized<--
-14:58:16 T:140233853761280 WARNING: CPythonInvoker(3): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:58:17 T:140233853761280  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:17 T:140233853761280  NOTICE: -->Python Interpreter Initialized<--
-14:58:20 T:140233626609408  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:20 T:140233626609408  NOTICE: -->Python Interpreter Initialized<--
-14:58:22 T:140233853761280  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:22 T:140233853761280  NOTICE: -->Python Interpreter Initialized<--
-14:58:24 T:140233626609408  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:24 T:140233626609408  NOTICE: -->Python Interpreter Initialized<--
-14:58:25 T:140234713102272   ERROR: GetDirectory - Error getting plugin://script.program.navigation/
-14:58:25 T:140234713102272   ERROR: CGUIMediaWindow::GetDirectory(plugin://script.program.navigation/) failed
-14:58:25 T:140233626609408  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:58:25 T:140234713102272   ERROR: GetDirectory - Error getting plugin://script.program.navigation/
-14:58:25 T:140234713102272   ERROR: CGUIMediaWindow::GetDirectory(plugin://script.program.navigation/) failed
-14:58:25 T:140233626609408  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:58:25 T:140234713102272   ERROR: GetDirectory - Error getting plugin://script.program.navigation/
-14:58:25 T:140234713102272   ERROR: CGUIMediaWindow::GetDirectory(plugin://script.program.navigation/) failed
-14:58:25 T:140233626609408  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:58:25 T:140234713102272   ERROR: GetDirectory - Error getting plugin://script.program.navigation/
-14:58:25 T:140234713102272   ERROR: CGUIMediaWindow::GetDirectory(plugin://script.program.navigation/) failed
-14:58:25 T:140233626609408  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:58:52 T:140233635002112  NOTICE: Previous line repeats 1 times.
-14:58:52 T:140233635002112  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:52 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-14:58:52 T:140233635002112  NOTICE: -->Python Interpreter Initialized<--
-14:58:52 T:140233635002112 WARNING: CPythonInvoker(8): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:58:53 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-14:58:53 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-14:58:53 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-14:58:53 T:140233635002112  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:53 T:140233635002112  NOTICE: -->Python Interpreter Initialized<--
-14:58:53 T:140233635002112 WARNING: CPythonInvoker(9): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:58:53 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-14:58:53 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-14:58:53 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-14:58:53 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-14:58:54 T:140234713102272 WARNING: RunScript called for a non-script addon 'script.program.navigation'. This behaviour is deprecated.
-14:58:54 T:140233635002112  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:54 T:140233635002112  NOTICE: -->Python Interpreter Initialized<--
-14:58:57 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:58:57 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-14:58:57 T:140233609824000 WARNING: CPythonInvoker(11): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:59:02 T:140234289456896  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:59:02 T:140234289456896  NOTICE: -->Python Interpreter Initialized<--
-14:59:05 T:140234289456896  NOTICE: plugin.audio.pandoki Auth  OK
-14:59:06 T:140234289456896  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
-14:59:06 T:140234289456896  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
-14:59:06 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
-14:59:06 T:140233609824000  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:59:06 T:140233609824000  NOTICE: Thread PAPlayer start, auto delete: false
-14:59:06 T:140233626609408  NOTICE: plugin.audio.pandoki Song PAN 7951 'George Strait - Amarillo By Morning'
-14:59:06 T:140234297849600  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
-14:59:06 T:140233626609408  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:59:07 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 7951 'George Strait - Amarillo By Morning'
-14:59:07 T:140233626609408  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:59:09 T:140233609824000  NOTICE: Thread FileCache start, auto delete: false
-14:59:15 T:140233626609408  NOTICE: Previous line repeats 1 times.
-14:59:15 T:140233626609408  NOTICE: Thread PAPlayer start, auto delete: false
-14:59:16 T:140233118766848  NOTICE: plugin.audio.pandoki Song PAN 25db 'Johnny Bush - Darkness On The Face Of The Earth'
-14:59:17 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 25db 'Johnny Bush - Darkness On The Face Of The Earth'
-14:59:17 T:140233934997248  NOTICE: Thread JobWorker start, auto delete: true
-14:59:17 T:140233926604544  NOTICE: Thread BackgroundLoader start, auto delete: false
-14:59:17 T:140233918211840  NOTICE: Thread JobWorker start, auto delete: true
-14:59:18 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:59:18 T:140233926604544  NOTICE: Thread JobWorker start, auto delete: true
-14:59:18 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-14:59:18 T:140233110374144 WARNING: CPythonInvoker(13): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:59:21 T:140234713102272 WARNING: RunScript called for a non-script addon 'script.program.navigation'. This behaviour is deprecated.
-14:59:21 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:59:21 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-14:59:25 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:59:25 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-14:59:25 T:140233110374144 WARNING: CPythonInvoker(15): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:59:27 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:59:27 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-14:59:38 T:140233118766848  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:59:38 T:140233118766848  NOTICE: -->Python Interpreter Initialized<--
-14:59:38 T:140233118766848 WARNING: CPythonInvoker(17): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.program.navigation/resources/media/transparent.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-14:59:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-14:59:42 T:140233118766848  NOTICE: Thread LanguageInvoker start, auto delete: false
-14:59:42 T:140233118766848  NOTICE: -->Python Interpreter Initialized<--
-14:59:42 T:140233118766848 WARNING: CPythonInvoker(18): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-14:59:42 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-14:59:42 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-14:59:42 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-14:59:42 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-14:59:44 T:140233118766848  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:00:34 T:140234713102272  NOTICE: Previous line repeats 2 times.
-15:00:34 T:140234713102272   ERROR: GetDirectory - Error getting /home/dave/.kodi/media/Fonts/
-15:00:34 T:140234713102272   ERROR: GetDirectory - Error getting special://home/media/Fonts/
-15:00:34 T:140234713102272   ERROR: GetDirectory - Error getting /home/dave/.kodi/media/Fonts/
-15:00:34 T:140234713102272   ERROR: GetDirectory - Error getting special://home/media/Fonts/
-15:00:53 T:140233165240064  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:00:56 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:00:56 T:140233926604544  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:01:20 T:140233926604544  NOTICE: Previous line repeats 4 times.
-15:01:20 T:140233926604544  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:01:20 T:140233926604544  NOTICE: -->Python Interpreter Initialized<--
-15:01:20 T:140233926604544 WARNING: CPythonInvoker(19): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:01:32 T:140233926604544  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:01:32 T:140233926604544  NOTICE: -->Python Interpreter Initialized<--
-15:01:32 T:140233926604544 WARNING: CPythonInvoker(20): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:02:04 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:02:06 T:140233926604544  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:02:06 T:140233926604544  NOTICE: -->Python Interpreter Initialized<--
-15:02:08 T:140233918211840  NOTICE: Thread FileCache start, auto delete: false
-15:02:13 T:140233118766848  NOTICE: Previous line repeats 1 times.
-15:02:13 T:140233118766848  NOTICE: plugin.audio.pandoki Song PAN c4db 'George Jones - He Stopped Loving Her Today'
-15:02:14 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK c4db 'George Jones - He Stopped Loving Her Today'
-15:02:20 T:140233934997248  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:02:20 T:140233934997248  NOTICE: -->Python Interpreter Initialized<--
-15:02:20 T:140233934997248 WARNING: CPythonInvoker(22): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:04:35 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:04:38 T:140233934997248  NOTICE: Thread FileCache start, auto delete: false
-15:04:45 T:140233926604544  NOTICE: Previous line repeats 1 times.
-15:04:45 T:140233926604544  NOTICE: plugin.audio.pandoki Song PAN fad5 'Justin Trevino - You'll Never Get A Better Chance (Than This)'
-15:04:46 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK fad5 'Justin Trevino - You'll Never Get A Better Chance (Than This)'
-15:06:08 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:06:08 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:06:11 T:140233165240064   ERROR: EXCEPTION Thrown (PythonToCppException) : -->Python callback/script returned the following error<--
+﻿19:47:46 T:139859699824576  NOTICE: special://profile/ is mapped to: special://masterprofile/
+19:47:46 T:139859699824576  NOTICE: -----------------------------------------------------------------------
+19:47:46 T:139859699824576  NOTICE: Starting Kodi (14.2 Git:7cc53a9). Platform: Linux x86 64-bit
+19:47:46 T:139859699824576  NOTICE: Using Release Kodi x64 build
+19:47:46 T:139859699824576  NOTICE: Kodi compiled Mar 27 2015 by GCC 4.8.2 for Linux x86 64-bit version 3.13.11 (199947)
+19:47:46 T:139859699824576  NOTICE: Running on Ubuntu 14.04.2 LTS, kernel: Linux x86 64-bit version 3.13.0-51-lowlatency
+19:47:46 T:139859699824576  NOTICE: FFmpeg statically linked, version: 2.4.6-xbmc-2.4.6-Helix
+19:47:46 T:139859699824576  NOTICE: Host CPU: AMD FX(tm)-6300 Six-Core Processor, 6 cores available
+19:47:46 T:139859699824576  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
+19:47:46 T:139859699824576  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/kodi
+19:47:46 T:139859699824576  NOTICE: special://masterprofile/ is mapped to: /home/dave/.kodi/userdata
+19:47:46 T:139859699824576  NOTICE: special://home/ is mapped to: /home/dave/.kodi
+19:47:46 T:139859699824576  NOTICE: special://temp/ is mapped to: /home/dave/.kodi/temp
+19:47:46 T:139859699824576  NOTICE: The executable running is: /usr/lib/kodi/kodi.bin
+19:47:46 T:139859699824576  NOTICE: Local hostname: 350z
+19:47:46 T:139859699824576  NOTICE: Log File is located: /home/dave/.kodi/temp/kodi.log
+19:47:46 T:139859699824576  NOTICE: -----------------------------------------------------------------------
+19:47:46 T:139859699824576  NOTICE: load settings...
+19:47:47 T:139859699824576  NOTICE: Found 1 Lists of Devices
+19:47:47 T:139859699824576  NOTICE: Enumerated PULSE devices:
+19:47:47 T:139859699824576  NOTICE:     Device 1
+19:47:47 T:139859699824576  NOTICE:         m_deviceName      : Default
+19:47:47 T:139859699824576  NOTICE:         m_displayName     : Default
+19:47:47 T:139859699824576  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
+19:47:47 T:139859699824576  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+19:47:47 T:139859699824576  NOTICE:         m_channels        : FL,FR
+19:47:47 T:139859699824576  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+19:47:47 T:139859699824576  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+19:47:47 T:139859699824576  NOTICE:     Device 2
+19:47:47 T:139859699824576  NOTICE:         m_deviceName      : alsa_output.pci-0000_01_00.1.hdmi-stereo
+19:47:47 T:139859699824576  NOTICE:         m_displayName     : GF108 High Definition Audio Controller Digital Stereo (HDMI)
+19:47:47 T:139859699824576  NOTICE:         m_displayNameExtra: HDMI / DisplayPort (PULSEAUDIO)
+19:47:47 T:139859699824576  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+19:47:47 T:139859699824576  NOTICE:         m_channels        : FL,FR
+19:47:47 T:139859699824576  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+19:47:47 T:139859699824576  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+19:47:47 T:139859699824576  NOTICE:     Device 3
+19:47:47 T:139859699824576  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_14.2.analog-stereo
+19:47:47 T:139859699824576  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
+19:47:47 T:139859699824576  NOTICE:         m_displayNameExtra: Analog Output (PULSEAUDIO)
+19:47:47 T:139859699824576  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+19:47:47 T:139859699824576  NOTICE:         m_channels        : FL,FR
+19:47:47 T:139859699824576  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+19:47:47 T:139859699824576  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+19:47:47 T:139859699824576  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+19:47:47 T:139859699824576  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+19:47:47 T:139859699824576  NOTICE: Default DVD Player: dvdplayer
+19:47:47 T:139859699824576  NOTICE: Default Video Player: dvdplayer
+19:47:47 T:139859699824576  NOTICE: Default Audio Player: paplayer
+19:47:47 T:139859699824576  NOTICE: Disabled debug logging due to GUI setting. Level 0.
+19:47:47 T:139859699824576  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
+19:47:47 T:139859699824576  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
+19:47:47 T:139859699824576  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+19:47:47 T:139859699824576  NOTICE: Loaded playercorefactory configuration
+19:47:47 T:139859699824576  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+19:47:47 T:139859699824576  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+19:47:47 T:139859200898816  NOTICE: Thread ActiveAE start, auto delete: false
+19:47:47 T:139859258570496  NOTICE: Thread AESink start, auto delete: false
+19:47:48 T:139859258570496  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
+19:47:48 T:139859699824576  NOTICE: Running database version Addons16
+19:47:48 T:139859699824576  NOTICE: ADDONS: Using repository repository.xbmc.org
+19:47:48 T:139859232519936  NOTICE: Thread PeripBusCEC start, auto delete: false
+19:47:48 T:139859224127232  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
+19:47:49 T:139859699824576  NOTICE: Setup SDL
+19:47:49 T:139859699824576  NOTICE: Checking resolution 15
+19:47:49 T:139859699824576  NOTICE: Using visual 0x28
+19:47:49 T:139859699824576  NOTICE: GL_VENDOR = NVIDIA Corporation
+19:47:49 T:139859699824576  NOTICE: GL_RENDERER = GeForce GT 620/PCIe/SSE2
+19:47:49 T:139859699824576  NOTICE: GL_VERSION = 4.2.0 NVIDIA 304.125
+19:47:49 T:139859699824576  NOTICE: GL_SHADING_LANGUAGE_VERSION = 4.20 NVIDIA via Cg compiler
+19:47:49 T:139859699824576  NOTICE: GL_GPU_MEMORY_INFO_TOTAL_AVAILABLE_MEMORY_NVX = 1048576
+19:47:49 T:139859699824576  NOTICE: GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX = 1047872
+19:47:49 T:139859699824576  NOTICE: GL_EXTENSIONS = GL_AMD_multi_draw_indirect GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_provoking_vertex GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_image_load_store GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_texture_type_2_10_10_10_REV GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KTX_buffer_region GL_NV_alpha_test GL_NV_blend_minmax GL_NV_blend_square GL_NV_complex_primitives GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_ES1_1_compatibility GL_NV_explicit_multisample GL_NV_fbo_color_attachments GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragdepth GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_expand_normal GL_NV_texture_lod_clamp GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_OES_compressed_paletted_texture GL_OES_depth24 GL_OES_depth32 GL_OES_depth_texture GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_rgb8_rgba8 GL_OES_read_format GL_OES_standard_derivatives GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_array_object GL_OES_vertex_half_float GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+19:47:49 T:139859699824576  NOTICE: Running database version Addons16
+19:47:49 T:139859699824576  NOTICE: Running database version ViewModes6
+19:47:49 T:139859699824576  NOTICE: Running database version Textures13
+19:47:49 T:139859699824576  NOTICE: Running database version MyMusic48
+19:47:50 T:139859699824576  NOTICE: Running database version MyVideos90
+19:47:50 T:139859699824576  NOTICE: Running database version TV26
+19:47:50 T:139859699824576  NOTICE: Running database version Epg8
+19:47:50 T:139859699824576  NOTICE: start dvd mediatype detection
+19:47:50 T:139859201550080  NOTICE: Thread DetectDVDMedia start, auto delete: false
+19:47:52 T:139859699824576 WARNING: JSONRPC: Could not parse type "PVR.Details.Channel"
+19:47:52 T:139859699824576 WARNING: JSONRPC: Could not parse type "PVR.Details.ChannelGroup.Extended"
+19:47:52 T:139859699824576 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
+19:47:52 T:139859699824576 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
+19:47:52 T:139858857916160  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:47:52 T:139859699824576  NOTICE: initialize done
+19:47:52 T:139859699824576  NOTICE: Running the application...
+19:47:52 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+19:47:52 T:139858841130752  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:47:52 T:139859699824576  NOTICE: starting zeroconf publishing
+19:47:52 T:139859699824576  NOTICE: Webserver: Starting...
+19:47:52 T:139858488059648  NOTICE: Thread JobWorker start, auto delete: true
+19:47:52 T:139859699824576  NOTICE: WebServer: Started the webserver
+19:47:52 T:139859699824576  NOTICE: ES: Starting event server
+19:47:52 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+19:47:52 T:139858462881536  NOTICE: Thread EventServer start, auto delete: false
+19:47:52 T:139858462881536  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
+19:47:52 T:139858462881536  NOTICE: UDP: Listening on port 9777
+19:47:52 T:139858454488832  NOTICE: Thread TCPServer start, auto delete: false
+19:47:52 T:139858026690304  NOTICE: Thread AirPlayServer start, auto delete: false
+19:47:52 T:139858018297600  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:47:52 T:139858857916160  NOTICE: -->Python Interpreter Initialized<--
+19:47:52 T:139858841130752  NOTICE: Previous line repeats 1 times.
+19:47:52 T:139858841130752 WARNING: CPythonInvoker(1): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+19:47:52 T:139858018297600  NOTICE: -->Python Interpreter Initialized<--
+19:47:55 T:139858018297600  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:47:55 T:139858018297600  NOTICE: -->Python Interpreter Initialized<--
+19:47:58 T:139858018297600  NOTICE: plugin.audio.pandoki Auth  OK
+19:47:59 T:139858018297600  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+19:47:59 T:139858018297600  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+19:47:59 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+19:47:59 T:139858857916160  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:47:59 T:139858857916160  NOTICE: Thread PAPlayer start, auto delete: false
+19:47:59 T:139858841130752  NOTICE: plugin.audio.pandoki Song PAN 3051 'Johnny Bush - You Ought To Hear Me Cry'
+19:47:59 T:139858841130752  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:48:00 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 3051 'Johnny Bush - You Ought To Hear Me Cry'
+19:48:00 T:139858841130752  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:48:02 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+19:48:05 T:139858841130752  NOTICE: Previous line repeats 1 times.
+19:48:05 T:139858841130752  NOTICE: Thread PAPlayer start, auto delete: false
+19:48:06 T:139857866254080  NOTICE: plugin.audio.pandoki Song PAN c17c 'Ray Price - I've Just Destroyed The World (I'm Living In)'
+19:48:07 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK c17c 'Ray Price - I've Just Destroyed The World (I'm Living In)'
+19:48:07 T:139857866254080  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:48:11 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:48:11 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+19:48:12 T:139857866254080  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:48:12 T:139857866254080  NOTICE: -->Python Interpreter Initialized<--
+19:48:12 T:139857866254080 WARNING: CPythonInvoker(5): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+19:48:12 T:139857866254080  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:48:12 T:139859699824576   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+19:48:12 T:139859699824576   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+19:48:12 T:139857892472576  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:48:13 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:48:13 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+19:48:13 T:139857892472576 WARNING: CPythonInvoker(6): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+19:49:01 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+19:50:19 T:139858471274240  NOTICE: Previous line repeats 2 times.
+19:50:19 T:139858471274240  NOTICE: Thread FileCache start, auto delete: false
+19:50:23 T:139858857916160  NOTICE: Previous line repeats 1 times.
+19:50:23 T:139858857916160  NOTICE: plugin.audio.pandoki Song PAN 3bec 'George Strait - Nobody In His Right Mind Would've Left Her'
+19:50:24 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 3bec 'George Strait - Nobody In His Right Mind Would've Left Her'
+19:52:40 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+19:52:42 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+19:52:46 T:139858471274240  NOTICE: Previous line repeats 1 times.
+19:52:46 T:139858471274240  NOTICE: plugin.audio.pandoki Song PAN 7850 'Merle Haggard - Why Am I Drinkin''
+19:52:47 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 7850 'Merle Haggard - Why Am I Drinkin''
+19:55:33 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+19:55:34 T:139858471274240  NOTICE: Thread FileCache start, auto delete: false
+19:55:39 T:139858018297600  NOTICE: Previous line repeats 1 times.
+19:55:39 T:139858018297600  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+19:55:39 T:139858857916160  NOTICE: plugin.audio.pandoki Song PAN e7c6 'Johnny Bush - Beneath A Neon Star'
+19:55:40 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK e7c6 'Johnny Bush - Beneath A Neon Star'
+19:56:42 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+19:58:00 T:139859699824576  NOTICE: Previous line repeats 1 times.
+19:58:00 T:139859699824576   ERROR: DBus: Error org.freedesktop.DBus.Error.UnknownMethod - Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+19:58:16 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+19:58:18 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+19:58:22 T:139858471274240  NOTICE: Previous line repeats 1 times.
+19:58:22 T:139858471274240  NOTICE: plugin.audio.pandoki Song PAN 1532 'Justin Trevino - Then & Only Then'
+19:58:23 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 1532 'Justin Trevino - Then & Only Then'
+20:00:45 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:00:46 T:139858471274240  NOTICE: Thread FileCache start, auto delete: false
+20:00:50 T:139858857916160  NOTICE: Previous line repeats 1 times.
+20:00:50 T:139858857916160  NOTICE: plugin.audio.pandoki Song PAN 3bec 'George Jones - A Good Year For The Roses (feat Alan Jackson)'
+20:00:51 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 3bec 'George Jones - A Good Year For The Roses (feat Alan Jackson)'
+20:03:36 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:03:38 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+20:03:42 T:139858471274240  NOTICE: Previous line repeats 1 times.
+20:03:42 T:139858471274240  NOTICE: plugin.audio.pandoki Song PAN bb5a 'George Strait - Too Much Of Too Little'
+20:03:43 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK bb5a 'George Strait - Too Much Of Too Little'
+20:07:14 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:07:20 T:139858471274240  NOTICE: Thread FileCache start, auto delete: false
+20:07:25 T:139858018297600  NOTICE: Previous line repeats 1 times.
+20:07:25 T:139858018297600  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+20:07:25 T:139858857916160  NOTICE: plugin.audio.pandoki Song PAN a416 'Johnny Bush - It's All Over But The Crying'
+20:07:26 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK a416 'Johnny Bush - It's All Over But The Crying'
+20:09:38 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:09:39 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+20:09:43 T:139858471274240  NOTICE: Previous line repeats 1 times.
+20:09:43 T:139858471274240  NOTICE: plugin.audio.pandoki Song PAN 7850 'Justin Trevino - Where Were You'
+20:09:44 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 7850 'Justin Trevino - Where Were You'
+20:12:27 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:12:28 T:139858471274240  NOTICE: Thread FileCache start, auto delete: false
+20:12:32 T:139858857916160  NOTICE: Previous line repeats 1 times.
+20:12:32 T:139858857916160  NOTICE: plugin.audio.pandoki Song PAN 3061 'George Jones - I Sleep Just Like A Baby'
+20:12:33 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 3061 'George Jones - I Sleep Just Like A Baby'
+20:13:48 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:15:38 T:139858857916160  NOTICE: Previous line repeats 1 times.
+20:15:38 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+20:15:41 T:139858471274240  NOTICE: Previous line repeats 1 times.
+20:15:41 T:139858471274240  NOTICE: plugin.audio.pandoki Song PAN 576e 'George Strait - Drinking Champagne'
+20:15:42 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 576e 'George Strait - Drinking Champagne'
+20:19:08 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:19:11 T:139858471274240  NOTICE: Thread FileCache start, auto delete: false
+20:19:22 T:139858018297600  NOTICE: Previous line repeats 1 times.
+20:19:22 T:139858018297600  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+20:19:22 T:139858488059648  NOTICE: plugin.audio.pandoki Song PAN 6fb1 'Johnny Bush - Lonely Street'
+20:19:23 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 6fb1 'Johnny Bush - Lonely Street'
+20:22:45 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:22:47 T:139858488059648  NOTICE: Thread FileCache start, auto delete: false
+20:22:51 T:139858857916160  NOTICE: Previous line repeats 1 times.
+20:22:51 T:139858857916160  NOTICE: plugin.audio.pandoki Song PAN 22da 'Justin Trevino - One More Drink And Then I'll Go'
+20:22:52 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 22da 'Justin Trevino - One More Drink And Then I'll Go'
+20:25:03 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:25:06 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+20:25:08 T:139858471274240  NOTICE: Previous line repeats 1 times.
+20:25:08 T:139858471274240  NOTICE: plugin.audio.pandoki Song PAN a0a8 'Merle Haggard - If I Left It Up To You'
+20:25:09 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK a0a8 'Merle Haggard - If I Left It Up To You'
+20:25:57 T:139859699824576   ERROR: DBus: Error org.freedesktop.DBus.Error.UnknownMethod - Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+20:26:59 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:27:04 T:139858857916160  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:27:04 T:139858841130752  NOTICE: Previous line repeats 1 times.
+20:27:04 T:139858841130752  NOTICE: -->Python Interpreter Initialized<--
+20:27:04 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+20:27:04 T:139858857916160  NOTICE: -->Python Interpreter Initialized<--
+20:27:04 T:139858857916160 WARNING: CPythonInvoker(8): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:27:05 T:139858018297600  NOTICE: plugin.audio.pandoki Exit  OK
+20:27:05 T:139859699824576   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+20:27:05 T:139859699824576   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+20:27:05 T:139858018297600  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:27:06 T:139858018297600  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:27:06 T:139858018297600  NOTICE: -->Python Interpreter Initialized<--
+20:27:08 T:139858018297600  NOTICE: plugin.audio.pandoki Auth  OK
+20:27:11 T:139858018297600  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+20:27:11 T:139858018297600  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+20:27:11 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+20:27:11 T:139858841130752  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:27:11 T:139858841130752  NOTICE: Thread PAPlayer start, auto delete: false
+20:27:11 T:139858857916160  NOTICE: plugin.audio.pandoki Song PAN 7e6d 'Gary Stewart - In Some Room Above The Street'
+20:27:11 T:139858857916160  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:27:12 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 7e6d 'Gary Stewart - In Some Room Above The Street'
+20:27:12 T:139858857916160  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:27:14 T:139858841130752  NOTICE: Thread FileCache start, auto delete: false
+20:27:17 T:139858857916160  NOTICE: Previous line repeats 1 times.
+20:27:17 T:139858857916160  NOTICE: Thread PAPlayer start, auto delete: false
+20:27:18 T:139858488059648  NOTICE: plugin.audio.pandoki Song PAN 0dfc 'George Strait - Overnight Success'
+20:27:19 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 0dfc 'George Strait - Overnight Success'
+20:27:19 T:139858488059648  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:27:22 T:139858488059648  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:27:22 T:139858488059648  NOTICE: -->Python Interpreter Initialized<--
+20:27:22 T:139858488059648 WARNING: CPythonInvoker(10): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:27:23 T:139858488059648  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:27:26 T:139858488059648  NOTICE: Previous line repeats 2 times.
+20:27:26 T:139858488059648  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:27:26 T:139858488059648  NOTICE: -->Python Interpreter Initialized<--
+20:27:27 T:139858018297600  NOTICE: plugin.audio.pandoki Dir   OK    4
+20:27:27 T:139857985402624  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:27:27 T:139857977009920  NOTICE: Previous line repeats 1 times.
+20:27:27 T:139857977009920  NOTICE: Thread JobWorker start, auto delete: true
+20:27:33 T:139857877202688  NOTICE: Previous line repeats 1 times.
+20:27:33 T:139857877202688  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:27:33 T:139857877202688  NOTICE: -->Python Interpreter Initialized<--
+20:27:35 T:139858018297600  NOTICE: plugin.audio.pandoki Fill  OK 5318 'Eric Church Radio'
+20:27:35 T:139858018297600  NOTICE: plugin.audio.pandoki Play  OK 5318 'Eric Church Radio'
+20:27:35 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Eric Church Radio'
+20:27:36 T:139858488059648  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:28:13 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:28:13 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+20:28:13 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+20:28:13 T:139857892472576 WARNING: CPythonInvoker(13): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:30:19 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+20:30:30 T:139858841130752  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:30:30 T:139858841130752  NOTICE: -->Python Interpreter Initialized<--
+20:30:30 T:139858841130752 WARNING: CPythonInvoker(14): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:30:30 T:139858841130752  NOTICE: plugin.audio.pandoki Song PAN 9c33 'Eric Church - Guys Like Me'
+20:30:31 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 9c33 'Eric Church - Guys Like Me'
+20:30:33 T:139858857916160  NOTICE: Thread FileCache start, auto delete: false
+20:30:36 T:139858841130752  NOTICE: Previous line repeats 1 times.
+20:30:36 T:139858841130752  NOTICE: Thread PAPlayer start, auto delete: false
+20:30:37 T:139857892472576  NOTICE: plugin.audio.pandoki Song PAN 3bec 'Luke Bryan - Someone Else Calling You Baby'
+20:30:38 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 3bec 'Luke Bryan - Someone Else Calling You Baby'
+20:30:41 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:30:41 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+20:30:41 T:139859699824576   ERROR: Control 50 in window 10025 has been asked to focus, but it can't
+20:30:42 T:139858018297600  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+20:30:42 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+20:30:42 T:139857977009920  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:30:42 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:30:42 T:139859699824576   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+20:30:42 T:139859699824576   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+20:30:42 T:139857892472576  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:30:54 T:139857987565312  NOTICE: Previous line repeats 1 times.
+20:30:54 T:139857987565312  NOTICE: plugin.audio.pandoki Song PAN 0dfc 'George Strait - Overnight Success'
+20:30:54 T:139857987565312  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:30:55 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK 0dfc 'George Strait - Overnight Success'
+20:30:55 T:139857987565312  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:31:26 T:139857987565312  NOTICE: Previous line repeats 7 times.
+20:31:26 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:31:26 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+20:31:26 T:139857987565312 WARNING: CPythonInvoker(16): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:31:27 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:31:27 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+20:31:28 T:139858018297600  NOTICE: plugin.audio.pandoki Dir   OK    6
+20:31:28 T:139857892472576  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:31:28 T:139857977009920  NOTICE: Previous line repeats 1 times.
+20:31:28 T:139857977009920  NOTICE: Thread JobWorker start, auto delete: true
+20:31:33 T:139857987565312  NOTICE: Previous line repeats 1 times.
+20:31:33 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:31:33 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+20:31:34 T:139858018297600  NOTICE: plugin.audio.pandoki Play  OK 5318 'Eric Church Radio'
+20:31:34 T:139858018297600  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Eric Church Radio'
+20:31:34 T:139857892472576  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:31:47 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:31:47 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+20:31:47 T:139857987565312 WARNING: CPythonInvoker(19): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:31:57 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:31:57 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+20:31:57 T:139857987565312 WARNING: CPythonInvoker(20): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:31:59 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:31:59 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+20:32:04 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:32:04 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+20:32:04 T:139857892472576 WARNING: CPythonInvoker(22): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:32:05 T:139859699824576 WARNING: RunScript called for a non-script addon 'script.program.navigation'. This behaviour is deprecated.
+20:32:05 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:32:05 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+20:32:12 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:32:12 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+20:32:12 T:139857892472576 WARNING: CPythonInvoker(24): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:32:14 T:139857892472576  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:32:14 T:139857892472576  NOTICE: -->Python Interpreter Initialized<--
+20:32:16 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:32:16 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+20:32:16 T:139857987565312 WARNING: CPythonInvoker(26): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:32:57 T:139858841130752  NOTICE: Thread JobWorker start, auto delete: true
+20:32:58 T:139858018297600  NOTICE: Previous line repeats 1 times.
+20:32:58 T:139858018297600  NOTICE: plugin.audio.pandoki Exit  OK
+20:32:59 T:139858018297600  NOTICE: Thread PAPlayer start, auto delete: false
+20:32:59 T:139859699824576   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+20:32:59 T:139859699824576   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+20:32:59 T:139858849523456  NOTICE: Thread BackgroundLoader start, auto delete: false
+20:34:03 T:139858857916160  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:34:03 T:139858857916160  NOTICE: -->Python Interpreter Initialized<--
+20:34:03 T:139858857916160 WARNING: CPythonInvoker(27): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:34:03 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+20:34:15 T:139858857916160  NOTICE: Thread PAPlayer start, auto delete: false
+20:34:15 T:139858841130752  NOTICE: Thread JobWorker start, auto delete: true
+20:47:32 T:139859258570496  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
+20:48:48 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+20:48:48 T:139858841130752  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:48:48 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:48:48 T:139858841130752  NOTICE: -->Python Interpreter Initialized<--
+20:48:48 T:139858841130752 WARNING: CPythonInvoker(28): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:53:54 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+20:53:54 T:139859699824576 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+20:53:54 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+20:53:54 T:139859699824576 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
+20:53:54 T:139859699824576 WARNING: Cleanup: Having to cleanup texture button-focus2.png
+20:53:55 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:53:55 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+20:53:55 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+20:53:55 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+20:53:55 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+20:53:55 T:139858849523456  NOTICE: Thread JobWorker start, auto delete: true
+20:53:56 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+20:53:56 T:139858471274240 WARNING: CPythonInvoker(29): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:54:12 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:54:12 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+20:54:12 T:139858471274240 WARNING: CPythonInvoker(30): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+20:55:14 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+20:55:14 T:139859699824576 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+20:55:14 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+20:55:14 T:139858849523456  NOTICE: Thread LanguageInvoker start, auto delete: false
+20:55:14 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+20:55:14 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+20:55:14 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+20:55:14 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+20:55:14 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+20:55:14 T:139858849523456  NOTICE: -->Python Interpreter Initialized<--
+20:55:14 T:139858849523456 WARNING: CPythonInvoker(31): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:00:13 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+21:00:13 T:139858849523456  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:13 T:139858841130752  NOTICE: Thread JobWorker start, auto delete: true
+21:00:13 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:13 T:139858849523456  NOTICE: -->Python Interpreter Initialized<--
+21:00:13 T:139858849523456 WARNING: CPythonInvoker(32): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:00:13 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+21:00:20 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:20 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+21:00:20 T:139857987565312 WARNING: CPythonInvoker(34): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:00:24 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:24 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+21:00:24 T:139857987565312 WARNING: CPythonInvoker(35): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:00:31 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:31 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+21:00:31 T:139857987565312 WARNING: CPythonInvoker(36): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:00:44 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:44 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+21:00:44 T:139857987565312 WARNING: CPythonInvoker(37): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:00:49 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:49 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+21:00:49 T:139857987565312 WARNING: CPythonInvoker(38): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:01:26 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+21:01:26 T:139859699824576 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+21:01:26 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+21:01:26 T:139858841130752  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:01:26 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+21:01:26 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:01:26 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+21:01:26 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:01:26 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+21:01:26 T:139858841130752  NOTICE: -->Python Interpreter Initialized<--
+21:01:26 T:139858841130752 WARNING: CPythonInvoker(39): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:01:59 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+21:01:59 T:139859699824576 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+21:01:59 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+21:01:59 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:01:59 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+21:01:59 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:01:59 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+21:01:59 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:01:59 T:139858841130752  NOTICE: Thread JobWorker start, auto delete: true
+21:01:59 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:01:59 T:139858471274240 WARNING: CPythonInvoker(40): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:02:06 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:02:06 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:02:06 T:139858471274240 WARNING: CPythonInvoker(41): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:02:11 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:02:11 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:02:11 T:139858471274240 WARNING: CPythonInvoker(42): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:02:31 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:02:31 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:02:34 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:02:34 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:02:34 T:139858471274240 WARNING: CPythonInvoker(44): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:03:49 T:139858841130752  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:03:49 T:139858471274240  NOTICE: Thread JobWorker start, auto delete: true
+21:03:49 T:139858841130752  NOTICE: -->Python Interpreter Initialized<--
+21:03:49 T:139858841130752 WARNING: CPythonInvoker(45): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:03:55 T:139858841130752  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:03:55 T:139858841130752  NOTICE: -->Python Interpreter Initialized<--
+21:03:55 T:139858841130752 WARNING: CPythonInvoker(46): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:04:01 T:139859699824576 WARNING: RunScript called for a non-script addon 'script.program.navigation'. This behaviour is deprecated.
+21:04:01 T:139858841130752  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:04:01 T:139858841130752  NOTICE: -->Python Interpreter Initialized<--
+21:04:09 T:139858841130752   ERROR: EXCEPTION Thrown (PythonToCppException) : -->Python callback/script returned the following error<--
                                              - NOTE: IGNORING THIS CAN LEAD TO MEMORY LEAKS!
-                                            Error Type: <type 'exceptions.NameError'>
-                                            Error Contents: global name 'ACTION_NAV_BACK' is not defined
+                                            Error Type: <type 'exceptions.AttributeError'>
+                                            Error Contents: 'module' object has no attribute 'getMousePosition'
                                             Traceback (most recent call last):
-                                              File "/home/dave/.kodi/addons/script.audio.BT_BC127_HFP/addon.py", line 268, in onAction
-                                                if (actionID in (ACTION_PREVIOUS_MENU, ACTION_NAV_BACK, ACTION_PARENT_DIR)):
-                                            NameError: global name 'ACTION_NAV_BACK' is not defined
+                                              File "/home/dave/.kodi/addons/script.program.navigation/addon.py", line 157, in onControl
+                                                pos = xbmcgui.getMousePosition()
+                                            AttributeError: 'module' object has no attribute 'getMousePosition'
                                             -->End of Python script error report<--
-15:06:15 T:140233926604544   ERROR: Previous line repeats 22 times.
-15:06:15 T:140233926604544  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:06:15 T:140233165240064   ERROR: EXCEPTION Thrown (PythonToCppException) : -->Python callback/script returned the following error<--
-                                             - NOTE: IGNORING THIS CAN LEAD TO MEMORY LEAKS!
-                                            Error Type: <type 'exceptions.NameError'>
-                                            Error Contents: global name 'ACTION_NAV_BACK' is not defined
-                                            Traceback (most recent call last):
-                                              File "/home/dave/.kodi/addons/script.audio.BT_BC127_HFP/addon.py", line 268, in onAction
-                                                if (actionID in (ACTION_PREVIOUS_MENU, ACTION_NAV_BACK, ACTION_PARENT_DIR)):
-                                            NameError: global name 'ACTION_NAV_BACK' is not defined
-                                            -->End of Python script error report<--
-15:06:15 T:140233918211840  NOTICE: Thread JobWorker start, auto delete: true
-15:06:15 T:140233926604544  NOTICE: -->Python Interpreter Initialized<--
-15:06:15 T:140233926604544 WARNING: CPythonInvoker(24): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:07:59 T:140233918211840  NOTICE: Thread JobWorker start, auto delete: true
-15:08:01 T:140233926604544  NOTICE: Thread FileCache start, auto delete: false
-15:08:08 T:140234289456896  NOTICE: Previous line repeats 1 times.
-15:08:08 T:140234289456896  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
-15:08:08 T:140233165240064  NOTICE: plugin.audio.pandoki Song PAN 3061 'Ray Price - Swinging Doors'
-15:08:09 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 3061 'Ray Price - Swinging Doors'
-15:09:20 T:140233918211840  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:09:20 T:140233918211840  NOTICE: -->Python Interpreter Initialized<--
-15:09:24 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:09:24 T:140233934997248  NOTICE: Thread JobWorker start, auto delete: true
-15:09:24 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:09:24 T:140233165240064 WARNING: CPythonInvoker(26): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:09:48 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:09:48 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:09:51 T:140233918211840  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:09:51 T:140233918211840  NOTICE: -->Python Interpreter Initialized<--
-15:09:51 T:140233918211840 WARNING: CPythonInvoker(28): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:09:56 T:140234713102272 WARNING: RunScript called for a non-script addon 'script.program.navigation'. This behaviour is deprecated.
-15:09:56 T:140233934997248  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:09:56 T:140233934997248  NOTICE: -->Python Interpreter Initialized<--
-15:10:00 T:140233934997248  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:10:00 T:140233918211840  NOTICE: Thread JobWorker start, auto delete: true
-15:10:00 T:140233934997248  NOTICE: -->Python Interpreter Initialized<--
-15:10:00 T:140233934997248 WARNING: CPythonInvoker(30): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:10:43 T:140233918211840  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:10:43 T:140233918211840  NOTICE: -->Python Interpreter Initialized<--
-15:10:44 T:140234289456896  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
-15:10:44 T:140233934997248  NOTICE: plugin.audio.pandoki Song PAN 3061 'Ray Price - Swinging Doors'
-15:10:44 T:140233934997248  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:10:44 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:10:44 T:140234713102272  NOTICE: Previous line repeats 2 times.
-15:10:44 T:140234713102272   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
-15:10:44 T:140234713102272   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
-15:10:44 T:140233918211840  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:10:45 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 3061 'Ray Price - Swinging Doors'
-15:10:45 T:140233948833536  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:10:45 T:140233609824000  NOTICE: Thread JobWorker start, auto delete: true
-15:10:47 T:140233918211840  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:10:47 T:140233918211840  NOTICE: -->Python Interpreter Initialized<--
-15:10:47 T:140233918211840 WARNING: CPythonInvoker(32): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:10:49 T:140233918211840  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:10:49 T:140233918211840  NOTICE: -->Python Interpreter Initialized<--
-15:10:49 T:140233934997248  NOTICE: Thread FileCache start, auto delete: false
-15:10:54 T:140233948833536  NOTICE: Previous line repeats 1 times.
-15:10:54 T:140233948833536  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:10:54 T:140233948833536  NOTICE: -->Python Interpreter Initialized<--
-15:10:54 T:140233948833536 WARNING: CPythonInvoker(34): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:10:55 T:140232829691648  NOTICE: plugin.audio.pandoki Song PAN 88fd 'Johnny Bush - Life Turned Her That Way'
-15:10:56 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 88fd 'Johnny Bush - Life Turned Her That Way'
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-focus2.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-15:11:14 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.program.navigation/resources/media/transparent.png
-15:11:14 T:140232829691648  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:11:14 T:140232829691648  NOTICE: -->Python Interpreter Initialized<--
-15:11:14 T:140232829691648 WARNING: CPythonInvoker(35): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:11:14 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:11:14 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:11:14 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:11:14 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:11:15 T:140232829691648  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:11:15 T:140232829691648  NOTICE: -->Python Interpreter Initialized<--
-15:12:13 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:12:13 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:12:13 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:12:13 T:140233110374144 WARNING: CPythonInvoker(37): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-15:12:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-15:12:15 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:12:15 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:12:15 T:140233110374144 WARNING: CPythonInvoker(38): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:12:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:12:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:12:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:12:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:12:16 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:12:16 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:13:07 T:140232829691648  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:13:07 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:13:07 T:140232829691648  NOTICE: -->Python Interpreter Initialized<--
-15:13:07 T:140232829691648 WARNING: CPythonInvoker(40): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:13:09 T:140232829691648  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:13:09 T:140232829691648  NOTICE: -->Python Interpreter Initialized<--
-15:13:13 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:13:13 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:13:13 T:140233110374144 WARNING: CPythonInvoker(42): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-15:13:43 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-15:13:43 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:13:43 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:13:43 T:140233165240064 WARNING: CPythonInvoker(43): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:13:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:13:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:13:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:13:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:13:43 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:13:45 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:13:45 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:13:57 T:140233609824000  NOTICE: Thread FileCache start, auto delete: false
-15:14:02 T:140233891575552  NOTICE: Previous line repeats 1 times.
-15:14:02 T:140233891575552  NOTICE: plugin.audio.pandoki Song PAN f1e5 'George Strait - Let's Fall To Pieces Together'
-15:14:03 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK f1e5 'George Strait - Let's Fall To Pieces Together'
-15:14:06 T:140232829691648  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:14:06 T:140232829691648  NOTICE: -->Python Interpreter Initialized<--
-15:14:06 T:140232829691648 WARNING: CPythonInvoker(45): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:16:37 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:16:41 T:140232829691648  NOTICE: Thread FileCache start, auto delete: false
-15:16:47 T:140233110374144  NOTICE: Previous line repeats 1 times.
-15:16:47 T:140233110374144  NOTICE: plugin.audio.pandoki Song PAN de31 'Gary Stewart - She's Actin' SIngle (I'm Drinkin' Doubles)'
-15:16:48 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK de31 'Gary Stewart - She's Actin' SIngle (I'm Drinkin' Doubles)'
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-15:17:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-15:17:01 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:17:01 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:17:01 T:140233110374144 WARNING: CPythonInvoker(46): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:17:01 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:17:01 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:17:01 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:17:01 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:17:02 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:17:02 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:17:23 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:17:23 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:17:23 T:140233609824000 WARNING: CPythonInvoker(48): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-15:17:25 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-15:17:25 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:17:25 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:17:25 T:140233609824000 WARNING: CPythonInvoker(49): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:17:25 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:17:25 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:17:25 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:17:25 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:17:26 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:17:26 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:17:31 T:140233110374144  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:17:31 T:140233110374144  NOTICE: -->Python Interpreter Initialized<--
-15:17:31 T:140233110374144 WARNING: CPythonInvoker(51): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:19:02 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:19:03 T:140233110374144  NOTICE: Thread FileCache start, auto delete: false
-15:19:17 T:140234289456896  NOTICE: Previous line repeats 1 times.
-15:19:17 T:140234289456896  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
-15:19:17 T:140233609824000  NOTICE: plugin.audio.pandoki Song PAN 3bec 'Gene Watson - Where Love Begins'
-15:19:18 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 3bec 'Gene Watson - Where Love Begins'
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-15:20:40 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:20:40 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:20:40 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:20:40 T:140233165240064 WARNING: CPythonInvoker(52): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:20:40 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:20:40 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:20:40 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:20:40 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:20:40 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:20:42 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:20:42 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:21:07 T:140232829691648  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:21:07 T:140232829691648  NOTICE: -->Python Interpreter Initialized<--
-15:21:07 T:140232829691648 WARNING: CPythonInvoker(54): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:21:59 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:22:06 T:140232829691648  NOTICE: Thread FileCache start, auto delete: false
-15:22:18 T:140233110374144  NOTICE: Previous line repeats 1 times.
-15:22:18 T:140233110374144  NOTICE: plugin.audio.pandoki Song PAN 3e79 'Johnny Bush - Driving Nails (In My Coffin)'
-15:22:19 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 3e79 'Johnny Bush - Driving Nails (In My Coffin)'
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonFO.png
-15:24:18 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_back_w.png
-15:24:18 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:24:18 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:24:18 T:140233165240064 WARNING: CPythonInvoker(55): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:24:18 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:24:18 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:24:18 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:24:18 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:24:18 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:25:16 T:140233110374144  NOTICE: Previous line repeats 1 times.
-15:25:16 T:140233110374144  NOTICE: Thread FileCache start, auto delete: false
-15:25:21 T:140233609824000  NOTICE: Previous line repeats 1 times.
-15:25:21 T:140233609824000  NOTICE: plugin.audio.pandoki Song PAN 191c 'Justin Trevino - Brand New Mister Me'
-15:25:22 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 191c 'Justin Trevino - Brand New Mister Me'
-15:25:31 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:25:31 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:25:31 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:25:31 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:25:31 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:25:31 T:140233609824000 WARNING: CPythonInvoker(56): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:25:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:25:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:25:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:25:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:26:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:26:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:26:00 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:26:00 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:26:00 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:26:00 T:140233609824000 WARNING: CPythonInvoker(57): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:26:00 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:26:00 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:26:00 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:26:00 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:26:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:26:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:26:15 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:26:15 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:26:15 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:26:15 T:140233609824000 WARNING: CPythonInvoker(58): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:26:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:26:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:26:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:26:15 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:27:11 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:27:11 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:27:11 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:27:11 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:27:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:27:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:27:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:27:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:27:11 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:27:11 T:140233165240064 WARNING: CPythonInvoker(59): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:27:11 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:27:37 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:27:37 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:27:37 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:27:37 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:27:37 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:27:37 T:140233609824000 WARNING: CPythonInvoker(60): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:27:37 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:27:37 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:27:37 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:27:37 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:27:40 T:140233609824000  NOTICE: Thread FileCache start, auto delete: false
-15:27:48 T:140232829691648  NOTICE: Previous line repeats 1 times.
-15:27:48 T:140232829691648  NOTICE: plugin.audio.pandoki Song PAN 34d4 'Gary Stewart - Ten Years Of This'
-15:27:49 T:140232829691648  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:27:49 T:140232829691648  NOTICE: -->Python Interpreter Initialized<--
-15:27:49 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 34d4 'Gary Stewart - Ten Years Of This'
-15:30:03 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:30:03 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:30:03 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:30:03 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:30:03 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:30:03 T:140233165240064 WARNING: CPythonInvoker(62): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:30:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:30:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:30:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:30:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:30:03 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:31:05 T:140232829691648  NOTICE: Previous line repeats 1 times.
-15:31:05 T:140232829691648  NOTICE: Thread FileCache start, auto delete: false
-15:31:21 T:140234289456896  NOTICE: Previous line repeats 1 times.
-15:31:21 T:140234289456896  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
-15:31:21 T:140233891575552  NOTICE: plugin.audio.pandoki Song PAN e049 'Ray Price - Curtain In The Window'
-15:31:22 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK e049 'Ray Price - Curtain In The Window'
-15:31:29 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:31:29 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:31:29 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:31:29 T:140233891575552  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:31:29 T:140233891575552  NOTICE: -->Python Interpreter Initialized<--
-15:31:29 T:140233891575552 WARNING: CPythonInvoker(63): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:31:29 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:31:29 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:31:29 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:31:29 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:33:03 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:33:03 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:33:03 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:33:03 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:33:03 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:33:03 T:140233165240064 WARNING: CPythonInvoker(64): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:33:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:33:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:33:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:33:03 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:33:03 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:33:24 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:33:24 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:33:24 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:33:24 T:140233891575552  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:33:24 T:140233891575552  NOTICE: -->Python Interpreter Initialized<--
-15:33:24 T:140233891575552 WARNING: CPythonInvoker(65): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:33:24 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:33:24 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:33:24 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:33:24 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:33:48 T:140233891575552  NOTICE: Thread FileCache start, auto delete: false
-15:33:55 T:140233609824000  NOTICE: Previous line repeats 1 times.
-15:33:55 T:140233609824000  NOTICE: plugin.audio.pandoki Song PAN 3535 'George Jones - Once You've Had The Best'
-15:33:56 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 3535 'George Jones - Once You've Had The Best'
-15:34:35 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:34:35 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:34:35 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:34:35 T:140233165240064  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:34:35 T:140233165240064  NOTICE: -->Python Interpreter Initialized<--
-15:34:35 T:140233165240064 WARNING: CPythonInvoker(66): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:34:35 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:34:35 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:34:35 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:34:35 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:34:35 T:140233165240064  NOTICE: Thread JobWorker start, auto delete: true
-15:34:46 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:34:46 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:34:46 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:34:46 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:34:46 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:34:46 T:140233609824000 WARNING: CPythonInvoker(67): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:34:46 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:34:46 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:34:46 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:34:46 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:34:58 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:34:58 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:34:58 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:34:58 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:34:58 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:34:58 T:140233609824000 WARNING: CPythonInvoker(68): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:34:58 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:34:58 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:34:58 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:34:58 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:11 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:35:11 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:35:11 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:35:11 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:35:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:35:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:35:11 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:11 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:35:11 T:140233609824000 WARNING: CPythonInvoker(69): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:35:31 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:35:31 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:35:31 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:35:31 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:35:31 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:35:31 T:140233609824000 WARNING: CPythonInvoker(70): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:35:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:35:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:35:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:39 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:35:39 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:35:39 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:35:39 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:35:39 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:35:39 T:140233609824000 WARNING: CPythonInvoker(71): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:35:39 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:35:39 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:39 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:35:39 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:59 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:35:59 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:35:59 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:35:59 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:35:59 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:35:59 T:140233609824000 WARNING: CPythonInvoker(72): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:35:59 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:35:59 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:35:59 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:35:59 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:36:07 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:36:07 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:36:07 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:36:07 T:140233609824000  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:36:07 T:140233609824000  NOTICE: -->Python Interpreter Initialized<--
-15:36:07 T:140233609824000 WARNING: CPythonInvoker(73): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:36:07 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:36:07 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:36:07 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:36:07 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:36:23 T:140233609824000  NOTICE: Thread FileCache start, auto delete: false
-15:36:27 T:140233891575552  NOTICE: Previous line repeats 1 times.
-15:36:27 T:140233891575552  NOTICE: plugin.audio.pandoki Song PAN 851e 'Johnny Bush - Green Snakes (On The Ceiling)'
-15:36:28 T:140234289456896  NOTICE: plugin.audio.pandoki Add   OK 851e 'Johnny Bush - Green Snakes (On The Ceiling)'
-15:36:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:36:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:36:42 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:36:43 T:140233891575552  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:36:43 T:140233891575552  NOTICE: -->Python Interpreter Initialized<--
-15:36:43 T:140233891575552 WARNING: CPythonInvoker(74): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:36:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:36:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:36:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:36:43 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:37:19 T:140233891575552  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:37:19 T:140233891575552  NOTICE: -->Python Interpreter Initialized<--
-15:37:19 T:140233891575552 WARNING: CPythonInvoker(75): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:37:28 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
-15:37:28 T:140234713102272 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
-15:37:28 T:140234713102272 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
-15:37:28 T:140233891575552  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:37:28 T:140233891575552  NOTICE: -->Python Interpreter Initialized<--
-15:37:28 T:140233891575552 WARNING: CPythonInvoker(76): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:37:28 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
-15:37:28 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:37:28 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
-15:37:28 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
-15:37:31 T:140234289456896  NOTICE: plugin.audio.pandoki Exit  OK
-15:37:31 T:140234713102272   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
-15:37:31 T:140234713102272   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
-15:37:31 T:140234289456896  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.program.navigation/resources/media/transparent.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.program.navigation/resources/media/transparent.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/top_bar.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/Carbon-Fiber-9.jpg
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/phoneW.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture /home/dave/.kodi/addons/script.audio.BT_BC127_HFP/resources/media/icon_home.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_buttonFO.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture icon_back_w.png
-15:37:31 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture floor_button.png
-15:37:33 T:140234713102272 WARNING: Previous line repeats 13 times.
-15:37:33 T:140234713102272 WARNING: RunScript called for a non-script addon 'script.program.navigation'. This behaviour is deprecated.
-15:37:33 T:140234289456896  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:37:33 T:140234289456896  NOTICE: -->Python Interpreter Initialized<--
-15:37:33 T:140234713102272 WARNING: ReleaseTexture: Unable to release texture button-nofocus.png
-15:37:36 T:140233626609408  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:37:36 T:140233626609408  NOTICE: -->Python Interpreter Initialized<--
-15:37:36 T:140233626609408 WARNING: CPythonInvoker(78): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:37:38 T:140234713102272 WARNING: Skin has invalid include: KeyboardButton
-15:37:41 T:140233626609408 WARNING: Previous line repeats 47 times.
-15:37:41 T:140233626609408  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:37:41 T:140233626609408  NOTICE: -->Python Interpreter Initialized<--
-15:37:41 T:140233626609408 WARNING: CPythonInvoker(79): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:37:41 T:140234713102272  NOTICE: Storing total System Uptime
-15:37:41 T:140234713102272  NOTICE: Saving settings
-15:37:41 T:140234713102272  NOTICE: stop all
-15:37:41 T:140234713102272  NOTICE: stop player
-15:37:41 T:140234713102272  NOTICE: ES: Stopping event server
-15:37:42 T:140234713102272  NOTICE: stopping zeroconf publishing
-15:37:42 T:140234713102272  NOTICE: Webserver: Stopping...
-15:37:42 T:140234713102272  NOTICE: WebServer: Stopped the webserver
-15:37:42 T:140234713102272  NOTICE: Webserver: Stopped...
-15:37:42 T:140233584645888  NOTICE: ES: UDP Event server stopped
-15:37:42 T:140234713102272  NOTICE: stop dvd detect media
-15:37:42 T:140234713102272  NOTICE: stop sap announcement listener
-15:37:42 T:140234713102272  NOTICE: clean cached files!
-15:37:42 T:140234713102272  NOTICE: unload skin
-15:37:42 T:140234713102272  NOTICE: stopped
-15:37:42 T:140234713102272  NOTICE: destroy
-15:37:42 T:140234713102272  NOTICE: closing down remote control service
-15:37:42 T:140234713102272  NOTICE: unload sections
-15:37:42 T:140234713102272  NOTICE: special://profile/ is mapped to: special://masterprofile/
-15:37:42 T:140234713102272  NOTICE: destroy
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
-15:37:42 T:140234713102272 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
-15:37:42 T:140234713102272  NOTICE: closing down remote control service
-15:37:42 T:140234713102272  NOTICE: unload sections
-15:37:42 T:140234713102272  NOTICE: application stopped...
+21:04:11 T:139857987565312  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:04:11 T:139857987565312  NOTICE: -->Python Interpreter Initialized<--
+21:04:11 T:139857987565312 WARNING: CPythonInvoker(48): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:24:36 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:24:36 T:139857987565312  NOTICE: Thread JobWorker start, auto delete: true
+21:24:36 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:24:36 T:139858471274240 WARNING: CPythonInvoker(49): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:24:37 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+21:24:37 T:139859699824576 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+21:24:37 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+21:24:37 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:24:37 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+21:24:37 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:24:37 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+21:24:37 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:24:37 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:24:37 T:139858471274240 WARNING: CPythonInvoker(50): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:25:06 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:25:06 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:25:06 T:139858471274240 WARNING: CPythonInvoker(51): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:25:09 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+21:25:09 T:139859699824576 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+21:25:09 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+21:25:09 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:25:09 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+21:25:09 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:25:09 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+21:25:09 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:25:09 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:25:09 T:139858471274240 WARNING: CPythonInvoker(52): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:25:15 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:25:15 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:25:15 T:139858471274240 WARNING: CPythonInvoker(53): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:25:21 T:139858471274240  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:25:21 T:139858471274240  NOTICE: -->Python Interpreter Initialized<--
+21:25:21 T:139858471274240 WARNING: CPythonInvoker(54): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:25:28 T:139858857916160  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:25:28 T:139858857916160  NOTICE: -->Python Interpreter Initialized<--
+21:25:31 T:139858857916160  NOTICE: plugin.audio.pandoki Auth  OK
+21:25:32 T:139858857916160  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+21:25:32 T:139858857916160  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+21:25:33 T:139858471274240  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:25:33 T:139858857916160  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+21:25:33 T:139858471274240  NOTICE: Thread PAPlayer start, auto delete: false
+21:25:33 T:139858841130752  NOTICE: plugin.audio.pandoki Song PAN c256 'George Jones - The One I Loved Back Then (The Corvette Song)'
+21:25:33 T:139858841130752  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:25:34 T:139858857916160  NOTICE: plugin.audio.pandoki Add   OK c256 'George Jones - The One I Loved Back Then (The Corvette Song)'
+21:25:34 T:139858841130752  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:25:35 T:139858471274240  NOTICE: Thread FileCache start, auto delete: false
+21:25:38 T:139858841130752  NOTICE: Previous line repeats 1 times.
+21:25:38 T:139858841130752  NOTICE: Thread PAPlayer start, auto delete: false
+21:25:38 T:139857979172608  NOTICE: Thread JobWorker start, auto delete: true
+21:25:38 T:139857970779904  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:25:38 T:139857892472576  NOTICE: Thread JobWorker start, auto delete: true
+21:25:38 T:139857970779904  NOTICE: -->Python Interpreter Initialized<--
+21:25:38 T:139857970779904 WARNING: CPythonInvoker(56): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:25:40 T:139858849523456  NOTICE: plugin.audio.pandoki Song PAN 3061 'Buck Owens - Act Naturally'
+21:25:41 T:139858857916160  NOTICE: plugin.audio.pandoki Add   OK 3061 'Buck Owens - Act Naturally'
+21:25:56 T:139858849523456  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:25:56 T:139858849523456  NOTICE: -->Python Interpreter Initialized<--
+21:25:56 T:139858849523456 WARNING: CPythonInvoker(57): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:26:24 T:139858849523456  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:26:24 T:139858849523456  NOTICE: -->Python Interpreter Initialized<--
+21:26:24 T:139858849523456 WARNING: CPythonInvoker(58): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:26:26 T:139858857916160  NOTICE: plugin.audio.pandoki Exit  OK
+21:26:26 T:139859699824576   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+21:26:26 T:139859699824576   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+21:26:26 T:139858857916160  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:26:36 T:139858857916160  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:26:36 T:139858857916160  NOTICE: -->Python Interpreter Initialized<--
+21:26:36 T:139858857916160 WARNING: CPythonInvoker(59): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:28:18 T:139859250177792  NOTICE: Thread JobWorker start, auto delete: true
+21:28:42 T:139857979172608  NOTICE: Thread PAPlayer start, auto delete: false
+21:28:42 T:139858958743296  NOTICE: Thread JobWorker start, auto delete: true
+21:28:42 T:139859258570496  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
+21:29:26 T:139859250177792  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:29:26 T:139858958743296  NOTICE: Thread JobWorker start, auto delete: true
+21:29:26 T:139859250177792  NOTICE: -->Python Interpreter Initialized<--
+21:29:26 T:139859250177792 WARNING: CPythonInvoker(60): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:30:02 T:139858958743296  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:30:02 T:139859250177792  NOTICE: Thread JobWorker start, auto delete: true
+21:30:02 T:139858958743296  NOTICE: -->Python Interpreter Initialized<--
+21:30:02 T:139858958743296 WARNING: CPythonInvoker(61): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:30:03 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+21:30:03 T:139859699824576 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+21:30:03 T:139859699824576 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+21:30:03 T:139858958743296  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:30:03 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+21:30:03 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:30:03 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+21:30:03 T:139859699824576 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+21:30:03 T:139858958743296  NOTICE: -->Python Interpreter Initialized<--
+21:30:03 T:139858958743296 WARNING: CPythonInvoker(62): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:30:05 T:139859699824576   ERROR: Window Translator: Can't find window 
+                                            screenvideo
+21:30:24 T:139858958743296   ERROR: Previous line repeats 1 times.
+21:30:24 T:139858958743296  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:30:24 T:139858958743296  NOTICE: -->Python Interpreter Initialized<--
+21:30:24 T:139858958743296 WARNING: CPythonInvoker(63): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:30:47 T:139858018297600  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:30:47 T:139858018297600  NOTICE: -->Python Interpreter Initialized<--
+21:30:50 T:139857979172608  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:30:50 T:139857979172608  NOTICE: -->Python Interpreter Initialized<--
+21:30:50 T:139857979172608 WARNING: CPythonInvoker(65): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:30:51 T:139857979172608  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:30:51 T:139857979172608  NOTICE: -->Python Interpreter Initialized<--
+21:30:53 T:139857979172608  NOTICE: plugin.audio.pandoki Auth  OK
+21:30:54 T:139857979172608  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+21:30:55 T:139857979172608  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+21:30:55 T:139857979172608  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+21:30:55 T:139858018297600  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:30:55 T:139858018297600  NOTICE: Thread PAPlayer start, auto delete: false
+21:30:55 T:139858958743296  NOTICE: plugin.audio.pandoki Song PAN 94d2 'David Ball - This Time'
+21:30:55 T:139858958743296  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:30:56 T:139857979172608  NOTICE: plugin.audio.pandoki Add   OK 94d2 'David Ball - This Time'
+21:30:56 T:139858958743296  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:30:59 T:139858018297600  NOTICE: Thread FileCache start, auto delete: false
+21:31:01 T:139858958743296  NOTICE: Previous line repeats 1 times.
+21:31:01 T:139858958743296  NOTICE: Thread PAPlayer start, auto delete: false
+21:31:02 T:139858921977600  NOTICE: plugin.audio.pandoki Song PAN 50f5 'Gene Watson - Sometimes I Get Lucky'
+21:31:03 T:139857979172608  NOTICE: plugin.audio.pandoki Add   OK 50f5 'Gene Watson - Sometimes I Get Lucky'
+21:31:03 T:139858921977600  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:31:08 T:139858921977600  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:31:08 T:139858921977600  NOTICE: -->Python Interpreter Initialized<--
+21:31:08 T:139858921977600 WARNING: CPythonInvoker(67): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:31:33 T:139858921977600  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:31:33 T:139858921977600  NOTICE: -->Python Interpreter Initialized<--
+21:31:33 T:139858921977600 WARNING: CPythonInvoker(68): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:31:36 T:139858921977600  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:31:36 T:139858921977600  NOTICE: -->Python Interpreter Initialized<--
+21:31:50 T:139858913584896  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:31:50 T:139858913584896  NOTICE: -->Python Interpreter Initialized<--
+21:31:50 T:139858913584896 WARNING: CPythonInvoker(70): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:32:01 T:139857979172608  NOTICE: plugin.audio.pandoki Exit  OK
+21:32:01 T:139859699824576   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+21:32:01 T:139859699824576   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+21:32:01 T:139857979172608  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:32:02 T:139857979172608  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:32:02 T:139857979172608  NOTICE: -->Python Interpreter Initialized<--
+21:32:02 T:139857979172608 WARNING: CPythonInvoker(71): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+21:32:02 T:139859699824576  NOTICE: Storing total System Uptime
+21:32:02 T:139859699824576  NOTICE: Saving settings
+21:32:02 T:139859699824576  NOTICE: stop all
+21:32:02 T:139859699824576  NOTICE: stop player
+21:32:02 T:139859699824576  NOTICE: ES: Stopping event server
+21:32:02 T:139858462881536  NOTICE: ES: UDP Event server stopped
+21:32:02 T:139859699824576  NOTICE: stopping zeroconf publishing
+21:32:02 T:139859699824576  NOTICE: Webserver: Stopping...
+21:32:02 T:139859699824576  NOTICE: WebServer: Stopped the webserver
+21:32:02 T:139859699824576  NOTICE: Webserver: Stopped...
+21:32:03 T:139859699824576  NOTICE: stop dvd detect media
+21:32:03 T:139859699824576  NOTICE: stop sap announcement listener
+21:32:03 T:139859699824576  NOTICE: clean cached files!
+21:32:03 T:139859699824576  NOTICE: unload skin
+21:32:03 T:139859699824576  NOTICE: stopped
+21:32:03 T:139859699824576  NOTICE: destroy
+21:32:03 T:139859699824576  NOTICE: closing down remote control service
+21:32:03 T:139859699824576  NOTICE: unload sections
+21:32:03 T:139859699824576  NOTICE: special://profile/ is mapped to: special://masterprofile/
+21:32:03 T:139859699824576  NOTICE: destroy
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
+21:32:03 T:139859699824576 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
+21:32:03 T:139859699824576  NOTICE: closing down remote control service
+21:32:03 T:139859699824576  NOTICE: unload sections
+21:32:03 T:139859699824576  NOTICE: application stopped...

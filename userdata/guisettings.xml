@@ -82,7 +82,7 @@
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>2</settinglevel>
-        <systemtotaluptime>1388</systemtotaluptime>
+        <systemtotaluptime>1492</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -404,7 +404,7 @@
         <setting type="bool" name="skin.CarPC-touch_carbon.PlayerControlsShowAudioInfo">true</setting>
         <setting type="bool" name="skin.CarPC-touch_carbon.PlayerControlsShowVideoInfo">false</setting>
         <setting type="bool" name="skin.CarPC-touch_carbon.PlayerControlsSubMenuVisible">false</setting>
-        <setting type="bool" name="skin.CarPC-touch_carbon.MediaVisible">true</setting>
+        <setting type="bool" name="skin.CarPC-touch_carbon.MediaVisible">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
