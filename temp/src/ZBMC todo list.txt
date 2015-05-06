@@ -1,0 +1,10 @@
+todo list for ZBMC
+
+implement pigpiod for IO with encoders/buttons/thumbwheel
+remove carpc-controller from starup
+create event server for hardware communication with serial BC127 module
+create library for for SparkFun BC127 BT module (C code BC127 commmands)
+create code for BC127 (c code to handle event server calls to BC127)
+create plugin for phone(HFP, PBOOK, MAP...) control in kodi
+create plugin for phone audio(A2DP & AVRCP) control in kodi
+
