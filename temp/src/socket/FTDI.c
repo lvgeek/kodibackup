@@ -7,7 +7,7 @@
 #include <termios.h>    // POSIX terminal control definitions
 
 /* Open File Descriptor */
-int USB = open( "/dev/ttyUSB0", O_RDWR| O_NOTTY );
+int USB = open( "/dev/ttyUSB0", O_RDWR| O_NOCTTY );
 
 /* Error Handling */
 if ( USB < 0 )
@@ -17,61 +17,73 @@ cout << "Error " << errno << " opening " << "/dev/ttyUSB0" << ": " << strerror (
 
 /* *** Configure Port *** */
 struct termios tty;
+struct termios tty_old;
 memset (&tty, 0, sizeof tty);
 
 /* Error Handling */
-if ( tcgetattr ( USB, &tty ) != 0 )
-{
-cout << "Error " << errno << " from tcgetattr: " << strerror(errno) << endl;
+if ( tcgetattr ( USB, &tty ) != 0 ) {
+   std::cout << "Error " << errno << " from tcgetattr: " << strerror(errno) << std::endl;
 }
 
+/* Save old tty parameters */
+tty_old = tty;
+
 /* Set Baud Rate */
-cfsetospeed (&tty, B9600);
-cfsetispeed (&tty, B9600);
+cfsetospeed (&tty, (speed_t)B115200);
+cfsetispeed (&tty, (speed_t)B115200);
 
 /* Setting other Port Stuff */
-tty.c_cflag     &=  ~PARENB;        // Make 8n1
+tty.c_cflag     &=  ~PARENB;            // Make 8n1
 tty.c_cflag     &=  ~CSTOPB;
 tty.c_cflag     &=  ~CSIZE;
 tty.c_cflag     |=  CS8;
-tty.c_cflag     &=  ~CRTSCTS;       // no flow control
-tty.c_lflag     =   0;          // no signaling chars, no echo, no canonical processing
-tty.c_oflag     =   0;                  // no remapping, no delays
-tty.c_cc[VMIN]      =   0;                  // read doesn't block
-tty.c_cc[VTIME]     =   5;                  // 0.5 seconds read timeout
 
+tty.c_cflag     &=  ~CRTSCTS;           // no flow control
+tty.c_cc[VMIN]   =  1;                  // read doesn't block
+tty.c_cc[VTIME]  =  5;                  // 0.5 seconds read timeout
 tty.c_cflag     |=  CREAD | CLOCAL;     // turn on READ & ignore ctrl lines
-tty.c_iflag     &=  ~(IXON | IXOFF | IXANY);// turn off s/w flow ctrl
-tty.c_lflag     &=  ~(ICANON | ECHO | ECHOE | ISIG); // make raw
-tty.c_oflag     &=  ~OPOST;              // make raw
+
+/* Make raw */
+cfmakeraw(&tty);
 
 /* Flush Port, then applies attributes */
 tcflush( USB, TCIFLUSH );
-
-if ( tcsetattr ( USB, TCSANOW, &tty ) != 0)
-{
-cout << "Error " << errno << " from tcsetattr" << endl;
+if ( tcsetattr ( USB, TCSANOW, &tty ) != 0) {
+   std::cout << "Error " << errno << " from tcsetattr" << std::endl;
 }
-
 /* *** WRITE *** */
+unsigned char cmd[] = "INIT \r";
+int n_written = 0,
+    spot = 0;
 
-unsigned char cmd[] = {'I', 'N', 'I', 'T', ' ', '\r', '\0'};
-int n_written = write( USB, cmd, sizeof(cmd) -1 );
-
-/* Allocate memory for read buffer */
-char buf [256];
-memset (&buf, '\0', sizeof buf);
+do {
+    n_written = write( USB, &cmd[spot], 1 );
+    spot += n_written;
+} while (cmd[spot-1] != '\r' && n_written > 0);
 
 /* *** READ *** */
-int n = read( USB, &buf , sizeof buf );
+iint n = 0,
+    spot = 0;
+char buf = '\0';
 
-/* Error Handling */
-if (n < 0)
-{
-     cout << "Error reading: " << strerror(errno) << endl;
+/* Whole response*/
+char response[1024];
+memset(response, '\0', sizeof response);
+
+do {
+   n = read( USB, &buf, 1 );
+   sprintf( &response[spot], "%c", buf );
+   spot += n;
+} while( buf != '\r' && n > 0);
+
+if (n < 0) {
+   std::cout << "Error reading: " << strerror(errno) << std::endl;
 }
-
-/* Print what I read... */
-cout << "Read: " << buf << endl;
+else if (n == 0) {
+    std::cout << "Read nothing!" << std::endl;
+}
+else {
+    std::cout << "Response: " << response << std::endl;
+}
 
 close(USB);
