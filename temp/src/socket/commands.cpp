@@ -130,11 +130,10 @@ static void *Commands_ProcessLoop(void *pParam)
 /*! \brief Parse a string and send the commands found via sockets.
  *
  *  \param[IN/OUT] pStr pointer to the command that should be executed
-
+ */
 extern void REMOTE_ProcessButtons();
 extern void REMOTE_ProcessEncoders();
 extern void *Radio_Loop(void *pParam);
- */
 static void Commands_Execute(char *pStr)
 {
     char        *pCommands[MAX_COMMANDS];
