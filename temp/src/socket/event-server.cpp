@@ -13,7 +13,7 @@
 #include "config.h"
 #include "event-server.h"
 #include "xbmcclient_if.h"
-#include "si4703.h"
+#include "BC127.h"
 
 
 /*
