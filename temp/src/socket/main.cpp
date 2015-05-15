@@ -10,7 +10,7 @@
 
 #include "event-server.h"
 #include "commands.h"
-#include "SF_BC127.h"
+#include "BC127.h"
 
 #include "config.h"
 #include "common.h"
