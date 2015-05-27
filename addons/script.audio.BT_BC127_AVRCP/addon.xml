@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.audio.BT_BC127_HFP" 
+    name="BT BC127 Hands Free Profile" 
+    version="1.0.1" 
+    provider-name="lvgeek">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <disclaimer></disclaimer>
+        <summary lang="en">Bluetooth BC127 HFP Addon</summary>
+        <description lang="en">Addon to interface xbmc with BC127 module using HFP and PBAP</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    </extension>
+</addon>
