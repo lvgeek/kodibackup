@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.audio.BT_BC127_HFP" 
-    name="BT BC127 Hands Free Profile" 
+<addon id="script.audio.BT_BC127_AVRCP" 
+    name="BT BC127 A2DP and AVRCP" 
     version="1.0.1" 
     provider-name="lvgeek">
     <requires>
@@ -12,8 +12,8 @@
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <disclaimer></disclaimer>
-        <summary lang="en">Bluetooth BC127 HFP Addon</summary>
-        <description lang="en">Addon to interface xbmc with BC127 module using HFP and PBAP</description>
+        <summary lang="en">Bluetooth BC127 A2DP and AVRCP Addon</summary>
+        <description lang="en">Addon to interface xbmc with BC127 module using A2DP and AVRCP</description>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     </extension>
 </addon>

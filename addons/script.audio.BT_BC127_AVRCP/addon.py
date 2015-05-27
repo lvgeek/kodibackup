@@ -37,7 +37,7 @@ TEXT_ALIGN_RIGHT_CENTER_Y = 5
 TEXT_ALIGN_CENTER_X_CENTER_Y = 6
 
 # Get global paths
-addon = xbmcaddon.Addon(id = "script.audio.BT_BC127_HFP")
+addon = xbmcaddon.Addon(id = "script.audio.BT_BC127_AVRCP")
 resourcesPath = os.path.join(addon.getAddonInfo('path'),'resources') + '/'
 clientScript = os.path.join(addon.getAddonInfo('path'),'resources','jamboree_client.py')
 mediaPath = os.path.join(addon.getAddonInfo('path'),'resources','media') + '/'
@@ -48,63 +48,144 @@ addonW = 1280
 addonH = 720
 
 # Buttons Configuration
-BUTTON_H        =105
-BUTTON_W        =105
+FREQ_LABEL_X	= 70
+FREQ_LABEL_Y	= 220
+FREQ_LABEL_W	= 450
+FREQ_LABEL_H	= 110
+FREQ_LABEL_FONT = 'WeatherTemp'
+BUTTON_SEEK_LEFT_X = FREQ_LABEL_X
+BUTTON_SEEK_LEFT_Y = FREQ_LABEL_Y + FREQ_LABEL_H
+BUTTON_SEEK_LEFT_W = 164
+BUTTON_SEEK_LEFT_H = 117
+BUTTON_STORE_X = BUTTON_SEEK_LEFT_X + BUTTON_SEEK_LEFT_W
+BUTTON_STORE_Y = BUTTON_SEEK_LEFT_Y
+BUTTON_STORE_W = 150
+BUTTON_STORE_H = 117
+BUTTON_SEEK_RIGHT_X = BUTTON_SEEK_LEFT_X + BUTTON_SEEK_LEFT_W + BUTTON_STORE_W
+BUTTON_SEEK_RIGHT_Y = BUTTON_SEEK_LEFT_Y
+BUTTON_SEEK_RIGHT_W = 164
+BUTTON_SEEK_RIGHT_H = 117
 
-# Label
-currentPhNum=xbmcgui.ControlLabel(BUTTON_W*5, BUTTON_H*2, BUTTON_W*4, BUTTON_H*2,
-                                '', 'font40_title', '0xffffffff')
-currentPhNum1=xbmcgui.ControlLabel(BUTTON_W*5, BUTTON_H*1, BUTTON_W*4, BUTTON_H*2,
-                                '', 'font13', '0xffffffff')
-messagelabel=xbmcgui.ControlLabel(BUTTON_W*5, BUTTON_H*1, BUTTON_W*4, BUTTON_H*2,
-                                '', 'font40_title', '0xffffffff')
-buttoncall=xbmcgui.ControlButton(BUTTON_W*1, BUTTON_H*5, BUTTON_W*2, BUTTON_H,
-                                 'CALL','floor_buttonFO.png','floor_button.png',
-                                 0,0,TEXT_ALIGN_CENTER_X_CENTER_Y)
+RADIO_TEXT_X	= 20
+RADIO_TEXT_Y	= 640
+RADIO_TEXT_W	= 1280
+RADIO_TEXT_H	= 100
+RADIO_TEXT_FONT = 'font40_title'
 
-#CurrentArtist=xbmcgui.ControlLabel(10, addonH-80, 800, 70,
-#                                '', 'font30_title', '0xffffffff')
-#CurrentTitle=xbmcgui.ControlLabel(addonW-790, addonH-80, 800, 70,
-#                                '', 'font30_title', '0xffffffff', alignment=1)
+STATION_NAME_W	= 300
+STATION_NAME_H	= 100
+STATION_NAME_X	= addonW - STATION_NAME_W
+STATION_NAME_Y	= 15
+STATION_NAME_FONT = 'font40_title'
 
-def phonenumber(value):
-    phone = '(%s) %s - %s' %(value[0:3],value[3:6],value[6:10])
-    return phone
+RSSI_X	= 570
+RSSI_Y	= 450
+RSSI_W	= 70
+RSSI_H	= 10
+RSSI_FONT = 'font30'
 
-def CheckPhoneNumber(PH1, skey):
-    if len(PH1) < 10:
-        PH1 = PH1 + skey
-    return PH1
+STATION_LIST_X = 600
+STATION_LIST_Y = 220
+STATION_LIST_W = 500
+STATION_LIST_H = 500
+STATION_LIST_FONT = 'font30'
+
+# Presets Configuration
+presets_start_x = 149
+presets_start_y = 422
+presets_offset_x = 160
+presets_width = 164
+presets_height = 107
+presets_font = 'font50_title'
+presets_color = '0xFFFFFFFF'
+presets_img_left = mediaPath + "left.png"
+presets_img_left_focus = mediaPath + "left_focus.png"
+presets_img_right = mediaPath + "right.png"
+presets_img_right_focus = mediaPath + "right_focus.png"
+presets_img_middle = mediaPath + "middle.png"
+presets_img_middle_focus = mediaPath + "middle_focus.png"
+
+
+RADIO_VOL_X = 570
+RADIO_VOL_Y = 450
+RADIO_VOL_W = 50
+RADIO_VOL_H = 1
+
+volume_buttons_x = 1200
+volume_buttons_y = 210
+volume_label_w = 350
+volume_label_x = addonW - volume_label_w
+volume_label_y = 80
+
+
+# Current Frequency label
+currentFreq = xbmcgui.ControlLabel(
+	FREQ_LABEL_X, FREQ_LABEL_Y,
+	FREQ_LABEL_W, FREQ_LABEL_H,
+	addon.getLocalizedString(id=30000),
+	textColor='0xffffffff',
+	font=FREQ_LABEL_FONT,
+	alignment=TEXT_ALIGN_RIGHT)
+
+stationsList = xbmcgui.ControlList(
+	STATION_LIST_X, 
+	STATION_LIST_Y, 
+	STATION_LIST_W, 
+	STATION_LIST_H, 
+	STATION_LIST_FONT,
+	buttonTexture=mediaPath + "right.png",
+	buttonFocusTexture=mediaPath + 'right_focus.png')
+stationsList.setSpace(60)
+
+# Current volume label
+currentVolume = xbmcgui.ControlLabel(
+	volume_label_x, volume_label_y,
+	350, 100,
+	'',
+	textColor='0xffffffff',
+	font='font30',
+	alignment=TEXT_ALIGN_RIGHT)
+
+# Radio Text label
+radioText = xbmcgui.ControlLabel(
+	RADIO_TEXT_X, RADIO_TEXT_Y,
+	RADIO_TEXT_W, RADIO_TEXT_H,
+	addon.getLocalizedString(id=30000),
+	textColor='0xffffffff',
+	font=RADIO_TEXT_FONT,
+	alignment=TEXT_ALIGN_LEFT)
+
+# Station Name label
+stationName = xbmcgui.ControlLabel(
+	STATION_NAME_X, STATION_NAME_Y,
+	STATION_NAME_W, STATION_NAME_H,
+	addon.getLocalizedString(id=30000),
+	textColor='0xffffffff',
+	font=STATION_NAME_FONT,
+	alignment=TEXT_ALIGN_RIGHT)
 ###################################################################################################
 ###################################################################################################
 # Temperature update thread
 ###################################################################################################
 ###################################################################################################
 class updateThreadClass(threading.Thread):
-    def run(self):
-        self.shutdown = False
+	def run(self):
+		self.shutdown = False
 
-        while not self.shutdown:
-            #currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
-            #Radio_SendCommand(self, "update_rds")
+		while not self.shutdown:
+			#currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
+			#Radio_SendCommand(self, "update_rds")
 
-            # Set labels
-            currentPhNum.setLabel(phonenumber(currentPhNum1.getLabel()))
-            if len(currentPhNum1.getLabel()) == 10:
-                buttoncall.setEnabled(True)
-                buttoncall.setLabel(textColor='0xFFFFFFFF')
-            else:
-                buttoncall.setEnabled(False)
-                buttoncall.setLabel(textColor='0x77777777')
-         
-#            CurrentArtist.setLabel(str(xbmc.getInfoLabel[xbmc.MusicPlayer.Artist]))
-#            CurrentTitle.setLabel(str(xbmc.getInfoLabel[xbmc.MusicPlayer.Title]))
-#           currentVolume.setLabel("volume: " + str(xbmcgui.Window(10000).getProperty('Radio.Volume')))
+			# Set labels
+			currentFreq.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.Frequency')) + "MHz")
+			radioText.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.RadioText')))
+			stationName.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.StationName')))
+			currentVolume.setLabel("volume: " + str(xbmcgui.Window(10000).getProperty('Radio.Volume')))
 
-            # Don't kill the CPU
-            time.sleep(0.1)
+			# Don't kill the CPU
+			time.sleep(0.1)
 
-class PhoneHPF(xbmcgui.WindowDialog):
+class PhoneAVRCP(xbmcgui.WindowDialog):
     def __init__(self):
         # Background
         #self.w = self.getWidth()
@@ -123,7 +204,7 @@ class PhoneHPF(xbmcgui.WindowDialog):
         self.addControl(xbmcgui.ControlLabel(
             self.w/2 - 150, 25,
             300, 100,
-            "Phone",
+            "Bluetooth Music",
             textColor='0xffffffff',
             font='font30_title',
             alignment=TEXT_ALIGN_CENTER_X))
@@ -157,114 +238,31 @@ class PhoneHPF(xbmcgui.WindowDialog):
         self.addControl(self.button_back)
         self.addControl(self.button_back_img)
 
-        # Dialing Buttons
-        self.button1=xbmcgui.ControlButton(BUTTON_W, BUTTON_H, BUTTON_W, BUTTON_H,
-                                                "1",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button1)
-        self.button2=xbmcgui.ControlButton(BUTTON_W*2, BUTTON_H, BUTTON_W, BUTTON_H,
-                                                "2",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button2)
-        self.button3=xbmcgui.ControlButton(BUTTON_W*3, BUTTON_H, BUTTON_W, BUTTON_H,
-                                                "3",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button3)
-        self.button4=xbmcgui.ControlButton(BUTTON_W, BUTTON_H*2, BUTTON_W, BUTTON_H,
-                                                "4",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button4)
-        self.button5=xbmcgui.ControlButton(BUTTON_W*2, BUTTON_H*2, BUTTON_W, BUTTON_H,
-                                                "5",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button5)
-        self.button6=xbmcgui.ControlButton(BUTTON_W*3, BUTTON_H*2, BUTTON_W, BUTTON_H,
-                                                "6",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button6)
-        self.button7=xbmcgui.ControlButton(BUTTON_W, BUTTON_H*3, BUTTON_W, BUTTON_H,
-                                                "7",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button7)
-        self.button8=xbmcgui.ControlButton(BUTTON_W*2, BUTTON_H*3, BUTTON_W, BUTTON_H,
-                                                "8",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button8)
-        self.button9=xbmcgui.ControlButton(BUTTON_W*3, BUTTON_H*3, BUTTON_W, BUTTON_H,
-                                                "9",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button9)
-        self.button0=xbmcgui.ControlButton(BUTTON_W*2, BUTTON_H*4, BUTTON_W, BUTTON_H,
-                                                "0",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.button0)
+		self.addControl(currentFreq)
 
-        self.addControl(buttoncall)
+		# Left button
+		self.button_left=xbmcgui.ControlButton(BUTTON_SEEK_LEFT_X,
+												BUTTON_SEEK_LEFT_Y,
+												BUTTON_SEEK_LEFT_W,
+												BUTTON_SEEK_LEFT_H,
+												"",
+												mediaPath + "prev_focus.png",
+												mediaPath + "prev.png")
+		self.addControl(self.button_left)
+		self.setFocus(self.button_left)
 
-        self.buttonend=xbmcgui.ControlButton(BUTTON_W*1, BUTTON_H*5, BUTTON_W*2, BUTTON_H,
-                                                'END','floor_buttonFO.png','floor_button.png',
-                                                0,0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.buttonend)
-
-        self.buttonbacksp=xbmcgui.ControlButton(BUTTON_W*3, BUTTON_H*5, BUTTON_W, BUTTON_H,
-                                                "<--",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.buttonbacksp)
-        self.buttonstar=xbmcgui.ControlButton(BUTTON_W*5, BUTTON_H*4, BUTTON_W*3, BUTTON_H,
-                                                "Phone Book",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.buttonstar)
-        self.buttonpnd=xbmcgui.ControlButton(BUTTON_W*5, BUTTON_H*5, BUTTON_W*3, BUTTON_H,
-                                                "Edit PhoneBook",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.buttonpnd)
-
-
-
+		# Right button
+		self.button_right=xbmcgui.ControlButton(BUTTON_SEEK_RIGHT_X,
+												BUTTON_SEEK_RIGHT_Y,
+												BUTTON_SEEK_RIGHT_W,
+												BUTTON_SEEK_RIGHT_H,
+												"",
+												mediaPath + "next_focus.png",
+												mediaPath + "next.png")
+		self.addControl(self.button_right)
+		self.setFocus(self.button_right)
 
 		# Add Labels
-        self.addControl(currentPhNum)
-        self.addControl(currentPhNum1)
-        currentPhNum1.setVisible(False)
         self.addControl(messagelabel)
 #        self.addControl(CurrentTitle)
 
@@ -316,84 +314,7 @@ class PhoneHPF(xbmcgui.WindowDialog):
             self.updateThread.join()
             self.close()
 
-        # CALL button
-        if controlID == buttoncall:
-            self.dissablekeys(True)         
-            BC127_SendCommand(self, 'CALL '+str(currentPhNum1.getLabel()))
-            messagelabel.setLabel('Calling...')
-            
 
-        # END button
-        if controlID == self.buttonend:
-            self.dissablekeys(False)         
-            BC127_SendCommand(self, 'END')
-            messagelabel.setLabel('Call Ended...')
-
-        # Keypad Buttons
-        if controlID == self.button1:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '1')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button2:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '2')
-            currentPhNum1.setLabel(tmpstr)            
-        elif controlID == self.button3:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '3')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button4:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '4')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button5:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '5')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button6:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '6')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button7:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '7')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button8:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '8')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button9:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '9')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.button0:
-            tmpstr = CheckPhoneNumber(str(currentPhNum1.getLabel()), '0')
-            currentPhNum1.setLabel(tmpstr)
-        elif controlID == self.buttonbacksp:
-            tmpstr = (str(currentPhNum1.getLabel())[:-1])
-            currentPhNum1.setLabel(tmpstr) 
-
-
-    def dissablekeys(self, call):
-        if call:
-            self.buttonend.setVisible(True)
-            buttoncall.setVisible(False)
-            self.button0.setEnabled(False)
-            self.button1.setEnabled(False)
-            self.button2.setEnabled(False)
-            self.button3.setEnabled(False)
-            self.button4.setEnabled(False)
-            self.button5.setEnabled(False)
-            self.button6.setEnabled(False)
-            self.button7.setEnabled(False)
-            self.button8.setEnabled(False)
-            self.button9.setEnabled(False)
-            self.buttonbacksp.setEnabled(False)
-        else:
-            self.buttonend.setVisible(False)
-            buttoncall.setVisible(True)
-            self.button0.setEnabled(True)
-            self.button1.setEnabled(True)
-            self.button2.setEnabled(True)
-            self.button3.setEnabled(True)
-            self.button4.setEnabled(True)
-            self.button5.setEnabled(True)
-            self.button6.setEnabled(True)
-            self.button7.setEnabled(True)
-            self.button8.setEnabled(True)
-            self.button9.setEnabled(True)
-            self.buttonbacksp.setEnabled(True)
 
 
 '''
@@ -418,7 +339,7 @@ def BC127_SendCommand(self, command):
     
 
 # Start the Addon
-dialog = PhoneHPF()
+dialog = PhoneAVRCP()
 dialog.doModal()
 sock.close()
 del dialog
