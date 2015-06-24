@@ -1,0 +1,26 @@
+<settings>
+    <setting id="csrfToken" value="kazGLy4A4IEHecr+KyNsi4aUkq4XUPwvjFfNbiUQEd4" />
+    <setting id="email" value="" />
+    <setting id="forceView" value="true" />
+    <setting id="maxBitrate" value="6" />
+    <setting id="password" value="" />
+    <setting id="preferAmazonTrailer" value="false" />
+    <setting id="selectLanguage" value="0" />
+    <setting id="showAvailability" value="false" />
+    <setting id="showKids" value="true" />
+    <setting id="showLibrary" value="false" />
+    <setting id="showNotification" value="true" />
+    <setting id="showOriginals" value="true" />
+    <setting id="siteVersion" value="0" />
+    <setting id="updateDB" value="true" />
+    <setting id="usePrimeProxy" value="false" />
+    <setting id="useTMDb" value="true" />
+    <setting id="useWLSeriesComplete" value="true" />
+    <setting id="viewIdDetails" value="508" />
+    <setting id="viewIdEpisodes" value="503" />
+    <setting id="viewIdMovies" value="501" />
+    <setting id="viewIdSeasons" value="50" />
+    <setting id="viewIdShows" value="501" />
+    <setting id="watchlistOrder" value="0" />
+    <setting id="watchlistTVOrder" value="1" />
+</settings>

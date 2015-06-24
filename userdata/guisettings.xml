@@ -82,7 +82,7 @@
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>2</settinglevel>
-        <systemtotaluptime>1977</systemtotaluptime>
+        <systemtotaluptime>1993</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -110,7 +110,7 @@
         <enablerssfeeds>false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
-        <skin>skin.CarPC-touch_carbon</skin>
+        <skin default="true">skin.confluence</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
@@ -405,6 +405,8 @@
         <setting type="bool" name="skin.CarPC-touch_carbon.PlayerControlsShowVideoInfo">false</setting>
         <setting type="bool" name="skin.CarPC-touch_carbon.PlayerControlsSubMenuVisible">false</setting>
         <setting type="bool" name="skin.CarPC-touch_carbon.MediaVisible">false</setting>
+        <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>

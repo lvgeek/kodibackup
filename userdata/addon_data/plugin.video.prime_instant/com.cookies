@@ -1,0 +1,12 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.amazon.com	TRUE	/	FALSE	1435169407	a-ogbcbff	1
+.amazon.com	TRUE	/	TRUE	2065888567	at-main	5|24zG7r1VAsLO5ZtlU2I6UEXVMIIBiViBYOhLOZvHeksCiZ12vynLlLSAxDezWBmpA6qJQNZnlKJUCBuq/jILqoZcVA9les4+3AHyTpGFJy1DYhKHRHZRWir98jLnJXGfIsJcWFvH1uKVwPTspGeq+ADnpbVyDJ52/+mWYkb+wbpoAb3saWk4H70nYuknmoGXij5aKf4KbglNqlE2ezuANN1I5LX1F1yNn+QZkJ0YsuKRLXt++g6x/lsNYK2FnQf3UdYPqqL7eKxT1MxaD8N8IfjGvU7+FIeJ
+.amazon.com	TRUE	/	FALSE	2082787201	session-id	183-0254871-4506525
+.amazon.com	TRUE	/	FALSE	2082787201	session-id-time	2082787201l
+.amazon.com	TRUE	/	FALSE	2065888568	session-token	"vMJ+aKoghhaGCucO68aKE4L5EJ/gIYsTGexwMp4s+1bCXk9QRUzo6uPNTWd89wk1kgAGkXyGG0lcYzPgs6GfiiZoDQLFotlA/YQ4BPPQiY3Lpp1S37Ut4p4lr8cihAOuefKTiIZb5eIEo2ghjLMzNfYxYEFfCKtmlrzY9LhmlcDn+T4Hd/W6KauGevurcui8FR1Uzl1Or4gy7vOkikMOENvw9n9Jwj6S9FvXeIKIuFM="
+.amazon.com	TRUE	/	FALSE	2065888570	ubid-main	177-4925305-2966203
+.amazon.com	TRUE	/	FALSE	2065888568	x-main	"5ApatqvKEnHo4vr5PFseXoVjM@LJy4vm"
+.amazon.com	TRUE	/	FALSE	2082787201	x-wl-uid	1bla1gXzBOREeg1HBUtqux8oRlFB4/788/1TgTepw3LDSz7jMtpD2yr5HPSy46M6d4Bm7fOPtaySZNZD6ByqGOkJuEy4qLnMzr+82xMTVCHhDgP48RiT/E2P2+5ZvvDZeWUpqama2g9s=
