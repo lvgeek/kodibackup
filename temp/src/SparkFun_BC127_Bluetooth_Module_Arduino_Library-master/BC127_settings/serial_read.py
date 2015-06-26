@@ -9,7 +9,7 @@ ser.timeout = 1
 while 1:
     cmd = ser.readline()
     if len(cmd)>1:
-        print cmd
+        print cmd.strip('\r\n')
 
 
 
