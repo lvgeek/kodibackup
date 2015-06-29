@@ -82,7 +82,7 @@
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>2</settinglevel>
-        <systemtotaluptime>1993</systemtotaluptime>
+        <systemtotaluptime>2060</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -110,7 +110,7 @@
         <enablerssfeeds>false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
-        <skin default="true">skin.confluence</skin>
+        <skin>skin.CarPC-touch_carbon</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>

@@ -1,5 +1,5 @@
 # Licence: GPL v.3 http://www.gnu.org/licenses/gpl.html
-# XBMC connection to BC127 Bluetooth interface 
+# XBMC connection to BC127 Bluetooth interface
 # Sparkfun Product: https://www.sparkfun.com/products/11924
 # lvgeek: https://github.com/lvgeek
 
@@ -48,10 +48,10 @@ addonW = 1280
 addonH = 720
 
 # Buttons Configuration
-FREQ_LABEL_X	= 70
-FREQ_LABEL_Y	= 220
-FREQ_LABEL_W	= 450
-FREQ_LABEL_H	= 110
+FREQ_LABEL_X    = 70
+FREQ_LABEL_Y    = 220
+FREQ_LABEL_W    = 450
+FREQ_LABEL_H    = 110
 FREQ_LABEL_FONT = 'WeatherTemp'
 BUTTON_SEEK_LEFT_X = FREQ_LABEL_X
 BUTTON_SEEK_LEFT_Y = FREQ_LABEL_Y + FREQ_LABEL_H
@@ -66,22 +66,22 @@ BUTTON_SEEK_RIGHT_Y = BUTTON_SEEK_LEFT_Y
 BUTTON_SEEK_RIGHT_W = 164
 BUTTON_SEEK_RIGHT_H = 117
 
-RADIO_TEXT_X	= 20
-RADIO_TEXT_Y	= 640
-RADIO_TEXT_W	= 1280
-RADIO_TEXT_H	= 100
+RADIO_TEXT_X    = 20
+RADIO_TEXT_Y    = 640
+RADIO_TEXT_W    = 1280
+RADIO_TEXT_H    = 100
 RADIO_TEXT_FONT = 'font40_title'
 
-STATION_NAME_W	= 300
-STATION_NAME_H	= 100
-STATION_NAME_X	= addonW - STATION_NAME_W
-STATION_NAME_Y	= 15
+STATION_NAME_W  = 300
+STATION_NAME_H  = 100
+STATION_NAME_X  = addonW - STATION_NAME_W
+STATION_NAME_Y  = 15
 STATION_NAME_FONT = 'font40_title'
 
-RSSI_X	= 570
-RSSI_Y	= 450
-RSSI_W	= 70
-RSSI_H	= 10
+RSSI_X  = 570
+RSSI_Y  = 450
+RSSI_W  = 70
+RSSI_H  = 10
 RSSI_FONT = 'font30'
 
 STATION_LIST_X = 600
@@ -120,76 +120,76 @@ volume_label_y = 80
 
 # Current Frequency label
 currentFreq = xbmcgui.ControlLabel(
-	FREQ_LABEL_X, FREQ_LABEL_Y,
-	FREQ_LABEL_W, FREQ_LABEL_H,
-	addon.getLocalizedString(id=30000),
-	textColor='0xffffffff',
-	font=FREQ_LABEL_FONT,
-	alignment=TEXT_ALIGN_RIGHT)
+        FREQ_LABEL_X, FREQ_LABEL_Y,
+        FREQ_LABEL_W, FREQ_LABEL_H,
+        addon.getLocalizedString(id=30000),
+        textColor='0xffffffff',
+        font=FREQ_LABEL_FONT,
+        alignment=TEXT_ALIGN_RIGHT)
 
 stationsList = xbmcgui.ControlList(
-	STATION_LIST_X, 
-	STATION_LIST_Y, 
-	STATION_LIST_W, 
-	STATION_LIST_H, 
-	STATION_LIST_FONT,
-	buttonTexture=mediaPath + "right.png",
-	buttonFocusTexture=mediaPath + 'right_focus.png')
+        STATION_LIST_X,
+        STATION_LIST_Y,
+        STATION_LIST_W,
+        STATION_LIST_H,
+        STATION_LIST_FONT,
+        buttonTexture=mediaPath + "right.png",
+        buttonFocusTexture=mediaPath + 'right_focus.png')
 stationsList.setSpace(60)
 
 # Current volume label
 currentVolume = xbmcgui.ControlLabel(
-	volume_label_x, volume_label_y,
-	350, 100,
-	'',
-	textColor='0xffffffff',
-	font='font30',
-	alignment=TEXT_ALIGN_RIGHT)
+        volume_label_x, volume_label_y,
+        350, 100,
+        '',
+        textColor='0xffffffff',
+        font='font30',
+        alignment=TEXT_ALIGN_RIGHT)
 
 # Radio Text label
 radioText = xbmcgui.ControlLabel(
-	RADIO_TEXT_X, RADIO_TEXT_Y,
-	RADIO_TEXT_W, RADIO_TEXT_H,
-	addon.getLocalizedString(id=30000),
-	textColor='0xffffffff',
-	font=RADIO_TEXT_FONT,
-	alignment=TEXT_ALIGN_LEFT)
+        RADIO_TEXT_X, RADIO_TEXT_Y,
+        RADIO_TEXT_W, RADIO_TEXT_H,
+        addon.getLocalizedString(id=30000),
+        textColor='0xffffffff',
+        font=RADIO_TEXT_FONT,
+        alignment=TEXT_ALIGN_LEFT)
 
 # Station Name label
 stationName = xbmcgui.ControlLabel(
-	STATION_NAME_X, STATION_NAME_Y,
-	STATION_NAME_W, STATION_NAME_H,
-	addon.getLocalizedString(id=30000),
-	textColor='0xffffffff',
-	font=STATION_NAME_FONT,
-	alignment=TEXT_ALIGN_RIGHT)
+        STATION_NAME_X, STATION_NAME_Y,
+        STATION_NAME_W, STATION_NAME_H,
+        addon.getLocalizedString(id=30000),
+        textColor='0xffffffff',
+        font=STATION_NAME_FONT,
+        alignment=TEXT_ALIGN_RIGHT)
 ###################################################################################################
 ###################################################################################################
 # Temperature update thread
 ###################################################################################################
 ###################################################################################################
 class updateThreadClass(threading.Thread):
-	def run(self):
-		self.shutdown = False
+    def run(self):
+        self.shutdown = False
 
-		while not self.shutdown:
-			#currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
-			#Radio_SendCommand(self, "update_rds")
+        while not self.shutdown:
+            #currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
+            #Radio_SendCommand(self, "update_rds")
 
-			# Set labels
-			currentFreq.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.Frequency')) + "MHz")
-			radioText.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.RadioText')))
-			stationName.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.StationName')))
-			currentVolume.setLabel("volume: " + str(xbmcgui.Window(10000).getProperty('Radio.Volume')))
+            # Set labels
+            currentFreq.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.Frequency')) + "MHz")
+            radioText.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.RadioText')))
+            stationName.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.StationName')))
+            currentVolume.setLabel("volume: " + str(xbmcgui.Window(10000).getProperty('Radio.Volume')))
 
-			# Don't kill the CPU
-			time.sleep(0.1)
+            # Don't kill the CPU
+            time.sleep(0.1)
 
 class PhoneAVRCP(xbmcgui.WindowDialog):
     def __init__(self):
-        # Background
-        #self.w = self.getWidth()
-        #self.h = self.getHeight()
+    # Background
+    #self.w = self.getWidth()
+    #self.h = self.getHeight()
         self.w = addonW
         self.h = addonH
         self.background=xbmcgui.ControlImage(0, 0, self.w, self.h-40, mediaPath + "Carbon-Fiber-9.jpg")
@@ -209,7 +209,7 @@ class PhoneAVRCP(xbmcgui.WindowDialog):
             font='font30_title',
             alignment=TEXT_ALIGN_CENTER_X))
 
-    
+
         # Invisible button used to control focus
         self.buttonfocus = xbmcgui.ControlButton(500, 0, 1, 1, "")
         self.addControl(self.buttonfocus)
@@ -238,32 +238,32 @@ class PhoneAVRCP(xbmcgui.WindowDialog):
         self.addControl(self.button_back)
         self.addControl(self.button_back_img)
 
-		self.addControl(currentFreq)
+        self.addControl(currentFreq)
 
-		# Left button
-		self.button_left=xbmcgui.ControlButton(BUTTON_SEEK_LEFT_X,
-												BUTTON_SEEK_LEFT_Y,
-												BUTTON_SEEK_LEFT_W,
-												BUTTON_SEEK_LEFT_H,
-												"",
-												mediaPath + "prev_focus.png",
-												mediaPath + "prev.png")
-		self.addControl(self.button_left)
-		self.setFocus(self.button_left)
+        # Left button
+        self.button_left=xbmcgui.ControlButton(BUTTON_SEEK_LEFT_X,
+                                                                                            BUTTON_SEEK_LEFT_Y,
+                                                                                            BUTTON_SEEK_LEFT_W,
+                                                                                            BUTTON_SEEK_LEFT_H,
+                                                                                            "",
+                                                                                            mediaPath + "prev_focus.png",
+                                                                                            mediaPath + "prev.png")
+        self.addControl(self.button_left)
+        self.setFocus(self.button_left)
 
-		# Right button
-		self.button_right=xbmcgui.ControlButton(BUTTON_SEEK_RIGHT_X,
-												BUTTON_SEEK_RIGHT_Y,
-												BUTTON_SEEK_RIGHT_W,
-												BUTTON_SEEK_RIGHT_H,
-												"",
-												mediaPath + "next_focus.png",
-												mediaPath + "next.png")
-		self.addControl(self.button_right)
-		self.setFocus(self.button_right)
+        # Right button
+        self.button_right=xbmcgui.ControlButton(BUTTON_SEEK_RIGHT_X,
+                                                                                            BUTTON_SEEK_RIGHT_Y,
+                                                                                            BUTTON_SEEK_RIGHT_W,
+                                                                                            BUTTON_SEEK_RIGHT_H,
+                                                                                            "",
+                                                                                            mediaPath + "next_focus.png",
+                                                                                            mediaPath + "next.png")
+        self.addControl(self.button_right)
+        self.setFocus(self.button_right)
 
-		# Add Labels
-        self.addControl(messagelabel)
+        # Add Labels
+#        self.addControl(messagelabel)
 #        self.addControl(CurrentTitle)
 
 
@@ -273,11 +273,10 @@ class PhoneAVRCP(xbmcgui.WindowDialog):
 
         # Store original window ID
         self.prevWindowId = xbmcgui.getCurrentWindowId()
-        
+
         # Go to x11 skin page
-        xbmc.executebuiltin("XBMC.ActivateWindow(1112)")
-        self.dissablekeys(False)
-        
+        xbmc.executebuiltin("XBMC.ActivateWindow(1115)")
+
         self.setFocus(self.buttonfocus)
 
     def onAction(self, action):
@@ -303,7 +302,7 @@ class PhoneAVRCP(xbmcgui.WindowDialog):
             self.updateThread.shutdown = True
             self.updateThread.join()
             self.close()
-        
+
         # HOME button
         if controlID == self.button_home:
             strWndFnc = "XBMC.ActivateWindow(10000)"
@@ -336,7 +335,7 @@ def BC127_SendCommand(self, command):
     #data, addr = sock.recvfrom(1024)
 
     return #data
-    
+
 
 # Start the Addon
 dialog = PhoneAVRCP()

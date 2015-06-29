@@ -1,147 +1,158 @@
-﻿20:27:29 T:139929278355392  NOTICE: special://profile/ is mapped to: special://masterprofile/
-20:27:29 T:139929278355392  NOTICE: -----------------------------------------------------------------------
-20:27:29 T:139929278355392  NOTICE: Starting Kodi (14.2 Git:7cc53a9). Platform: Linux x86 64-bit
-20:27:29 T:139929278355392  NOTICE: Using Release Kodi x64 build
-20:27:29 T:139929278355392  NOTICE: Kodi compiled Mar 27 2015 by GCC 4.8.2 for Linux x86 64-bit version 3.13.11 (199947)
-20:27:29 T:139929278355392  NOTICE: Running on Ubuntu 14.04.2 LTS, kernel: Linux x86 64-bit version 3.13.0-53-lowlatency
-20:27:29 T:139929278355392  NOTICE: FFmpeg statically linked, version: 2.4.6-xbmc-2.4.6-Helix
-20:27:29 T:139929278355392  NOTICE: Host CPU: AMD FX(tm)-6300 Six-Core Processor, 6 cores available
-20:27:29 T:139929278355392  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
-20:27:29 T:139929278355392  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/kodi
-20:27:29 T:139929278355392  NOTICE: special://masterprofile/ is mapped to: /home/dave/.kodi/userdata
-20:27:29 T:139929278355392  NOTICE: special://home/ is mapped to: /home/dave/.kodi
-20:27:29 T:139929278355392  NOTICE: special://temp/ is mapped to: /home/dave/.kodi/temp
-20:27:29 T:139929278355392  NOTICE: The executable running is: /usr/lib/kodi/kodi.bin
-20:27:29 T:139929278355392  NOTICE: Local hostname: 350z
-20:27:29 T:139929278355392  NOTICE: Log File is located: /home/dave/.kodi/temp/kodi.log
-20:27:29 T:139929278355392  NOTICE: -----------------------------------------------------------------------
-20:27:29 T:139929278355392  NOTICE: load settings...
-20:27:29 T:139929278355392  NOTICE: Found 1 Lists of Devices
-20:27:29 T:139929278355392  NOTICE: Enumerated PULSE devices:
-20:27:29 T:139929278355392  NOTICE:     Device 1
-20:27:29 T:139929278355392  NOTICE:         m_deviceName      : Default
-20:27:29 T:139929278355392  NOTICE:         m_displayName     : Default
-20:27:29 T:139929278355392  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
-20:27:29 T:139929278355392  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-20:27:29 T:139929278355392  NOTICE:         m_channels        : FL,FR
-20:27:29 T:139929278355392  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-20:27:29 T:139929278355392  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-20:27:29 T:139929278355392  NOTICE:     Device 2
-20:27:29 T:139929278355392  NOTICE:         m_deviceName      : alsa_output.pci-0000_01_00.1.hdmi-stereo
-20:27:29 T:139929278355392  NOTICE:         m_displayName     : GF108 High Definition Audio Controller Digital Stereo (HDMI)
-20:27:29 T:139929278355392  NOTICE:         m_displayNameExtra: HDMI / DisplayPort (PULSEAUDIO)
-20:27:29 T:139929278355392  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-20:27:29 T:139929278355392  NOTICE:         m_channels        : FL,FR
-20:27:29 T:139929278355392  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-20:27:29 T:139929278355392  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-20:27:29 T:139929278355392  NOTICE:     Device 3
-20:27:29 T:139929278355392  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_14.2.analog-stereo
-20:27:29 T:139929278355392  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
-20:27:29 T:139929278355392  NOTICE:         m_displayNameExtra: Analog Output (PULSEAUDIO)
-20:27:29 T:139929278355392  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-20:27:29 T:139929278355392  NOTICE:         m_channels        : FL,FR
-20:27:29 T:139929278355392  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-20:27:29 T:139929278355392  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-20:27:29 T:139929278355392  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
-20:27:29 T:139929278355392  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
-20:27:29 T:139929278355392  NOTICE: Default DVD Player: dvdplayer
-20:27:29 T:139929278355392  NOTICE: Default Video Player: dvdplayer
-20:27:29 T:139929278355392  NOTICE: Default Audio Player: paplayer
-20:27:29 T:139929278355392  NOTICE: Disabled debug logging due to GUI setting. Level 0.
-20:27:29 T:139929278355392  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
-20:27:29 T:139929278355392  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
-20:27:29 T:139929278355392  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
-20:27:29 T:139929278355392  NOTICE: Loaded playercorefactory configuration
-20:27:29 T:139929278355392  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
-20:27:29 T:139929278355392  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
-20:27:29 T:139928779454208  NOTICE: Thread ActiveAE start, auto delete: false
-20:27:29 T:139928837125888  NOTICE: Thread AESink start, auto delete: false
-20:27:30 T:139928837125888  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
-20:27:30 T:139929278355392  NOTICE: Running database version Addons16
-20:27:31 T:139929278355392  NOTICE: ADDONS: Using repository repository.xbmc.org
-20:27:31 T:139928811075328  NOTICE: Thread PeripBusCEC start, auto delete: false
-20:27:31 T:139928802682624  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
-20:27:31 T:139929278355392  NOTICE: Setup SDL
-20:27:31 T:139929278355392  NOTICE: Checking resolution 15
-20:27:32 T:139929278355392  NOTICE: Using visual 0x28
-20:27:32 T:139929278355392  NOTICE: GL_VENDOR = NVIDIA Corporation
-20:27:32 T:139929278355392  NOTICE: GL_RENDERER = GeForce GT 620/PCIe/SSE2
-20:27:32 T:139929278355392  NOTICE: GL_VERSION = 4.2.0 NVIDIA 304.125
-20:27:32 T:139929278355392  NOTICE: GL_SHADING_LANGUAGE_VERSION = 4.20 NVIDIA via Cg compiler
-20:27:32 T:139929278355392  NOTICE: GL_GPU_MEMORY_INFO_TOTAL_AVAILABLE_MEMORY_NVX = 1048576
-20:27:32 T:139929278355392  NOTICE: GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX = 1047872
-20:27:32 T:139929278355392  NOTICE: GL_EXTENSIONS = GL_AMD_multi_draw_indirect GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_provoking_vertex GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_image_load_store GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_texture_type_2_10_10_10_REV GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KTX_buffer_region GL_NV_alpha_test GL_NV_blend_minmax GL_NV_blend_square GL_NV_complex_primitives GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_ES1_1_compatibility GL_NV_explicit_multisample GL_NV_fbo_color_attachments GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragdepth GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_expand_normal GL_NV_texture_lod_clamp GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_OES_compressed_paletted_texture GL_OES_depth24 GL_OES_depth32 GL_OES_depth_texture GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_rgb8_rgba8 GL_OES_read_format GL_OES_standard_derivatives GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_array_object GL_OES_vertex_half_float GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-20:27:33 T:139929278355392  NOTICE: Running database version Addons16
-20:27:33 T:139929278355392  NOTICE: Running database version ViewModes6
-20:27:33 T:139929278355392  NOTICE: Running database version Textures13
-20:27:33 T:139929278355392  NOTICE: Running database version MyMusic48
-20:27:33 T:139929278355392  NOTICE: Running database version MyVideos90
-20:27:33 T:139929278355392  NOTICE: Running database version TV26
-20:27:33 T:139929278355392  NOTICE: Running database version Epg8
-20:27:33 T:139929278355392  NOTICE: start dvd mediatype detection
-20:27:33 T:139928780138240  NOTICE: Thread DetectDVDMedia start, auto delete: false
-20:27:33 T:139929278355392 WARNING: JSONRPC: Could not parse type "PVR.Details.Channel"
-20:27:33 T:139929278355392 WARNING: JSONRPC: Could not parse type "PVR.Details.ChannelGroup.Extended"
-20:27:33 T:139929278355392 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
-20:27:33 T:139929278355392 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
-20:27:33 T:139928436864768  NOTICE: Thread LanguageInvoker start, auto delete: false
-20:27:33 T:139929278355392  NOTICE: initialize done
-20:27:33 T:139929278355392  NOTICE: Running the application...
-20:27:33 T:139928222562048  NOTICE: Thread JobWorker start, auto delete: true
-20:27:33 T:139928214169344  NOTICE: Thread LanguageInvoker start, auto delete: false
-20:27:33 T:139929278355392  NOTICE: starting zeroconf publishing
-20:27:33 T:139929278355392  NOTICE: Webserver: Starting...
-20:27:33 T:139928197383936  NOTICE: Thread JobWorker start, auto delete: true
-20:27:33 T:139929278355392  NOTICE: WebServer: Started the webserver
-20:27:33 T:139929278355392  NOTICE: ES: Starting event server
-20:27:33 T:139928172205824  NOTICE: Thread JobWorker start, auto delete: true
-20:27:33 T:139927752800000  NOTICE: Thread EventServer start, auto delete: false
-20:27:33 T:139927752800000  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
-20:27:33 T:139927752800000  NOTICE: UDP: Listening on port 9777
-20:27:33 T:139927744407296  NOTICE: Thread TCPServer start, auto delete: false
-20:27:33 T:139927727621888  NOTICE: Thread AirPlayServer start, auto delete: false
-20:27:33 T:139928436864768  NOTICE: -->Python Interpreter Initialized<--
-20:27:33 T:139928214169344  NOTICE: Previous line repeats 1 times.
-20:27:33 T:139928214169344 WARNING: CPythonInvoker(1): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-20:27:33 T:139928214169344  NOTICE: Thread LanguageInvoker start, auto delete: false
-20:27:33 T:139928214169344  NOTICE: -->Python Interpreter Initialized<--
-20:27:35 T:139928214169344  NOTICE: Thread FileCache start, auto delete: false
-20:27:49 T:139928214169344  NOTICE: Previous line repeats 4 times.
-20:27:49 T:139928214169344  NOTICE: Thread LanguageInvoker start, auto delete: false
-20:27:49 T:139928214169344  NOTICE: -->Python Interpreter Initialized<--
-20:27:49 T:139928214169344 WARNING: CPythonInvoker(3): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-20:27:49 T:139929278355392  NOTICE: Storing total System Uptime
-20:27:49 T:139929278355392  NOTICE: Saving settings
-20:27:49 T:139929278355392  NOTICE: stop all
-20:27:55 T:139928222562048   ERROR: CCurlFile::Stat - Failed: Timeout was reached(28) for http://mirrors.kodi.tv/addons/gotham/metadata.tvdb.com/metadata.tvdb.com-1.8.1.zip|Referer=metadata.tvdb.com-1.8.0.zip
-20:27:55 T:139929278355392  NOTICE: stop player
-20:27:55 T:139929278355392  NOTICE: ES: Stopping event server
-20:27:55 T:139929278355392  NOTICE: stopping zeroconf publishing
-20:27:55 T:139929278355392  NOTICE: Webserver: Stopping...
-20:27:55 T:139929278355392  NOTICE: WebServer: Stopped the webserver
-20:27:55 T:139929278355392  NOTICE: Webserver: Stopped...
-20:27:56 T:139927752800000  NOTICE: ES: UDP Event server stopped
-20:27:56 T:139929278355392  NOTICE: stop dvd detect media
-20:27:56 T:139929278355392  NOTICE: stop sap announcement listener
-20:27:56 T:139929278355392  NOTICE: clean cached files!
-20:27:56 T:139929278355392  NOTICE: unload skin
-20:27:56 T:139929278355392  NOTICE: stopped
-20:27:56 T:139929278355392  NOTICE: destroy
-20:27:56 T:139929278355392  NOTICE: closing down remote control service
-20:27:56 T:139929278355392  NOTICE: unload sections
-20:27:56 T:139929278355392  NOTICE: special://profile/ is mapped to: special://masterprofile/
-20:27:56 T:139929278355392  NOTICE: destroy
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
-20:27:56 T:139929278355392 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
-20:27:56 T:139929278355392  NOTICE: closing down remote control service
-20:27:56 T:139929278355392  NOTICE: unload sections
-20:27:56 T:139929278355392  NOTICE: application stopped...
+﻿12:53:58 T:139868459960256  NOTICE: special://profile/ is mapped to: special://masterprofile/
+12:53:58 T:139868459960256  NOTICE: -----------------------------------------------------------------------
+12:53:58 T:139868459960256  NOTICE: Starting Kodi (14.2 Git:7cc53a9). Platform: Linux x86 64-bit
+12:53:58 T:139868459960256  NOTICE: Using Release Kodi x64 build
+12:53:58 T:139868459960256  NOTICE: Kodi compiled Mar 27 2015 by GCC 4.8.2 for Linux x86 64-bit version 3.13.11 (199947)
+12:53:58 T:139868459960256  NOTICE: Running on Ubuntu 14.04.2 LTS, kernel: Linux x86 64-bit version 3.13.0-55-generic
+12:53:58 T:139868459960256  NOTICE: FFmpeg statically linked, version: 2.4.6-xbmc-2.4.6-Helix
+12:53:58 T:139868459960256  NOTICE: Host CPU: Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz, 8 cores available
+12:53:58 T:139868459960256  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
+12:53:58 T:139868459960256  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/kodi
+12:53:58 T:139868459960256  NOTICE: special://masterprofile/ is mapped to: /home/dave/.kodi/userdata
+12:53:58 T:139868459960256  NOTICE: special://home/ is mapped to: /home/dave/.kodi
+12:53:58 T:139868459960256  NOTICE: special://temp/ is mapped to: /home/dave/.kodi/temp
+12:53:58 T:139868459960256  NOTICE: The executable running is: /usr/lib/kodi/kodi.bin
+12:53:58 T:139868459960256  NOTICE: Local hostname: HPFreeman
+12:53:58 T:139868459960256  NOTICE: Log File is located: /home/dave/.kodi/temp/kodi.log
+12:53:58 T:139868459960256  NOTICE: -----------------------------------------------------------------------
+12:53:58 T:139868459960256  NOTICE: load settings...
+12:53:58 T:139868459960256  NOTICE: Found 1 Lists of Devices
+12:53:58 T:139868459960256  NOTICE: Enumerated PULSE devices:
+12:53:58 T:139868459960256  NOTICE:     Device 1
+12:53:58 T:139868459960256  NOTICE:         m_deviceName      : Default
+12:53:58 T:139868459960256  NOTICE:         m_displayName     : Default
+12:53:58 T:139868459960256  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
+12:53:58 T:139868459960256  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+12:53:58 T:139868459960256  NOTICE:         m_channels        : FL,FR
+12:53:58 T:139868459960256  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+12:53:58 T:139868459960256  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+12:53:58 T:139868459960256  NOTICE:     Device 2
+12:53:58 T:139868459960256  NOTICE:         m_deviceName      : alsa_output.pci-0000_01_00.1.hdmi-stereo
+12:53:58 T:139868459960256  NOTICE:         m_displayName     : GK107 HDMI Audio Controller Digital Stereo (HDMI)
+12:53:58 T:139868459960256  NOTICE:         m_displayNameExtra: HDMI / DisplayPort (PULSEAUDIO)
+12:53:58 T:139868459960256  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+12:53:58 T:139868459960256  NOTICE:         m_channels        : FL,FR
+12:53:58 T:139868459960256  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+12:53:58 T:139868459960256  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+12:53:58 T:139868459960256  NOTICE:     Device 3
+12:53:58 T:139868459960256  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_1b.0.analog-stereo
+12:53:58 T:139868459960256  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
+12:53:58 T:139868459960256  NOTICE:         m_displayNameExtra: Headphones (PULSEAUDIO)
+12:53:58 T:139868459960256  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+12:53:58 T:139868459960256  NOTICE:         m_channels        : FL,FR
+12:53:58 T:139868459960256  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+12:53:58 T:139868459960256  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+12:53:58 T:139868459960256  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+12:53:58 T:139868459960256  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+12:53:58 T:139868459960256  NOTICE: Default DVD Player: dvdplayer
+12:53:58 T:139868459960256  NOTICE: Default Video Player: dvdplayer
+12:53:58 T:139868459960256  NOTICE: Default Audio Player: paplayer
+12:53:58 T:139868459960256  NOTICE: Disabled debug logging due to GUI setting. Level 0.
+12:53:58 T:139868459960256  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
+12:53:58 T:139868459960256  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
+12:53:58 T:139868459960256  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+12:53:58 T:139868459960256  NOTICE: Loaded playercorefactory configuration
+12:53:58 T:139868459960256  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+12:53:58 T:139868459960256  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+12:53:58 T:139867963537152  NOTICE: Thread ActiveAE start, auto delete: false
+12:53:58 T:139868023432960  NOTICE: Thread AESink start, auto delete: false
+12:53:58 T:139868023432960  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
+12:53:58 T:139868459960256  NOTICE: Running database version Addons16
+12:53:58 T:139868459960256  NOTICE: ADDONS: Using repository repository.xbmc.org
+12:53:58 T:139867997431552  NOTICE: Thread PeripBusCEC start, auto delete: false
+12:53:58 T:139867989038848  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
+12:53:58 T:139868459960256  NOTICE: Setup SDL
+12:53:58 T:139868459960256  NOTICE: Checking resolution 15
+12:53:58 T:139868459960256  NOTICE: Using visual 0x28
+12:53:58 T:139868459960256  NOTICE: GL_VENDOR = NVIDIA Corporation
+12:53:58 T:139868459960256  NOTICE: GL_RENDERER = Quadro K1000M/PCIe/SSE2
+12:53:58 T:139868459960256  NOTICE: GL_VERSION = 4.2.0 NVIDIA 304.125
+12:53:58 T:139868459960256  NOTICE: GL_SHADING_LANGUAGE_VERSION = 4.20 NVIDIA via Cg compiler
+12:53:58 T:139868459960256  NOTICE: GL_GPU_MEMORY_INFO_TOTAL_AVAILABLE_MEMORY_NVX = 2097152
+12:53:58 T:139868459960256  NOTICE: GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX = 2097152
+12:53:58 T:139868459960256  NOTICE: GL_EXTENSIONS = GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_provoking_vertex GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_image_load_store GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_texture_type_2_10_10_10_REV GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KTX_buffer_region GL_NV_alpha_test GL_NV_bindless_texture GL_NV_blend_minmax GL_NV_blend_square GL_NV_complex_primitives GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_deep_texture3D GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_ES1_1_compatibility GL_NV_explicit_multisample GL_NV_fbo_color_attachments GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragdepth GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_expand_normal GL_NV_texture_lod_clamp GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_video_capture GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_OES_compressed_paletted_texture GL_OES_depth24 GL_OES_depth32 GL_OES_depth_texture GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_rgb8_rgba8 GL_OES_read_format GL_OES_standard_derivatives GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_array_object GL_OES_vertex_half_float GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+12:53:58 T:139868459960256  NOTICE: Running database version Addons16
+12:53:58 T:139868459960256  NOTICE: Running database version ViewModes6
+12:53:58 T:139868459960256  NOTICE: Running database version Textures13
+12:53:58 T:139868459960256  NOTICE: Running database version MyMusic48
+12:53:58 T:139868459960256  NOTICE: Running database version MyVideos90
+12:53:58 T:139868459960256  NOTICE: Running database version TV26
+12:53:58 T:139868459960256  NOTICE: Running database version Epg8
+12:53:58 T:139868459960256  NOTICE: start dvd mediatype detection
+12:53:58 T:139868458407680  NOTICE: Thread DetectDVDMedia start, auto delete: false
+12:53:59 T:139868459960256 WARNING: JSONRPC: Could not parse type "PVR.Details.Channel"
+12:53:59 T:139868459960256 WARNING: JSONRPC: Could not parse type "PVR.Details.ChannelGroup.Extended"
+12:53:59 T:139868459960256 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
+12:53:59 T:139868459960256 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
+12:53:59 T:139867619043072  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:53:59 T:139868459960256  NOTICE: initialize done
+12:53:59 T:139867610650368  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:53:59 T:139868459960256  NOTICE: Running the application...
+12:53:59 T:139867600946944  NOTICE: Thread JobWorker start, auto delete: true
+12:53:59 T:139867619043072  NOTICE: -->Python Interpreter Initialized<--
+12:53:59 T:139867592292096  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:53:59 T:139868459960256  NOTICE: starting zeroconf publishing
+12:53:59 T:139868459960256  NOTICE: Webserver: Starting...
+12:53:59 T:139867575506688  NOTICE: Thread JobWorker start, auto delete: true
+12:53:59 T:139868459960256  NOTICE: WebServer: Started the webserver
+12:53:59 T:139868459960256  NOTICE: ES: Starting event server
+12:53:59 T:139866943776512  NOTICE: Thread JobWorker start, auto delete: true
+12:53:59 T:139866935383808  NOTICE: Thread EventServer start, auto delete: false
+12:53:59 T:139866935383808  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
+12:53:59 T:139866935383808  NOTICE: UDP: Listening on port 9777
+12:53:59 T:139866926991104  NOTICE: Thread TCPServer start, auto delete: false
+12:53:59 T:139866910205696  NOTICE: Thread AirPlayServer start, auto delete: false
+12:53:59 T:139867610650368  NOTICE: -->Python Interpreter Initialized<--
+12:53:59 T:139867592292096  NOTICE: Previous line repeats 1 times.
+12:53:59 T:139867592292096 WARNING: CPythonInvoker(2): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:53:59 T:139867592292096  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:53:59 T:139867592292096  NOTICE: -->Python Interpreter Initialized<--
+12:54:22 T:139867610650368  NOTICE: BC127 A2DP_STREAM_START 2
+12:54:24 T:139867610650368  NOTICE: Previous line repeats 1 times.
+12:54:24 T:139867610650368  NOTICE: BC127 AVRCP_PLAY
+12:54:24 T:139867619043072  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:54:58 T:139867575506688  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:54:58 T:139867600946944  NOTICE: Thread JobWorker start, auto delete: true
+12:54:58 T:139867575506688  NOTICE: -->Python Interpreter Initialized<--
+12:54:58 T:139867575506688 WARNING: CPythonInvoker(4): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:55:00 T:139867575506688  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:55:05 T:139867575506688  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:55:05 T:139867575506688  NOTICE: -->Python Interpreter Initialized<--
+12:55:05 T:139867575506688 WARNING: CPythonInvoker(5): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:55:13 T:139868015040256  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:55:13 T:139868015040256  NOTICE: -->Python Interpreter Initialized<--
+12:55:13 T:139868015040256 WARNING: CPythonInvoker(6): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:55:13 T:139868459960256  NOTICE: Storing total System Uptime
+12:55:13 T:139868459960256  NOTICE: Saving settings
+12:55:13 T:139868459960256  NOTICE: stop all
+12:55:13 T:139868459960256  NOTICE: stop player
+12:55:13 T:139868459960256  NOTICE: ES: Stopping event server
+12:55:13 T:139868459960256  NOTICE: stopping zeroconf publishing
+12:55:13 T:139868459960256  NOTICE: Webserver: Stopping...
+12:55:13 T:139868459960256  NOTICE: WebServer: Stopped the webserver
+12:55:13 T:139868459960256  NOTICE: Webserver: Stopped...
+12:55:14 T:139866935383808  NOTICE: ES: UDP Event server stopped
+12:55:14 T:139868459960256  NOTICE: stop dvd detect media
+12:55:14 T:139868459960256  NOTICE: stop sap announcement listener
+12:55:14 T:139868459960256  NOTICE: clean cached files!
+12:55:14 T:139868459960256  NOTICE: unload skin
+12:55:14 T:139868459960256  NOTICE: stopped
+12:55:14 T:139868459960256  NOTICE: destroy
+12:55:14 T:139868459960256  NOTICE: closing down remote control service
+12:55:14 T:139868459960256  NOTICE: unload sections
+12:55:14 T:139868459960256  NOTICE: special://profile/ is mapped to: special://masterprofile/
+12:55:14 T:139868459960256  NOTICE: destroy
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
+12:55:14 T:139868459960256 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
+12:55:14 T:139868459960256  NOTICE: closing down remote control service
+12:55:14 T:139868459960256  NOTICE: unload sections
+12:55:14 T:139868459960256  NOTICE: application stopped...

@@ -6,7 +6,7 @@
 import serial
 
 
-ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=30)
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 while 1:
     answer = ser.readline()
     print answer

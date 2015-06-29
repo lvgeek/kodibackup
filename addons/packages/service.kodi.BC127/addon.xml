@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.kodi.BC127" name="KODI BC127 Connector" version="1.0" provider-name="Dave Freeman"> <!-- Unique ID and name of the addon -->
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/> <!-- Be able to use python in the addon -->
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="startup"> <!-- Extend KODI with a service. Start the addon when starting KODI, and run "default.py" -->
+  </extension>
+  <extension point="xbmc.addon.metadata"> <!-- Additional addon information -->
+    <platform>all</platform>
+    <summary lang="en">Connect KODI with a BC127 Bluetooth device. Send/Recieve serial commands when starting, stopping, pausing, ... Bluetooth device.</summary>
+  </extension>
+</addon>
