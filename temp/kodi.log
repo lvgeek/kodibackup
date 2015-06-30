@@ -161,3 +161,49 @@
                                             NameError: global name 'buttonPB' is not defined
                                             -->End of Python script error report<--
 16:06:19 T:139640545847040  NOTICE: Thread JobWorker start, auto delete: true
+16:07:44 T:139640562632448  NOTICE: Previous line repeats 3 times.
+16:07:44 T:139640562632448  NOTICE: Thread LanguageInvoker start, auto delete: false
+16:07:44 T:139640048707328  NOTICE: Previous line repeats 1 times.
+16:07:44 T:139640048707328  NOTICE: Thread JobWorker start, auto delete: true
+16:07:44 T:139640562632448  NOTICE: -->Python Interpreter Initialized<--
+16:07:44 T:139640562632448 WARNING: CPythonInvoker(9): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+16:07:44 T:139640571025152  NOTICE: -->Python Interpreter Initialized<--
+16:07:46 T:139640571025152  NOTICE: Thread LanguageInvoker start, auto delete: false
+16:07:46 T:139640571025152  NOTICE: -->Python Interpreter Initialized<--
+16:07:46 T:139640571025152 WARNING: CPythonInvoker(10): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+16:07:46 T:139641421313984  NOTICE: Storing total System Uptime
+16:07:46 T:139641421313984  NOTICE: Saving settings
+16:07:46 T:139641421313984  NOTICE: stop all
+16:07:46 T:139641421313984  NOTICE: stop player
+16:07:46 T:139641421313984  NOTICE: ES: Stopping event server
+16:07:46 T:139640040314624  NOTICE: ES: UDP Event server stopped
+16:07:47 T:139641421313984  NOTICE: stopping zeroconf publishing
+16:07:47 T:139641421313984  NOTICE: Webserver: Stopping...
+16:07:47 T:139641421313984  NOTICE: WebServer: Stopped the webserver
+16:07:47 T:139641421313984  NOTICE: Webserver: Stopped...
+16:07:47 T:139641421313984  NOTICE: stop dvd detect media
+16:07:47 T:139641421313984  NOTICE: stop sap announcement listener
+16:07:47 T:139641421313984  NOTICE: clean cached files!
+16:07:47 T:139641421313984  NOTICE: unload skin
+16:07:47 T:139641421313984 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
+16:07:47 T:139641421313984 WARNING: Cleanup: Having to cleanup texture button-focus2.png
+16:07:47 T:139641421313984  NOTICE: stopped
+16:07:47 T:139641421313984  NOTICE: destroy
+16:07:47 T:139641421313984  NOTICE: closing down remote control service
+16:07:47 T:139641421313984  NOTICE: unload sections
+16:07:47 T:139641421313984  NOTICE: special://profile/ is mapped to: special://masterprofile/
+16:07:47 T:139641421313984  NOTICE: destroy
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
+16:07:47 T:139641421313984 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
+16:07:47 T:139641421313984  NOTICE: closing down remote control service
+16:07:47 T:139641421313984  NOTICE: unload sections
+16:07:47 T:139641421313984  NOTICE: application stopped...
