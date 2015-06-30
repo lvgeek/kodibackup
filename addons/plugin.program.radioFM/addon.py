@@ -10,7 +10,6 @@ import threading
 import time
 
 
-
 ###################################################################################################
 ###################################################################################################
 # Initialization
@@ -42,47 +41,58 @@ addonW = 1280
 addonH = 720
 
 # Buttons Configuration
-FREQ_LABEL_X	= 70
-FREQ_LABEL_Y	= 220
-FREQ_LABEL_W	= 450
-FREQ_LABEL_H	= 110
+FREQ_LABEL_X        = 50
+FREQ_LABEL_Y        = 220
+FREQ_LABEL_W        = 450
+FREQ_LABEL_H        = 110
 FREQ_LABEL_FONT = 'WeatherTemp'
 BUTTON_SEEK_LEFT_X = FREQ_LABEL_X
 BUTTON_SEEK_LEFT_Y = FREQ_LABEL_Y + FREQ_LABEL_H
 BUTTON_SEEK_LEFT_W = 164
 BUTTON_SEEK_LEFT_H = 117
+
 BUTTON_STORE_X = BUTTON_SEEK_LEFT_X + BUTTON_SEEK_LEFT_W
 BUTTON_STORE_Y = BUTTON_SEEK_LEFT_Y
+
+BUTTON_DELETE_X = BUTTON_SEEK_LEFT_X + BUTTON_SEEK_LEFT_W
+BUTTON_DELETE_Y = BUTTON_SEEK_LEFT_Y  + BUTTON_SEEK_LEFT_H
+
 BUTTON_STORE_W = 150
 BUTTON_STORE_H = 117
+BUTTON_DELETE_W = 150
+BUTTON_DELETE_H = 117
 BUTTON_SEEK_RIGHT_X = BUTTON_SEEK_LEFT_X + BUTTON_SEEK_LEFT_W + BUTTON_STORE_W
 BUTTON_SEEK_RIGHT_Y = BUTTON_SEEK_LEFT_Y
 BUTTON_SEEK_RIGHT_W = 164
 BUTTON_SEEK_RIGHT_H = 117
 
-RADIO_TEXT_X	= 20
-RADIO_TEXT_Y	= 640
-RADIO_TEXT_W	= 1280
-RADIO_TEXT_H	= 100
+RADIO_TEXT_X        = 20
+RADIO_TEXT_Y        = 640
+RADIO_TEXT_W        = 1280
+RADIO_TEXT_H        = 100
 RADIO_TEXT_FONT = 'font40_title'
 
-STATION_NAME_W	= 300
-STATION_NAME_H	= 100
-STATION_NAME_X	= addonW - STATION_NAME_W
-STATION_NAME_Y	= 15
+STATION_NAME_W        = 300
+STATION_NAME_H        = 100
+STATION_NAME_X        = addonW - STATION_NAME_W
+STATION_NAME_Y        = 15
 STATION_NAME_FONT = 'font40_title'
 
-RSSI_X	= 570
-RSSI_Y	= 450
-RSSI_W	= 70
-RSSI_H	= 10
+RSSI_X        = 570
+RSSI_Y        = 450
+RSSI_W        = 70
+RSSI_H        = 10
 RSSI_FONT = 'font30'
 
-STATION_LIST_X = 600
-STATION_LIST_Y = 220
-STATION_LIST_W = 500
-STATION_LIST_H = 500
+STATION_LIST_X = 545
+STATION_LIST_Y = 110
+STATION_LIST_W = 275
+STATION_LIST_H = 570
 STATION_LIST_FONT = 'font30'
+STATION_LIST2_X = STATION_LIST_X + STATION_LIST_W + 5
+STATION_LIST2_Y = STATION_LIST_Y
+STATION_LIST2_W = STATION_LIST_W
+STATION_LIST2_H = STATION_LIST_H
 
 # Presets Configuration
 presets_start_x = 149
@@ -105,73 +115,88 @@ RADIO_VOL_Y = 450
 RADIO_VOL_W = 50
 RADIO_VOL_H = 1
 
-volume_buttons_x = 1200
-volume_buttons_y = 210
-volume_label_w = 350
+volume_buttons_x = 1180
+volume_buttons_y = 220
+volume_label_w = 370
 volume_label_x = addonW - volume_label_w
-volume_label_y = 80
+volume_label_y = 100
 
 
 # Current Frequency label
 currentFreq = xbmcgui.ControlLabel(
-	FREQ_LABEL_X, FREQ_LABEL_Y,
-	FREQ_LABEL_W, FREQ_LABEL_H,
-	addon.getLocalizedString(id=30000),
-	textColor='0xffffffff',
-	font=FREQ_LABEL_FONT,
-	alignment=TEXT_ALIGN_RIGHT)
+        FREQ_LABEL_X, FREQ_LABEL_Y,
+        FREQ_LABEL_W, FREQ_LABEL_H,
+        addon.getLocalizedString(id=30000),
+        textColor='0xffffffff',
+        font=FREQ_LABEL_FONT,
+        alignment=TEXT_ALIGN_RIGHT)
 
+# List of Preset Stations
 stationsList = xbmcgui.ControlList(
-	STATION_LIST_X, 
-	STATION_LIST_Y, 
-	STATION_LIST_W, 
-	STATION_LIST_H, 
-	STATION_LIST_FONT,
-	buttonTexture=mediaPath + "right.png",
-	buttonFocusTexture=mediaPath + 'right_focus.png')
-stationsList.setSpace(60)
+        STATION_LIST_X,
+        STATION_LIST_Y,
+        STATION_LIST_W,
+        STATION_LIST_H,
+        STATION_LIST_FONT,
+        buttonTexture=mediaPath + "middle.png",
+        buttonFocusTexture=mediaPath + 'middle_focus.png',
+        _itemHeight = 60,
+        _alignmentY = -8)
+
+# List 2 of Preset Stations
+stationsList2 = xbmcgui.ControlList(
+        STATION_LIST2_X,
+        STATION_LIST2_Y,
+        STATION_LIST2_W,
+        STATION_LIST2_H,
+        STATION_LIST_FONT,
+        buttonTexture=mediaPath + "middle.png",
+        buttonFocusTexture=mediaPath + 'middle_focus.png',
+        selectedColor = '0x00000000',
+        _itemHeight = 60,
+        _alignmentY = -8)
 
 # Current volume label
 currentVolume = xbmcgui.ControlLabel(
-	volume_label_x, volume_label_y,
-	350, 100,
-	'',
-	textColor='0xffffffff',
-	font='font30',
-	alignment=TEXT_ALIGN_RIGHT)
+        volume_label_x, volume_label_y,
+        350, 100,
+        '',
+        textColor='0xffffffff',
+        font='font30',
+        alignment=TEXT_ALIGN_RIGHT)
 
 # Radio Text label
 radioText = xbmcgui.ControlLabel(
-	RADIO_TEXT_X, RADIO_TEXT_Y,
-	RADIO_TEXT_W, RADIO_TEXT_H,
-	addon.getLocalizedString(id=30000),
-	textColor='0xffffffff',
-	font=RADIO_TEXT_FONT,
-	alignment=TEXT_ALIGN_LEFT)
+        RADIO_TEXT_X, RADIO_TEXT_Y,
+        RADIO_TEXT_W, RADIO_TEXT_H,
+        addon.getLocalizedString(id=30000),
+        textColor='0xffffffff',
+        font=RADIO_TEXT_FONT,
+        alignment=TEXT_ALIGN_LEFT)
 
 # Station Name label
 stationName = xbmcgui.ControlLabel(
-	STATION_NAME_X, STATION_NAME_Y,
-	STATION_NAME_W, STATION_NAME_H,
-	addon.getLocalizedString(id=30000),
-	textColor='0xffffffff',
-	font=STATION_NAME_FONT,
-	alignment=TEXT_ALIGN_RIGHT)
+        STATION_NAME_X, STATION_NAME_Y,
+        STATION_NAME_W, STATION_NAME_H,
+        addon.getLocalizedString(id=30000),
+        textColor='0xffffffff',
+        font=STATION_NAME_FONT,
+        alignment=TEXT_ALIGN_RIGHT)
 
 # RSSI indicator
 signalStrengthBar = xbmcgui.ControlImage(
-	RSSI_X,
-	RSSI_Y,
-	RSSI_W,
-	RSSI_H,
-	mediaPath + "bottom_bar.png")
+        RSSI_X,
+        RSSI_Y,
+        RSSI_W,
+        RSSI_H,
+        mediaPath + "bottom_bar.png")
 rssi = xbmcgui.ControlLabel(
-	RSSI_X, RSSI_Y - 35,
-	RSSI_W, RSSI_H,
-	'',
-	textColor='0xffffffff',
-	font=RSSI_FONT,
-	alignment=TEXT_ALIGN_CENTER_X)
+        RSSI_X, RSSI_Y - 35,
+        RSSI_W, RSSI_H,
+        '',
+        textColor='0xffffffff',
+        font=RSSI_FONT,
+        alignment=TEXT_ALIGN_CENTER_X)
 
 
 ###################################################################################################
@@ -180,342 +205,409 @@ rssi = xbmcgui.ControlLabel(
 ###################################################################################################
 ###################################################################################################
 class updateThreadClass(threading.Thread):
-	def run(self):
-		self.shutdown = False
+        def run(self):
+                self.shutdown = False
 
-		while not self.shutdown:
-			#currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
-			#Radio_SendCommand(self, "update_rds")
+                while not self.shutdown:
+                        #currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
+                        #Radio_SendCommand(self, "update_rds")
 
-			# Set labels
-			currentFreq.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.Frequency')) + "MHz")
-			radioText.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.RadioText')))
-			stationName.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.StationName')))
-			currentVolume.setLabel("volume: " + str(xbmcgui.Window(10000).getProperty('Radio.Volume')))
+                        # Set labels
+                        currentFreq.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.Frequency')) + "MHz")
+                        radioText.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.RadioText')))
+                        stationName.setLabel(str(xbmcgui.Window(10000).getProperty('Radio.StationName')))
+                        currentVolume.setLabel("volume: " + str(xbmcgui.Window(10000).getProperty('Radio.Volume')))
 
-			'''
-			radioVolume = int(xbmcgui.Window(10000).getProperty('Radio.Volume'))
-			if radioVolume > 0:
-				radioVolumeBar.setPosition(RADIO_VOL_X, RADIO_VOL_Y - radioVolume * 10)
-				radioVolumeBar.setHeight(radioVolume * 10)
-			else:
-				radioVolumeBar.setHeight(10)'''
-			'''
-			currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
-			if currentRssi > 0:
-				signalStrengthBar.setPosition(RADIO_VOL_X, RADIO_VOL_Y - currentRssi * 10)
-				signalStrengthBar.setHeight(currentRssi * 10)
-			else:
-				signalStrengthBar.setHeight(10)
-			rssi.setLabel(str(currentRssi))
-			'''
-			# Don't kill the CPU
-			time.sleep(0.1)
+                        '''
+                        radioVolume = int(xbmcgui.Window(10000).getProperty('Radio.Volume'))
+                        if radioVolume > 0:
+                                radioVolumeBar.setPosition(RADIO_VOL_X, RADIO_VOL_Y - radioVolume * 10)
+                                radioVolumeBar.setHeight(radioVolume * 10)
+                        else:
+                                radioVolumeBar.setHeight(10)'''
+                        '''
+                        currentRssi = int(xbmcgui.Window(10000).getProperty('Radio.RSSI'))
+                        if currentRssi > 0:
+                                signalStrengthBar.setPosition(RADIO_VOL_X, RADIO_VOL_Y - currentRssi * 10)
+                                signalStrengthBar.setHeight(currentRssi * 10)
+                        else:
+                                signalStrengthBar.setHeight(10)
+                        rssi.setLabel(str(currentRssi))
+                        '''
+                        # Don't kill the CPU
+                        time.sleep(0.1)
 
 class RadioFM(xbmcgui.WindowDialog):
 
-	def __init__(self):
-		# Background
-		#self.w = self.getWidth()
-		#self.h = self.getHeight()
-		self.w = addonW
-		self.h = addonH
-		self.background=xbmcgui.ControlImage(0, 0, self.w, self.h, mediaPath + "background.png")
-		self.addControl(self.background)
+        def __init__(self):
+                # Background
+                #self.w = self.getWidth()
+                #self.h = self.getHeight()
+                self.w = addonW
+                self.h = addonH
+                self.background=xbmcgui.ControlImage(0, 0, self.w, self.h, mediaPath + "background.png")
+                self.addControl(self.background)
 
-		#win = xbmcgui.Window(xbmcgui.getCurrentWindowId())
-		#category = str(win.getProperty('frequency'))
+                #win = xbmcgui.Window(xbmcgui.getCurrentWindowId())
+                #category = str(win.getProperty('frequency'))
 
-		# top and bottom images
-		self.addControl(xbmcgui.ControlImage(0, 0, self.w, 90, mediaPath + "top_bar.png"))
-		self.addControl(xbmcgui.ControlImage(0, self.h - 90, self.w, 90, mediaPath + "bottom_bar.png"))
+                # top and bottom images
+                self.addControl(xbmcgui.ControlImage(0, 0, self.w, 90, mediaPath + "top_bar.png"))
+                self.addControl(xbmcgui.ControlImage(0, self.h - 90, self.w, 90, mediaPath + "bottom_bar.png"))
 
-		# radio logo
-		#self.addControl(xbmcgui.ControlImage(self.w/2 - 143/2, 80, 143, 57, mediaPath + "logo_radio.png"))
-		self.addControl(xbmcgui.ControlLabel(
-			90, 25,
-			300, 100,
-			"Radio FM",
-			textColor='0xffffffff',
-			font='font30_title',
-			alignment=TEXT_ALIGN_LEFT))
+                # radio logo
+                #self.addControl(xbmcgui.ControlImage(self.w/2 - 143/2, 80, 143, 57, mediaPath + "logo_radio.png"))
+                self.addControl(xbmcgui.ControlLabel(
+                        90, 25,
+                        300, 100,
+                        "Radio FM",
+                        textColor='0xffffffff',
+                        font='font30_title',
+                        alignment=TEXT_ALIGN_LEFT))
 
-		'''
-		Pressing channels buttons:
-			mode = 0 -> go to channel
-			mode = 1 -> memorate curent channel
-		'''
-		self.mode = 0
-		
-		# Invisible button used to control focus
-		self.buttonfocus = xbmcgui.ControlButton(500, 0, 1, 1, "")
-		self.addControl(self.buttonfocus)
-		self.setFocus(self.buttonfocus)
+                '''
+                Pressing channels buttons:
+                        mode = 0 -> go to channel
+                        mode = 1 -> memorate curent channel
+                '''
+                self.mode = 0
 
-		# Home button
-		self.button_home=xbmcgui.ControlButton(0, 0, 83, 83,
-												"",
-												"floor_buttonFO.png",
-												"floor_button.png",
-												0,
-												0)
-		self.addControl(self.button_home)
-		self.addControl(xbmcgui.ControlImage(0, 0, 83, 83,
-												mediaPath + "icon_home.png"))
+                # Invisible button used to control focus
+                self.buttonfocus = xbmcgui.ControlButton(500, 0, 1, 1, "")
+                self.addControl(self.buttonfocus)
+                self.setFocus(self.buttonfocus)
 
-		# Back button
-		self.button_back_img=xbmcgui.ControlImage(self.w - 100, self.h - 83, 83, 83,
-												"icon_back_w.png")
-		self.button_back=xbmcgui.ControlButton(self.w - 100, self.h - 83, 83, 83,
-												"",
-												"floor_buttonFO.png",
-												"floor_button.png",
-												0,
-												0)
-		self.addControl(self.button_back)
-		self.addControl(self.button_back_img)
+                # Home button
+                self.button_home=xbmcgui.ControlButton(0, 0, 83, 83,
+                                                                                                "",
+                                                                                                "floor_buttonFO.png",
+                                                                                                "floor_button.png",
+                                                                                                0,
+                                                                                                0)
+                self.addControl(self.button_home)
+                self.addControl(xbmcgui.ControlImage(0, 0, 83, 83,
+                                                                                                mediaPath + "icon_home.png"))
 
-		# text background
-		#self.addControl(xbmcgui.ControlImage(BUTTON_SEEK_LEFT_X, 
-		#										BUTTON_SEEK_LEFT_Y - BUTTON_SEEK_LEFT_H, 
-		#										380 + 10, 
-		#										125, 
-		#										mediaPath + "text_background.png"))
-		self.addControl(currentFreq)
+                # Back button
+                self.button_back_img=xbmcgui.ControlImage(self.w - 100, self.h - 83, 83, 83,
+                                                                                                "icon_back_w.png")
+                self.button_back=xbmcgui.ControlButton(self.w - 100, self.h - 83, 83, 83,
+                                                                                                "",
+                                                                                                "floor_buttonFO.png",
+                                                                                                "floor_button.png",
+                                                                                                0,
+                                                                                                0)
+                self.addControl(self.button_back)
+                self.addControl(self.button_back_img)
 
-		# Left button
-		self.button_left=xbmcgui.ControlButton(BUTTON_SEEK_LEFT_X,
-												BUTTON_SEEK_LEFT_Y,
-												BUTTON_SEEK_LEFT_W,
-												BUTTON_SEEK_LEFT_H,
-												"",
-												mediaPath + "prev_focus.png",
-												mediaPath + "prev.png")
-		self.addControl(self.button_left)
-		self.setFocus(self.button_left)
+                # text background
+                #self.addControl(xbmcgui.ControlImage(BUTTON_SEEK_LEFT_X,
+                #                                                                                BUTTON_SEEK_LEFT_Y - BUTTON_SEEK_LEFT_H,
+                #                                                                                380 + 10,
+                #                                                                                125,
+                #                                                                                mediaPath + "text_background.png"))
+                self.addControl(currentFreq)
 
-		# Right button
-		self.button_right=xbmcgui.ControlButton(BUTTON_SEEK_RIGHT_X,
-												BUTTON_SEEK_RIGHT_Y,
-												BUTTON_SEEK_RIGHT_W,
-												BUTTON_SEEK_RIGHT_H,
-												"",
-												mediaPath + "next_focus.png",
-												mediaPath + "next.png")
-		self.addControl(self.button_right)
-		self.setFocus(self.button_right)
+                # Left button
+                self.button_left=xbmcgui.ControlButton(BUTTON_SEEK_LEFT_X,
+                                                                                                BUTTON_SEEK_LEFT_Y,
+                                                                                                BUTTON_SEEK_LEFT_W,
+                                                                                                BUTTON_SEEK_LEFT_H,
+                                                                                                "",
+                                                                                                mediaPath + "prev_focus.png",
+                                                                                                mediaPath + "prev.png")
+                self.addControl(self.button_left)
+                self.setFocus(self.button_left)
 
-		# Store Station Button
-		self.button_store=xbmcgui.ControlButton(BUTTON_STORE_X,
-												BUTTON_STORE_Y,
-												BUTTON_STORE_W,
-												BUTTON_STORE_H,
-												"",
-												mediaPath + "settings_focus.png",
-												mediaPath + "settings.png",
-												0,
-												0,
-												alignment=TEXT_ALIGN_CENTER_X)
-		self.addControl(self.button_store)
-		self.setFocus(self.button_store)
+                # Right button
+                self.button_right=xbmcgui.ControlButton(BUTTON_SEEK_RIGHT_X,
+                                                                                                BUTTON_SEEK_RIGHT_Y,
+                                                                                                BUTTON_SEEK_RIGHT_W,
+                                                                                                BUTTON_SEEK_RIGHT_H,
+                                                                                                "",
+                                                                                                mediaPath + "next_focus.png",
+                                                                                                mediaPath + "next.png")
+                self.addControl(self.button_right)
+                self.setFocus(self.button_right)
 
-		# Volume up button
-		self.button_volume_up=xbmcgui.ControlButton(volume_buttons_x,
-												volume_buttons_y - 70,
-												70,70,
-												'',
-												mediaPath + 'volume-up2.png',
-												mediaPath + 'volume-up.png',
-												0,
-												0,
-												alignment=TEXT_ALIGN_CENTER_X)
-		self.addControl(self.button_volume_up)
-		self.setFocus(self.button_volume_up)
+                # Store Station Button
+                self.button_store=xbmcgui.ControlButton(BUTTON_STORE_X,
+                                                                                                BUTTON_STORE_Y,
+                                                                                                BUTTON_STORE_W,
+                                                                                                BUTTON_STORE_H,
+                                                                                                "",
+                                                                                                mediaPath + "settings_focus.png",
+                                                                                                mediaPath + "settings.png",
+                                                                                                0,
+                                                                                                0,
+                                                                                                alignment=TEXT_ALIGN_CENTER_X)
+                self.addControl(self.button_store)
+                self.setFocus(self.button_store)
 
-		# Volume down button
-		self.button_volume_down=xbmcgui.ControlButton(volume_buttons_x,
-												volume_buttons_y,
-												70,70,
-												'',
-												mediaPath + 'volume-down2.png',
-												mediaPath + 'volume-down.png',
-												0,
-												0,
-												alignment=TEXT_ALIGN_CENTER_X)
-		self.addControl(self.button_volume_down)
-		self.setFocus(self.button_volume_down)
+                #Delete Button
+                self.button_delete=xbmcgui.ControlButton(BUTTON_DELETE_X,
+                                                                                                BUTTON_DELETE_Y,
+                                                                                                BUTTON_DELETE_W,
+                                                                                                BUTTON_DELETE_H,
+                                                                                                "",
+                                                                                                mediaPath + "delete_focus.png",
+                                                                                                mediaPath + "delete.png",
+                                                                                                0,
+                                                                                                0,
+                                                                                                alignment=TEXT_ALIGN_CENTER_X)
 
-		# Volume mute button
-		'''
-		self.button_volume_mute=xbmcgui.ControlButton(volume_buttons_x,
-												volume_buttons_y + 200,
-												100,100,
-												'',
-												mediaPath + 'icons/volume-mute.png',
-												mediaPath + 'icons/volume-mute2.png',
-												0,
-												0,
-												alignment=TEXT_ALIGN_CENTER_X)
-		self.addControl(self.button_volume_mute)
-		self.setFocus(self.button_volume_mute)'''
+                self.addControl(self.button_delete)
+                self.setFocus(self.button_delete)
 
-		self.addControl(currentVolume)
+                # Volume up button
+                self.button_volume_up=xbmcgui.ControlButton(volume_buttons_x,
+                                                                                                volume_buttons_y - 70,
+                                                                                                70,70,
+                                                                                                '',
+                                                                                                mediaPath + 'volume-up2.png',
+                                                                                                mediaPath + 'volume-up.png',
+                                                                                                0,
+                                                                                                0,
+                                                                                                alignment=TEXT_ALIGN_CENTER_X)
+                self.addControl(self.button_volume_up)
+                self.setFocus(self.button_volume_up)
 
-		# Add Labels
-		self.addControl(radioText)
-		self.addControl(stationName)
+                # Volume down button
+                self.button_volume_down=xbmcgui.ControlButton(volume_buttons_x,
+                                                                                                volume_buttons_y,
+                                                                                                70,70,
+                                                                                                '',
+                                                                                                mediaPath + 'volume-down2.png',
+                                                                                                mediaPath + 'volume-down.png',
+                                                                                                0,
+                                                                                                0,
+                                                                                                alignment=TEXT_ALIGN_CENTER_X)
+                self.addControl(self.button_volume_down)
+                self.setFocus(self.button_volume_down)
 
-		# Stations list
-		self.addControl(stationsList)
+                # Volume mute button
+                '''
+                self.button_volume_mute=xbmcgui.ControlButton(volume_buttons_x,
+                                                                                                volume_buttons_y + 200,
+                                                                                                100,100,
+                                                                                                '',
+                                                                                                mediaPath + 'icons/volume-mute.png',
+                                                                                                mediaPath + 'icons/volume-mute2.png',
+                                                                                                0,
+                                                                                                0,
+                                                                                                alignment=TEXT_ALIGN_CENTER_X)
+                self.addControl(self.button_volume_mute)
+                self.setFocus(self.button_volume_mute)'''
 
-		# Get stations from the file and show them
-		updateStations(self)
+                self.addControl(currentVolume)
 
-		# Start temperature update thread
-		self.updateThread = updateThreadClass()
-		self.updateThread.start()
+                # Add Labels
+                self.addControl(radioText)
+                self.addControl(stationName)
 
-		#self.addControl(signalStrengthBar)
-		#self.addControl(rssi)
+                # Stations list
+                self.addControl(stationsList)
+                self.addControl(stationsList2)
 
-		# Store original window ID
-		self.prevWindowId = xbmcgui.getCurrentWindowId()
-		
-		# Go to x11 skin page
-		xbmc.executebuiltin("XBMC.ActivateWindow(1114)")
-		
-		self.setFocus(self.buttonfocus)
-	def onControl(self, controlID):
-		# Back button
-		if controlID == self.button_back:
-			strWndFnc = "XBMC.ActivateWindow(%i)" % self.prevWindowId
-			xbmc.executebuiltin(strWndFnc)
-			# stop the temp thread
-			sock.close()
-			self.updateThread.shutdown = True
-			self.updateThread.join()
-			self.close()
-		
-		# HOME button
-		if controlID == self.button_home:
-			strWndFnc = "XBMC.ActivateWindow(10000)"
-			xbmc.executebuiltin(strWndFnc)
-			# stop the temp thread
-			sock.close()
-			self.updateThread.shutdown = True
-			self.updateThread.join()
-			self.close()
+                # Get stations from the file and show them
+                updateStations(self)
 
-		# Seek right Radio channel
-		if controlID == self.button_left:
-			Radio_SendCommand(self, "seek_down")
-			#Radio_SendCommand(self, "tune_down")
-			self.setFocus(self.buttonfocus)
-			#xbmc.executebuiltin("XBMC.SetProperty(frequency,"+dat+"FM")
-			#xbmcgui.Dialog().ok("New Channel found",channel)
+                # Start temperature update thread
+                self.updateThread = updateThreadClass()
+                self.updateThread.start()
 
-		# Seek left Radio channel
-		if controlID == self.button_right:
-			Radio_SendCommand(self, "seek_up")
-			#Radio_SendCommand(self, "tune_up")
-			self.setFocus(self.buttonfocus)
+                #self.addControl(signalStrengthBar)
+                #self.addControl(rssi)
 
-		# Store Station
-		if controlID == self.button_store:
-			currentFrequency = str(xbmcgui.Window(10000).getProperty('Radio.Frequency'))
-			currentStationName = str(xbmcgui.Window(10000).getProperty('Radio.StationName'))
-			currentFrequencyInList = False
-			for i in range(0, len(self.stations_array)):
-				currentItem = str(self.stations_array[i])
-				#print "%s %s %i" % (currentItem, currentFrequency, currentItem.find(currentFrequency))
-				if currentItem.find(currentFrequency) >= 0:
-					#xbmcgui.Dialog().ok("%s already in list" % currentFrequency, "Press OK to continue")
-					currentFrequencyInList = True
-					break
-			if currentFrequencyInList == False:
-				if currentStationName:
-					currentFrequency = currentFrequency + " - " + currentStationName
-				stationsList.addItem(currentFrequency)
-				self.stations_array.append(currentFrequency)
-				StationsListUpdatePosition(self)
-				writeStations(self)
-			self.setFocus(self.buttonfocus)
+                # Store original window ID
+                self.prevWindowId = xbmcgui.getCurrentWindowId()
 
-		# Volume Up
-		if controlID == self.button_volume_up:
-			Radio_SendCommand(self, "volume_plus")
-			'''
-			tempVol = int(dat) * 6
-			if tempVol >= 90:
-				tempVol = 100
-			xbmc.executebuiltin("XBMC.SetVolume(%d,1)" % (int(tempVol)))
-			'''
-			self.setFocus(self.buttonfocus)
-		
-		# Volume Down
-		if controlID == self.button_volume_down:
-			Radio_SendCommand(self, "volume_minus")
-			'''
-			tempVol = int(dat) * 6
-			if tempVol >= 90:
-				tempVol = 100
-			xbmc.executebuiltin("XBMC.SetVolume(%d,1)" % (int(tempVol)))
-			'''
-			self.setFocus(self.buttonfocus)
-		
-		# Volume Mute
-		'''if controlID == self.button_volume_mute:
-			Radio_SendCommand(self, "toggle_mute")
-			self.setFocus(self.buttonfocus)'''
+                # Go to x11 skin page
+                xbmc.executebuiltin("XBMC.ActivateWindow(1114)")
 
-		if controlID == stationsList:
-			item = stationsList.getSelectedItem()
-			requestedFrequency = item.getLabel().split(' ')
-			Radio_SendCommand(self, "tune_" + requestedFrequency[0])
-			if str(xbmcgui.Window(10000).getProperty('Radio.Active')) == "false":
-				xbmc.Player().stop()
-				CarpcController_SendCommand("system_mode_toggle")
-			self.setFocus(self.buttonfocus)
+                self.setFocus(self.buttonfocus)
+
+        def onControl(self, controlID):
+                # Back button
+                if controlID == self.button_back:
+                        strWndFnc = "XBMC.ActivateWindow(%i)" % self.prevWindowId
+                        xbmc.executebuiltin(strWndFnc)
+                        # stop the temp thread
+                        sock.close()
+                        self.updateThread.shutdown = True
+                        self.updateThread.join()
+                        self.close()
+
+                # HOME button
+                if controlID == self.button_home:
+                        strWndFnc = "XBMC.ActivateWindow(10000)"
+                        xbmc.executebuiltin(strWndFnc)
+                        # stop the temp thread
+                        sock.close()
+                        self.updateThread.shutdown = True
+                        self.updateThread.join()
+                        self.close()
+
+                # Seek right Radio channel
+                if controlID == self.button_left:
+                        Radio_SendCommand(self, "seek_down")
+                        #Radio_SendCommand(self, "tune_down")
+                        self.setFocus(self.buttonfocus)
+                        #xbmc.executebuiltin("XBMC.SetProperty(frequency,"+dat+"FM")
+                        #xbmcgui.Dialog().ok("New Channel found",channel)
+
+                # Seek left Radio channel
+                if controlID == self.button_right:
+                        Radio_SendCommand(self, "seek_up")
+                        #Radio_SendCommand(self, "tune_up")
+                        self.setFocus(self.buttonfocus)
+
+                 # Store Station
+                if controlID == self.button_store:
+                        currentFrequency = str(xbmcgui.Window(10000).getProperty('Radio.Frequency'))
+                        currentStationName = str(xbmcgui.Window(10000).getProperty('Radio.StationName'))
+                        currentFrequencyInList = False
+                        if len(self.stations_array) < 16:
+                            for i in range(0, len(self.stations_array)):
+                                    currentItem = str(self.stations_array[i])
+                                    #print "%s %s %i" % (currentItem, currentFrequency, currentItem.find(currentFrequency))
+                                    if currentItem.find(currentFrequency) >= 0:
+                                            #xbmcgui.Dialog().ok("%s already in list" % currentFrequency, "Press OK to continue")
+                                            currentFrequencyInList = True
+                                            break
+                            if currentFrequencyInList == False:
+                                    if currentStationName:
+                                            currentFrequency = currentFrequency + " - " + currentStationName
+                                    if i <= 8:
+                                            stationsList.addItem(currentFrequency)
+                                    else:
+                                            stationsList2.addItem(currentFrequency)
+                                    self.stations_array.append(currentFrequency)
+                                    StationsListUpdatePosition(self)
+                                    writeStations(self)
+                                    updateStations(self)
+                        else:
+                            StationsListUpdatePosition(self)
+                            xbmcgui.Dialog().ok("Press OK to continue","The list is full. Please delete a station first.")
+                        self.setFocus(self.buttonfocus)
+
+                # Delete Station
+                if controlID == self.button_delete:
+                        currentFrequency = str(xbmcgui.Window(10000).getProperty('Radio.Frequency'))
+                        currentStationName = str(xbmcgui.Window(10000).getProperty('Radio.StationName'))
+                        currentFrequencyInList = False
+                        for i in range(0, len(self.stations_array)):
+                            currentItem = str(self.stations_array[i])
+                            #print "%s %s %i" % (currentItem, currentFrequency, currentItem.find(currentFrequency))
+                            if currentItem.find(currentFrequency) >= 0:
+                                #xbmcgui.Dialog().ok("Press OK to continue","%s delete now" % currentFrequency )
+                                if len(self.stations_array) > 1:
+                                    del self.stations_array[i]
+                                writeStations(self)
+                                updateStations(self)
+                                #StationsListUpdatePosition(self)
+                        self.setFocus(self.buttonfocus)
+
+                # Volume Up
+                if controlID == self.button_volume_up:
+                        Radio_SendCommand(self, "volume_plus")
+                        '''
+                        tempVol = int(dat) * 6
+                        if tempVol >= 90:
+                                tempVol = 100
+                        xbmc.executebuiltin("XBMC.SetVolume(%d,1)" % (int(tempVol)))
+                        '''
+                        self.setFocus(self.buttonfocus)
+
+                # Volume Down
+                if controlID == self.button_volume_down:
+                        Radio_SendCommand(self, "volume_minus")
+                        '''
+                        tempVol = int(dat) * 6
+                        if tempVol >= 90:
+                                tempVol = 100
+                        xbmc.executebuiltin("XBMC.SetVolume(%d,1)" % (int(tempVol)))
+                        '''
+                        self.setFocus(self.buttonfocus)
+
+                # Volume Mute
+                '''if controlID == self.button_volume_mute:
+                        Radio_SendCommand(self, "toggle_mute")
+                        self.setFocus(self.buttonfocus)'''
+                # Preset List 1
+                if controlID == stationsList:
+                        item = stationsList.getSelectedItem()
+                        requestedFrequency = item.getLabel().split(' ')
+                        Radio_SendCommand(self, "tune_" + requestedFrequency[0])
+                        if str(xbmcgui.Window(10000).getProperty('Radio.Active')) == "false":
+                                xbmc.Player().stop()
+                                CarpcController_SendCommand("system_mode_toggle")
+                        self.setFocus(self.buttonfocus)
+
+                # Preset List 2
+                if controlID == stationsList2:
+                        item = stationsList2.getSelectedItem()
+                        requestedFrequency = item.getLabel().split(' ')
+                        Radio_SendCommand(self, "tune_" + requestedFrequency[0])
+                        if str(xbmcgui.Window(10000).getProperty('Radio.Active')) == "false":
+                                xbmc.Player().stop()
+                                CarpcController_SendCommand("system_mode_toggle")
+                        self.setFocus(self.buttonfocus)
 
 def CarpcController_SendCommand(command):
-	UDP_IP = "127.0.0.1"
-	UDP_PORT = 5005
+        UDP_IP = "127.0.0.1"
+        UDP_PORT = 5005
 
-	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-	# Send request to server
-	sock.sendto(command + "\0", (UDP_IP, UDP_PORT))
+        # Send request to server
+        sock.sendto(command + "\0", (UDP_IP, UDP_PORT))
 
-	sock.close()
+        sock.close()
 
 def StationsListUpdatePosition(self):
-	stationsList.setPosition(STATION_LIST_X, STATION_LIST_Y - (10 / 2 * len(self.stations_array)))
+        stationsList.setPosition(STATION_LIST_X, STATION_LIST_Y)
+        stationsList2.setPosition(STATION_LIST2_X, STATION_LIST2_Y)
 
 '''
 Read stations from the stations file and populate stations_array array
 '''
 def updateStations(self):
-	# update channel list from the stations file
-	fd = open(stations,"r")
-	self.stations_array = []
-	for line in fd:
-		self.stations_array.append(line.strip("\n"))
-	fd.close()
+        # update channel list from the stations file
+        fd = open(stations,"r")
+        self.stations_array = []
+        self.stations_array1 = []
+        self.stations_array2 = []
 
-	StationsListUpdatePosition(self)
+        stationsList.reset()
+        stationsList2.reset()
 
-	for i in range(0, len(self.stations_array)):
-		stationsList.addItem(str(self.stations_array[i]))
+        for line in fd:
+                self.stations_array.append(line.strip("\n"))
+        fd.close()
+
+        # split stations_array in half and create two arrays
+        self.stations_array2 = self.stations_array[:len(self.stations_array)//2]
+        self.stations_array1 = self.stations_array[len(self.stations_array)//2:]
+
+        StationsListUpdatePosition(self)
+
+        # add items to the two control lists
+        for i in range(0, len(self.stations_array1)):
+                stationsList.addItem(str(self.stations_array1[i]))
+
+        for j in range(0, len(self.stations_array2)):
+                stationsList2.addItem(str(self.stations_array2[j]))
 
 '''
 Update stations_array at position 'index' with frequency 'freq' and
 write stations_array to the stations file.
 '''
 def writeStations(self):
-	fd = open(stations,'w')
-	for line in self.stations_array:
-		fd.write(line+'\n')
-	fd.close()
+        fd = open(stations,'w')
+        for line in self.stations_array:
+                fd.write(line+'\n')
+        fd.close()
 
 '''
 seek_right
@@ -526,13 +618,13 @@ toggle_mute
 get_frequency
 '''
 def Radio_SendCommand(self, command):
-	UDP_IP = "127.0.0.1"
-	UDP_PORT = 5005
+        UDP_IP = "127.0.0.1"
+        UDP_PORT = 5005
 
-	# Send request to server
-	sock.sendto("radio_" + command + "\0", (UDP_IP, UDP_PORT))
+        # Send request to server
+        sock.sendto("radio_" + command + "\0", (UDP_IP, UDP_PORT))
 
-	
+
 
 
 # Start the Addon

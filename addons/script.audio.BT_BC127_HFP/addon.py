@@ -77,7 +77,7 @@ def CheckPhoneNumber(PH1, skey):
     return PH1
 ###################################################################################################
 ###################################################################################################
-# Temperature update thread
+# update thread
 ###################################################################################################
 ###################################################################################################
 class updateThreadClass(threading.Thread):
@@ -103,6 +103,17 @@ class updateThreadClass(threading.Thread):
 
             # Don't kill the CPU
             time.sleep(0.1)
+
+
+
+class PopupPB(xbmcgui.WindowDialog):
+    def __init__(self, line1, line2, line3, line4, line5):
+        self.addControl(xbmcgui.ControlLabel(x=190, y=25, width=500, height=25, label=line1[0]))
+        self.addControl(xbmcgui.ControlLabel(x=190, y=50, width=500, height=25, label=line2[0]))
+        self.addControl(xbmcgui.ControlLabel(x=190, y=75, width=500, height=25, label=line3[0]))
+        self.addControl(xbmcgui.ControlLabel(x=190, y=100, width=500, height=25, label=line4[0]))
+        self.addControl(xbmcgui.ControlLabel(x=190, y=125, width=500, height=25, label=line5[0]))
+    
 
 class PhoneHPF(xbmcgui.WindowDialog):
     def __init__(self):
@@ -243,23 +254,14 @@ class PhoneHPF(xbmcgui.WindowDialog):
                                                 0,
                                                 0,TEXT_ALIGN_CENTER_X_CENTER_Y)
         self.addControl(self.buttonbacksp)
-        self.buttonstar=xbmcgui.ControlButton(BUTTON_W*5, BUTTON_H*4, BUTTON_W*3, BUTTON_H,
+        self.buttonPB=xbmcgui.ControlButton(BUTTON_W*5, BUTTON_H*5, BUTTON_W*3, BUTTON_H,
                                                 "Phone Book",
                                                 "floor_buttonFO.png",
                                                 "floor_button.png",
                                                 0,
                                                 0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.buttonstar)
-        self.buttonpnd=xbmcgui.ControlButton(BUTTON_W*5, BUTTON_H*5, BUTTON_W*3, BUTTON_H,
-                                                "Edit PhoneBook",
-                                                "floor_buttonFO.png",
-                                                "floor_button.png",
-                                                0,
-                                                0,TEXT_ALIGN_CENTER_X_CENTER_Y)
-        self.addControl(self.buttonpnd)
-
-
-
+        self.addControl(self.buttonPB)
+ 
 
 		# Add Labels
         self.addControl(currentPhNum)
@@ -315,6 +317,13 @@ class PhoneHPF(xbmcgui.WindowDialog):
             self.updateThread.shutdown = True
             self.updateThread.join()
             self.close()
+
+        # Phonebook button
+        if controlID == buttonPB:
+            self.dissablekeys(True)
+            window = PopupPB('test1','test2','test3','test4','test5')
+            window.show()         
+            messagelabel.setLabel('')
 
         # CALL button
         if controlID == buttoncall:
@@ -404,6 +413,7 @@ volume_xx
 toggle_mute
 get_frequency
 '''
+
 def BC127_SendCommand(self, command):
     UDP_IP = "127.0.0.1"
     UDP_PORT = 5555
@@ -415,7 +425,7 @@ def BC127_SendCommand(self, command):
     #data, addr = sock.recvfrom(1024)
 
     return #data
-    
+
 
 # Start the Addon
 dialog = PhoneHPF()
