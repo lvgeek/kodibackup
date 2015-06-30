@@ -1,0 +1,20 @@
+<settings>
+    <setting id="Entry" value="0" />
+    <setting id="name0" value="Jill Mobil" />
+    <setting id="name1" value="Ryan" />
+    <setting id="name2" value="Allison" />
+    <setting id="name3" value="John Mobil" />
+    <setting id="name4" value="Bill Freeman" />
+    <setting id="name5" value="Andrew Freeman" />
+    <setting id="name6" value="Ellen" />
+    <setting id="name7" value="Rod Lovil" />
+    <setting id="phone0" value="2108446023" />
+    <setting id="phone1" value="2108449493" />
+    <setting id="phone2" value="8303913973" />
+    <setting id="phone3" value="2108449577" />
+    <setting id="phone4" value="2103940194" />
+    <setting id="phone5" value="8306602773" />
+    <setting id="phone6" value="2103652726" />
+    <setting id="phone7" value="2104153356" />
+    <setting id="port" value="/dev/ttyUSB0" />
+</settings>

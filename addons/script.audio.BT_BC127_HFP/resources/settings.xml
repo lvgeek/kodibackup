@@ -1,3 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
+	<category                                      label="Settings">
+		<setting id="port"      type="text"   label="port"          default="/dev/ttyUSB0"/>
+	</category>
+	<category                                      label="PhoneBook">
+		<setting id="name0"     type="text"   label="Name"              />
+		<setting id="phone0"    type="number" label="Phone Number"/>
+		<setting id="name1"     type="text"   label="Name" />
+		<setting id="phone1"    type="number" label="Phone Number"   />
+		<setting id="name2"     type="text"   label="Name"            />
+		<setting id="phone2"    type="number" label="Phone Number" />
+		<setting id="name3"     type="text"   label="Name"           />
+		<setting id="phone3"    type="number" label="Phone Number"  />
+		<setting id="name4"     type="text"   label="Name"          />
+		<setting id="phone4"    type="number" label="Phone Number"   />
+		<setting id="name5"     type="text"   label="Name"           />
+		<setting id="phone5"    type="number" label="Phone Number"    />
+		<setting id="name6"     type="text"   label="Name"             />
+		<setting id="phone6"    type="number" label="Phone Number"   />
+		<setting id="name7"     type="text"   label="Name"          />
+		<setting id="phone7"    type="number" label="Phone Number"   />
+		<setting id="name8"     type="text"   label="Name"          />
+		<setting id="phone8"    type="number" label="Phone Number"   />
+		<setting id="name9"     type="text"   label="Name"          />
+		<setting id="phone9"    type="number" label="Phone Number"   />
+	</category>
 </settings>
