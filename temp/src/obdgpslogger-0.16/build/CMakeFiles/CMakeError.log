@@ -1,0 +1,65 @@
+Determining if the getaddrinfo exist failed with the following output:
+Change Dir: /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4210112400/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4210112400.dir/build.make CMakeFiles/cmTryCompileExec4210112400.dir/build
+make[1]: Entering directory `/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4210112400.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4210112400.dir/CheckSymbolExists.c.o   -c /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘getaddrinfo’ undeclared (first use in this function)
+   return ((int*)(&getaddrinfo))[argc];
+                   ^
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTryCompileExec4210112400.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4210112400/fast] Error 2
+
+File /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/socket.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getaddrinfo
+  return ((int*)(&getaddrinfo))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the BTPROTO_RFCOMM exist failed with the following output:
+Change Dir: /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3375310430/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3375310430.dir/build.make CMakeFiles/cmTryCompileExec3375310430.dir/build
+make[1]: Entering directory `/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3375310430.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3375310430.dir/CheckSymbolExists.c.o   -c /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:33: fatal error: bluetooth/bluetooth.h: No such file or directory
+ #include <bluetooth/bluetooth.h>
+                                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3375310430.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3375310430/fast] Error 2
+
+File /home/dave/.kodi/temp/src/obdgpslogger-0.16/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <bluetooth/bluetooth.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef BTPROTO_RFCOMM
+  return ((int*)(&BTPROTO_RFCOMM))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

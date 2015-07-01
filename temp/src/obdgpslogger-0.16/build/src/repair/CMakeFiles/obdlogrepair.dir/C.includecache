@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libs/sqlite3/sqlite3.h
+stdarg.h
+-
+
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/repair/obdrepair.h
+sqlite3.h
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/repair/sqlite3.h
+
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/repair/obdrepairmain.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+obdrepair.h
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/repair/obdrepair.h
+sqlite3.h
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/repair/sqlite3.h
+

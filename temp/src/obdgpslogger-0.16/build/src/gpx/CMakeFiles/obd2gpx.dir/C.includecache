@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libs/sqlite3/sqlite3.h
+stdarg.h
+-
+
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/gpx/obd2gpx.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+libgen.h
+-
+obd2gpx.h
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/gpx/obd2gpx.h
+obdconfig.h
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/gpx/obdconfig.h
+sqlite3.h
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/gpx/sqlite3.h
+
+/home/dave/.kodi/temp/src/obdgpslogger-0.16/src/gpx/obd2gpx.h
+getopt.h
+-
+
+obdconfig.h
+
