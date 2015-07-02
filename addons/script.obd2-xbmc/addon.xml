@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="script.obd2-xbmc"
+  version="1.0.0"
+  name="obd2-xbmc"
+  provider-name="DAFreeman [dave@lvengineering.com] "
+  >
+  <requires>
+    <import addon="xbmc.gui" version="4.0.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>	
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py"/>  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">OBD2 Data Display for XBMC</summary>
+    <description lang="en">The script uses pyobd to read and display OBD2 automotive data</description>
+    <platform>all</platform>
+  </extension>
+</addon>

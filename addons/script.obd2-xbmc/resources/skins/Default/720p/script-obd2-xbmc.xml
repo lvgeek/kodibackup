@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<allowoverlay>no</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<!-- Background -->
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+            		<texture>background-default.jpg</texture>
+            		<fadetime>500</fadetime>
+ 		</control>
+		<control type="label" id="30000">
+			<posx>240</posx>
+			<posy>20</posy>
+			<width>800</width>
+			<height>100</height>
+            		<texture>background-default.jpg</texture>
+            		<fadetime>500</fadetime>
+ 		</control>
+				
+
+
+
+
+
+
+
+
+
+
+		
+
+<!-- Gauge grouping start -->
+        <control type="group">
+            <description>Gauge</description>
+            <posx>800</posx>
+            <posy>100</posy>
+            <width>300</width>
+            <height>300</height>
+            <visible>true</visible>
+            <control type="image">
+                <description>gauge_background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>300</width>
+                <height>300</height>
+                <visible>true</visible>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <texture>gauge/back1.png</texture>
+            </control>
+	    <control type="label" id="10016">
+                <description>Engine Load Label</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>300</width>
+                <height>50</height>
+		<align>center</align>
+		<label>Engine Load</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+            <control type="label" id="10116">
+                <description>displayed value</description>
+                <posx>0</posx>
+                <posy>100</posy>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>300</width>
+                <height>100</height>
+                <label>0</label>
+		<visible>true</visible>
+            </control>
+            <control type="label" id="10216">
+                <description>percent position</description>
+                <posx>0</posx>
+                <posy>100</posy>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>300</width>
+                <height>100</height>
+                <label>0</label>
+                <visible>false</visible>
+            </control>
+            <control type="image">
+                <description>gauge_pointer</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>300</width>
+                <height>300</height>
+                <visible>true</visible>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <texture>$INFO[Control.GetLabel(10216),gauge/progress2/p,.png]</texture>
+            </control>
+        </control>
+<!-- Gauge grouping stop -->
+
+
+	</controls>
+</window>

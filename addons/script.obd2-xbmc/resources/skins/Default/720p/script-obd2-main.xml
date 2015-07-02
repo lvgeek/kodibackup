@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<allowoverlay>no</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<!-- Background -->
+		<control type="image" id="4600">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+            <texture>tvguide-background-default.jpg</texture>
+            <fadetime>500</fadetime>
+            <animation type="Conditional" condition="Control.IsVisible(5000)">
+                <effect type="fade" start="100" end="0" time="500" />
+            </animation>
+		</control>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <texture>tvguide-glasspane.png</texture>
+            <animation type="Conditional" condition="Control.IsVisible(5000)">
+                <effect type="fade" start="100" end="0" time="500" />
+            </animation>
+        </control>
+	<control type="label" id="10000">
+            <description>visibility marker for Dashboard1 group</description>
+        </control>
+	<control type="group">
+		<description>Dashboard1 group</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <visible>!Control.IsVisible(10000)</visible>
+						<control type="label" id="10001">
+                <description>Main title</description>
+                <posx>10</posx>
+                <posy>70</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+	    <control type="label" id="10002">
+                <description>Speed Label</description>
+                <posx>10</posx>
+                <posy>110</posy>
+                <width>630</width>
+                <height>50</height>
+		<label>Speed</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+		<control type="label" id="10003">
+                <description>Speed</description>
+                <posx>10</posx>
+                <posy>140</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+	    </control>
+<!--  	    <control type="progress" id="10203">
+		<description>SpeedProgress</description>
+		<posx>700</posx>
+		<posy>175</posy>
+		<width>400</width>
+		<height>50</height>
+		<info></info>
+	    </control>
+-->
+		<control type="label" id="10004">
+                <description>RPM Label</description>
+                <posx>130</posx>
+                <posy>110</posy>
+                <width>630</width>
+                <height>50</height>
+								<label>RPM</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10005">
+                <description>RPM</description>
+                <posx>130</posx>
+                <posy>140</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10006">
+                <description>Run Time Label</description>
+                <posx>250</posx>
+                <posy>110</posy>
+                <width>630</width>
+                <height>50</height>
+								<label>Engine Run Time</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10007">
+                <description>Run Time</description>
+                <posx>250</posx>
+                <posy>140</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10008">
+                <description>Intake Temp Label</description>
+                <posx>450</posx>
+                <posy>110</posy>
+                <width>630</width>
+                <height>50</height>
+								<label>Intake Temp</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10009">
+                <description>Intake Temp</description>
+                <posx>450</posx>
+                <posy>140</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10012">
+                <description>MAF Label</description>
+                <posx>600</posx>
+                <posy>110</posy>
+                <width>630</width>
+                <height>50</height>
+								<label>MAF</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10013">
+                <description>MAF</description>
+                <posx>600</posx>
+                <posy>140</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10014">
+                <description>Coolant Temp Label</description>
+                <posx>730</posx>
+                <posy>110</posy>
+                <width>630</width>
+                <height>50</height>
+								<label>Coolant Temp</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10015">
+                <description>Coolant Temp</description>
+                <posx>730</posx>
+                <posy>140</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						
+
+<!-- Gauge grouping start -->
+        <control type="group">
+            <description>Gauge</description>
+            <posx>800</posx>
+            <posy>100</posy>
+            <width>300</width>
+            <height>300</height>
+            <visible>true</visible>
+            <control type="image">
+                <description>gauge_background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>300</width>
+                <height>300</height>
+                <visible>true</visible>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <texture>gauge/back1.png</texture>
+            </control>
+	    <control type="label" id="10016">
+                <description>Engine Load Label</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>300</width>
+                <height>50</height>
+		<align>center</align>
+		<label>Engine Load</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+            <control type="label" id="10116">
+                <description>displayed value</description>
+                <posx>0</posx>
+                <posy>100</posy>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>300</width>
+                <height>100</height>
+                <label>0</label>
+		<visible>true</visible>
+            </control>
+            <control type="label" id="10216">
+                <description>percent position</description>
+                <posx>0</posx>
+                <posy>100</posy>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>300</width>
+                <height>100</height>
+                <label>0</label>
+                <visible>false</visible>
+            </control>
+            <control type="image">
+                <description>gauge_pointer</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>300</width>
+                <height>300</height>
+                <visible>true</visible>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <texture>$INFO[Control.GetLabel(10216),gauge/progress2/p,.png]</texture>
+            </control>
+        </control>
+<!-- Gauge grouping stop -->
+
+
+
+
+
+
+
+		<control type="label" id="10010">
+                <description>DTC Label</description>
+                <posx>200</posx>
+                <posy>200</posy>
+                <width>630</width>
+                <height>50</height>
+								<label>DTCs</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="label" id="10011">
+                <description>DTCs</description>
+                <posx>200</posx>
+                <posy>230</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+						<control type="button" id="10100">
+                    <posx>400</posx>
+                    <posy>350</posy>
+                    <width>150</width>
+                    <height>50</height>
+                    <label>$ADDON[script.obd2 30003]</label>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+                    <texturenofocus>tvguide-program-grey.png</texturenofocus>
+                </control>
+					</control>
+        <control type="group">
+				
+        <control type="label" id="5000">
+            <description>visibility marker for TV Guide group</description>
+        </control>
+        <control type="group">
+					<description>TV Guide group</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<visible>!Control.IsVisible(5000)</visible>
+
+					<control type="label" id="4000">
+						<description>Displays todays date</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>
+						<height>50</height>
+						<textcolor>ffffffff</textcolor>
+						<font>font13</font>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</control>
+				
+				
+            <!-- Date and time row -->
+            <control type="group">
+                <posx>0</posx>
+                <posy>10</posy>
+                <width>1280</width>
+                <height>50</height>
+                <visible>true</visible>
+
+                <control type="label" id="4000">
+                    <description>Displays todays date</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>180</width>
+                    <height>50</height>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+            </control>
+
+            <control type="label" id="4020">
+                <description>Program title</description>
+                <posx>30</posx>
+                <posy>510</posy>
+                <width>630</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+            <control type="image" id="4024">
+                <description>Channel logo</description>
+                <posx>540</posx>
+                <posy>518</posy>
+                <width>80</width>
+                <height>40</height>
+                <aspectratio>keep</aspectratio>
+                <fadetime>500</fadetime>
+                <visible>false</visible><!-- unused in default skin -->
+            </control>
+            <control type="label" id="4021">
+                <description>Program time</description>
+                <posx>900</posx>
+                <posy>510</posy>
+                <width>340</width>
+                <height>50</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <align>right</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="textbox" id="4022">
+                <description>Program description</description>
+                <posx>30</posx>
+                <posy>550</posy>
+                <width>850</width>
+                <height>149</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <wrapmultiline>true</wrapmultiline>
+                <autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
+            </control>
+            <control type="image" id="4023">
+                <description>Program logo / Source logo</description>
+                <posx>930</posx>
+                <posy>530</posy>
+                <width>320</width>
+                <height>160</height>
+                <aspectratio>keep</aspectratio>
+                <fadetime>500</fadetime>
+            </control>
+
+            <control type="label" id="4200">
+                <description>visibility marker for loading group</description>
+            </control>
+            <control type="group">
+                <posx>340</posx>
+                <posy>250</posy>
+                <width>600</width>
+                <height>55</height>
+                <visible>!Control.IsVisible(4200)</visible>
+                <animation effect="fade" start="0" end="100" time="250" delay="1500">Visible</animation>
+
+                <control type="image">
+                    <description>loading splash</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>55</width>
+                    <height>55</height>
+                    <texture>tvguide-loading.gif</texture>
+                </control>
+                <control type="label">
+                    <description>loading splash</description>
+                    <posx>70</posx>
+                    <posy>0</posy>
+                    <width>600</width>
+                    <height>55</height>
+                    <label>$ADDON[script.obd2 30001]</label>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font30</font>
+                    <aligny>center</aligny>
+                </control>
+                <control type="progress" id="4201">
+                    <posx>70</posx>
+                    <posy>50</posy>
+                    <width>580</width>
+                    <height>2</height>
+                    <texturebg />
+                    <lefttexture />
+                    <midtexture>tvguide-white-progress.png</midtexture>
+                    <righttexture />
+                </control>
+                <control type="label" id="4202">
+                    <description>loading time left</description>
+                    <posx>70</posx>
+                    <posy>50</posy>
+                    <width>600</width>
+                    <height>50</height>
+                    <label>...</label>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <aligny>center</aligny>
+                </control>
+                <control type="button" id="4203">
+                    <posx>70</posx>
+                    <posy>100</posy>
+                    <width>150</width>
+                    <height>50</height>
+                    <label>$ADDON[script.obd2 30008]</label>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+                    <texturenofocus>tvguide-program-grey.png</texturenofocus>
+                </control>
+            </control>
+
+            <control type="label" id="4300">
+                <description>visibility marker for mouse control group</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>50</width>
+                <height>50</height>
+            </control>
+            <control type="group">
+                <posx>0</posx>
+                <posy>720</posy>
+                <width>1280</width>
+                <height>70</height>
+                <visible>!Control.IsVisible(4300)</visible>
+                <animation effect="slide" start="0,0" end="0,-70" time="500">Visible</animation>
+                <animation effect="slide" start="0,-70" end="0,0" time="500">Hidden</animation>
+
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1280</width>
+                    <height>70</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1280</width>
+                    <height>70</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <posx>20</posx>
+                    <posy>10</posy>
+                    <width>150</width>
+                    <height>50</height>
+                    <label>$ADDON[script.obd2 30005]</label>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <aligny>center</aligny>
+                </control>
+                <control type="label" id="4301">
+                    <posx>200</posx>
+                    <posy>10</posy>
+                    <width>400</width>
+                    <height>50</height>
+                    <!--<label>$ADDON[script.obd2 30007]</label>-->
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <aligny>center</aligny>
+                </control>
+
+                <control type="label" id="4302">
+                    <posx>680</posx>
+                    <posy>10</posy>
+                    <width>400</width>
+                    <height>50</height>
+                    <!--<label>$ADDON[script.obd2 30007]</label>-->
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <aligny>center</aligny>
+                </control>
+
+                <!--<control type="button" id="4302">
+                    <description>navigate left</description>
+                    <posx>340</posx>
+                    <posy>10</posy>
+                    <width>100</width>
+                    <height>50</height>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <label>&lt;</label>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+                    <texturenofocus>tvguide-program-grey.png</texturenofocus>
+                </control>
+                <control type="button" id="4303">
+                    <description>navigate up</description>
+                    <posx>450</posx>
+                    <posy>10</posy>
+                    <width>100</width>
+                    <height>50</height>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <label>^</label>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+                    <texturenofocus>tvguide-program-grey.png</texturenofocus>
+                </control>
+                <control type="button" id="4304">
+                    <description>navigate down</description>
+                    <posx>560</posx>
+                    <posy>10</posy>
+                    <width>100</width>
+                    <height>50</height>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <label>v</label>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+                    <texturenofocus>tvguide-program-grey.png</texturenofocus>
+                </control>-->
+                <control type="button" id="4305">
+                    <description>Next Track</description>
+                    <posx>670</posx>
+                    <posy>10</posy>
+                    <width>100</width>
+                    <height>50</height>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <label>&gt;</label>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+                    <texturenofocus>tvguide-program-grey.png</texturenofocus>
+                </control>
+
+                <control type="button" id="4306">
+                    <description>exit</description>
+                    <posx>1220</posx>
+                    <posy>10</posy>
+                    <width>50</width>
+                    <height>50</height>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <label>X</label>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+                    <texturenofocus>tvguide-program-grey.png</texturenofocus>
+                </control>
+
+            </control>
+
+        </control><!-- id="5000" -->
+
+        <control type="videowindow">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <animation type="Conditional" condition="!Control.IsVisible(5000)">
+                <effect type="zoom" end="25" center="1250,690" time="500" />
+            </animation>
+        </control>
+
+        <control type="label" id="6000">
+            <description>visibility marker for OSD Info bar</description>
+        </control>
+        <control type="group">
+            <description>OSD Info bar</description>
+            <posx>0</posx>
+            <posy>500</posy>
+            <width>1280</width>
+            <height>220</height>
+            <visible>!Control.IsVisible(6000)</visible>
+            <animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
+
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1280</width>
+                <height>220</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+
+            <!-- Program description -->
+            <control type="label" id="6001">
+                <description>Program title</description>
+                <posx>30</posx>
+                <posy>10</posy>
+                <width>850</width>
+                <height>50</height>
+                <label>[B]Title[/B]</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <aligny>center</aligny>
+            </control>
+            <control type="label" id="6002">
+                <description>Program time</description>
+                <posx>1230</posx>
+                <posy>10</posy>
+                <width>240</width>
+                <height>50</height>
+                <label>[B]18:00 - 20:00[/B]</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <align>right</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="textbox" id="6003">
+                <description>Program description</description>
+                <posx>30</posx>
+                <posy>50</posy>
+                <width>1230</width>
+                <height>149</height>
+                <label>Description</label>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <wrapmultiline>true</wrapmultiline>
+
+                <autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
+            </control>
+            <control type="image" id="6004">
+                <description>Program channel logo</description>
+                <posx>1100</posx>
+                <posy>155</posy>
+                <width>160</width>
+                <height>45</height>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="label" id="6005">
+                <description>Program channel text</description>
+                <posx>110</posx>
+                <posy>155</posy>
+                <width>160</width>
+                <height>45</height>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <align>center</align>
+                <visible>StringCompare(Control.GetLabel(6004),)</visible>
+            </control>
+
+        </control>
+
+	</controls>
+</window>

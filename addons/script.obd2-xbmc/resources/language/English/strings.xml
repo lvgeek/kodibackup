@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="30000">OBD2-XBMC</string>
+    <string id="30001">Speed</string>
+    <string id="30002">RPM</string>
+    <string id="30003">Coolant</string>
+    <string id="30004">Vacuum</string>
+    <string id="30005">Timing</string>
+    <string id="30006">Power</string>
+    <string id="30007">Torque</string>
+    <string id="30008">MPG</string>
+</strings>
