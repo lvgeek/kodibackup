@@ -124,7 +124,8 @@
       				<onright>6</onright>				
 				<texturenofocus >home_3.png</texturenofocus>
 				<texturefocus border="5">home_3_p.png</texturefocus>
-				<onclick>ActivateWindow(10025,plugin://plugin.audio.pandoki/?play=5158)</onclick>
+<!--				<onclick>ActivateWindow(10025,plugin://plugin.audio.pandoki/?play=5158)</onclick> -->
+				<onclick>ActivateWindow(10025,plugin://plugin.audio.pandoki)</onclick>
 			</control>
 			<control type="image">
 				<description>Pandora</description>
@@ -147,18 +148,110 @@
 				<textcolor>FFFFFFFF</textcolor>
 			</control>
 		</control>
-	
-		<control type="image">
-		
-		<include>Window_OpenClose_Animation_Zoom</include>
-		
+	    
+        <control type="image">
+			<description>Normal Default Logo Image</description>
 			<posx>440</posx>
 			<posy>147</posy>
 			<width>400</width>
 			<height>400</height>
-			<texture>350Z.png</texture>
+			<aspectratio>scale</aspectratio>
+			<texture>z_logo.png</texture>
+			<visible>!Player.HasAudio</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
 		</control>
-	
+		<control type="visualisation" id="2">
+			<description>visualisation</description>
+			<include>Window_OpenClose_Animation_Zoom</include>
+			<left>365</left>
+			<top>50</top>
+			<width>550</width>
+			<height>550</height>
+			<visible>Player.HasAudio + Window.IsVisible(home)</visible>
+			<fadetime>600</fadetime>
+		</control>
+		<control type="group">
+            <left>365</left>
+            <top>50</top>
+			<width>550</width>
+            <height>550</height>
+			<visible>Player.HasAudio + Window.IsVisible(home)</visible>
+            <control type="label">
+                <visible>true</visible>
+                <left>150</left>
+				<top>165</top>
+                <width>250</width>
+                <height>100</height>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <info>MusicPlayer.Artist</info>
+                <scroll>true</scroll>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+				<wrapmultiline>false</wrapmultiline>
+            </control>
+            <control type="label">
+                <visible>true</visible>
+                <left>150</left>
+				<top>140</top>
+                <width>250</width>
+                <height>100</height>
+                <font>font13_title</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <info>MusicPlayer.Title</info>
+				<scroll>true</scroll>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+				<wrapmultiline>false</wrapmultiline>
+            </control>
+			<control type="label">
+				<visible>true</visible>
+				<left>120</left>
+				<top>455</top>
+                <width>250</width>
+                <height>100</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+				<label>[1]</label>
+				<info>musicplayer.time</info>
+				<visible>Player.HasAudio + Window.IsVisible(home)</visible>
+			</control>
+			<control type="label">
+				<visible>true</visible>
+				<left>150</left>
+				<top>455</top>
+                <width>250</width>
+                <height>100</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+				<label>/</label>
+				<visible>Player.HasAudio + Window.IsVisible(home)</visible>
+			</control>
+			<control type="label">
+				<visible>true</visible>
+				<left>180</left>
+				<top>455</top>
+                <width>250</width>
+                <height>100</height>
+				<font>font11</font>
+				<textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+				<label>[1]</label>
+				<info>musicplayer.duration</info>
+				<visible>Player.HasAudio + Window.IsVisible(home)</visible>
+			</control>
+        </control>
+
+
 		<control type="group">
 		<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>560r</posx>

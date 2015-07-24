@@ -25,6 +25,7 @@ import xbmcaddon
 
 ACTION_PREVIOUS_MENU = 10
 ACTION_SELECT_ITEM = 7
+ACTION_CANCEL_DIALOG = (9,10,51,92,110)
 
 TEXT_ALIGN_LEFT = 0
 TEXT_ALIGN_RIGHT = 1
@@ -83,11 +84,11 @@ class OBD2XBMC(xbmcgui.WindowXMLDialog):
 	def onFocus( self, controlId ):
 	        pass
   
-	def onAction( self, action ):
-	        if ( action in ACTION_CANCEL_DIALOG ):
-	            self._close_dialog()
+#	def onAction( self, action ):
+#	        if ( action in ACTION_CANCEL_DIALOG ):
+#	            self._close_dialog()
 
-'''
+
 	def __init__(self.script-obd2-xbmc.xml, strFallbackPath, strDefaultName, forceFallback):
 		self.retval=0
 		self.mediaPath=os.path.join(addon.getAddonInfo('path'),'resources','media') + '/'
@@ -140,9 +141,6 @@ class OBD2XBMC(xbmcgui.WindowXMLDialog):
 		self.pspeed.setPercent(99)
 
 
-
-
-
 		# Back button
 		self.button_back_img=xbmcgui.ControlImage(self.w - 90, self.h - 100, 80, 80, self.mediaPath + 'icon_back.png',colorDiffuse='0xffffffff')
 		self.button_back=xbmcgui.ControlButton(self.w - 90, self.h - 100, 80, 80,"",self.mediaPath + 'iconback-focus.png',self.mediaPath + 'iconback.png',0,0)
@@ -169,10 +167,11 @@ addon = xbmcaddon.Addon(id='script.obd2-xbmc')
 finished=0
 
 while finished == 0:
-	dialog=OBD2XBMC()
+    dialog=OBD2XBMC()
+#	dialog=OBD2XBMC("script-obd2-main.xml", xbmcaddon.Addon().getAddonInfo('path'))
 	dialog.doModal()
 	if dialog.retval == 0:
 		finished = 1
 	del dialog
 del addon
-'''
+

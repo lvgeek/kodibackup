@@ -1,146 +1,297 @@
-﻿15:29:37 T:139641421313984  NOTICE: special://profile/ is mapped to: special://masterprofile/
-15:29:37 T:139641421313984  NOTICE: -----------------------------------------------------------------------
-15:29:37 T:139641421313984  NOTICE: Starting Kodi (14.2 Git:7cc53a9). Platform: Linux x86 64-bit
-15:29:37 T:139641421313984  NOTICE: Using Release Kodi x64 build
-15:29:37 T:139641421313984  NOTICE: Kodi compiled Mar 27 2015 by GCC 4.8.2 for Linux x86 64-bit version 3.13.11 (199947)
-15:29:37 T:139641421313984  NOTICE: Running on Ubuntu 14.04.2 LTS, kernel: Linux x86 64-bit version 3.13.0-55-generic
-15:29:37 T:139641421313984  NOTICE: FFmpeg statically linked, version: 2.4.6-xbmc-2.4.6-Helix
-15:29:37 T:139641421313984  NOTICE: Host CPU: Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz, 8 cores available
-15:29:37 T:139641421313984  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
-15:29:37 T:139641421313984  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/kodi
-15:29:37 T:139641421313984  NOTICE: special://masterprofile/ is mapped to: /home/dave/.kodi/userdata
-15:29:37 T:139641421313984  NOTICE: special://home/ is mapped to: /home/dave/.kodi
-15:29:37 T:139641421313984  NOTICE: special://temp/ is mapped to: /home/dave/.kodi/temp
-15:29:37 T:139641421313984  NOTICE: The executable running is: /usr/lib/kodi/kodi.bin
-15:29:37 T:139641421313984  NOTICE: Local hostname: HPFreeman
-15:29:37 T:139641421313984  NOTICE: Log File is located: /home/dave/.kodi/temp/kodi.log
-15:29:37 T:139641421313984  NOTICE: -----------------------------------------------------------------------
-15:29:37 T:139641421313984  NOTICE: load settings...
-15:29:37 T:139641421313984  NOTICE: Found 1 Lists of Devices
-15:29:37 T:139641421313984  NOTICE: Enumerated PULSE devices:
-15:29:37 T:139641421313984  NOTICE:     Device 1
-15:29:37 T:139641421313984  NOTICE:         m_deviceName      : Default
-15:29:37 T:139641421313984  NOTICE:         m_displayName     : Default
-15:29:37 T:139641421313984  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
-15:29:37 T:139641421313984  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-15:29:37 T:139641421313984  NOTICE:         m_channels        : FL,FR
-15:29:37 T:139641421313984  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-15:29:37 T:139641421313984  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-15:29:37 T:139641421313984  NOTICE:     Device 2
-15:29:37 T:139641421313984  NOTICE:         m_deviceName      : alsa_output.pci-0000_01_00.1.hdmi-stereo
-15:29:37 T:139641421313984  NOTICE:         m_displayName     : GK107 HDMI Audio Controller Digital Stereo (HDMI)
-15:29:37 T:139641421313984  NOTICE:         m_displayNameExtra: HDMI / DisplayPort (PULSEAUDIO)
-15:29:37 T:139641421313984  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-15:29:37 T:139641421313984  NOTICE:         m_channels        : FL,FR
-15:29:37 T:139641421313984  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-15:29:37 T:139641421313984  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-15:29:37 T:139641421313984  NOTICE:     Device 3
-15:29:37 T:139641421313984  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_1b.0.analog-stereo
-15:29:37 T:139641421313984  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
-15:29:37 T:139641421313984  NOTICE:         m_displayNameExtra: Headphones (PULSEAUDIO)
-15:29:37 T:139641421313984  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
-15:29:37 T:139641421313984  NOTICE:         m_channels        : FL,FR
-15:29:37 T:139641421313984  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
-15:29:37 T:139641421313984  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
-15:29:37 T:139641421313984  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
-15:29:37 T:139641421313984  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
-15:29:37 T:139641421313984  NOTICE: Default DVD Player: dvdplayer
-15:29:37 T:139641421313984  NOTICE: Default Video Player: dvdplayer
-15:29:37 T:139641421313984  NOTICE: Default Audio Player: paplayer
-15:29:37 T:139641421313984  NOTICE: Disabled debug logging due to GUI setting. Level 0.
-15:29:37 T:139641421313984  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
-15:29:37 T:139641421313984  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
-15:29:37 T:139641421313984  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
-15:29:37 T:139641421313984  NOTICE: Loaded playercorefactory configuration
-15:29:37 T:139641421313984  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
-15:29:37 T:139641421313984  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
-15:29:37 T:139640924890880  NOTICE: Thread ActiveAE start, auto delete: false
-15:29:37 T:139640984786688  NOTICE: Thread AESink start, auto delete: false
-15:29:37 T:139640984786688  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
-15:29:37 T:139641421313984  NOTICE: Running database version Addons16
-15:29:37 T:139641421313984  NOTICE: ADDONS: Using repository repository.xbmc.org
-15:29:37 T:139640958785280  NOTICE: Thread PeripBusCEC start, auto delete: false
-15:29:37 T:139640950392576  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
-15:29:37 T:139641421313984  NOTICE: Setup SDL
-15:29:37 T:139641421313984  NOTICE: Checking resolution 15
-15:29:37 T:139641421313984  NOTICE: Using visual 0x28
-15:29:37 T:139641421313984  NOTICE: GL_VENDOR = NVIDIA Corporation
-15:29:37 T:139641421313984  NOTICE: GL_RENDERER = Quadro K1000M/PCIe/SSE2
-15:29:37 T:139641421313984  NOTICE: GL_VERSION = 4.2.0 NVIDIA 304.125
-15:29:37 T:139641421313984  NOTICE: GL_SHADING_LANGUAGE_VERSION = 4.20 NVIDIA via Cg compiler
-15:29:37 T:139641421313984  NOTICE: GL_GPU_MEMORY_INFO_TOTAL_AVAILABLE_MEMORY_NVX = 2097152
-15:29:37 T:139641421313984  NOTICE: GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX = 2097152
-15:29:37 T:139641421313984  NOTICE: GL_EXTENSIONS = GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_provoking_vertex GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_image_load_store GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_texture_type_2_10_10_10_REV GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KTX_buffer_region GL_NV_alpha_test GL_NV_bindless_texture GL_NV_blend_minmax GL_NV_blend_square GL_NV_complex_primitives GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_deep_texture3D GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_ES1_1_compatibility GL_NV_explicit_multisample GL_NV_fbo_color_attachments GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragdepth GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_expand_normal GL_NV_texture_lod_clamp GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_video_capture GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_OES_compressed_paletted_texture GL_OES_depth24 GL_OES_depth32 GL_OES_depth_texture GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_rgb8_rgba8 GL_OES_read_format GL_OES_standard_derivatives GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_array_object GL_OES_vertex_half_float GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-15:29:37 T:139641421313984  NOTICE: Running database version Addons16
-15:29:37 T:139641421313984  NOTICE: Running database version ViewModes6
-15:29:37 T:139641421313984  NOTICE: Running database version Textures13
-15:29:37 T:139641421313984  NOTICE: Running database version MyMusic48
-15:29:37 T:139641421313984  NOTICE: Running database version MyVideos90
-15:29:37 T:139641421313984  NOTICE: Running database version TV26
-15:29:37 T:139641421313984  NOTICE: Running database version Epg8
-15:29:37 T:139641421313984  NOTICE: start dvd mediatype detection
-15:29:37 T:139641419761408  NOTICE: Thread DetectDVDMedia start, auto delete: false
-15:29:37 T:139641421313984 WARNING: JSONRPC: Could not parse type "PVR.Details.Channel"
-15:29:37 T:139641421313984 WARNING: JSONRPC: Could not parse type "PVR.Details.ChannelGroup.Extended"
-15:29:37 T:139641421313984 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
-15:29:37 T:139641421313984 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
-15:29:37 T:139640580466432  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:29:37 T:139641421313984  NOTICE: initialize done
-15:29:37 T:139641421313984  NOTICE: Running the application...
-15:29:37 T:139640580466432  NOTICE: -->Python Interpreter Initialized<--
-15:29:37 T:139640571025152  NOTICE: Thread JobWorker start, auto delete: true
-15:29:37 T:139640562632448  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:29:37 T:139641421313984  NOTICE: starting zeroconf publishing
-15:29:37 T:139641421313984  NOTICE: Webserver: Starting...
-15:29:37 T:139640545847040  NOTICE: Thread JobWorker start, auto delete: true
-15:29:37 T:139641421313984  NOTICE: WebServer: Started the webserver
-15:29:37 T:139641421313984  NOTICE: ES: Starting event server
-15:29:37 T:139640040314624  NOTICE: Thread EventServer start, auto delete: false
-15:29:37 T:139640040314624  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
-15:29:37 T:139640040314624  NOTICE: UDP: Listening on port 9777
-15:29:37 T:139640048707328  NOTICE: Thread JobWorker start, auto delete: true
-15:29:37 T:139640031921920  NOTICE: Thread TCPServer start, auto delete: false
-15:29:37 T:139640012941056  NOTICE: Thread AirPlayServer start, auto delete: false
-15:29:37 T:139640562632448  NOTICE: -->Python Interpreter Initialized<--
-15:29:37 T:139640562632448 WARNING: CPythonInvoker(1): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:29:37 T:139640562632448  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:29:37 T:139640562632448  NOTICE: -->Python Interpreter Initialized<--
-15:29:43 T:139640580466432  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:29:50 T:139640580466432  NOTICE: Previous line repeats 3 times.
-15:29:50 T:139640580466432  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:29:50 T:139640580466432  NOTICE: -->Python Interpreter Initialized<--
-15:29:50 T:139640580466432 WARNING: CPythonInvoker(3): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-15:29:51 T:139640580466432  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:29:53 T:139640562632448  NOTICE: Previous line repeats 1 times.
-15:29:53 T:139640562632448  NOTICE: Thread JobWorker start, auto delete: true
-15:29:54 T:139640580466432  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:29:54 T:139640580466432  NOTICE: -->Python Interpreter Initialized<--
-15:29:54 T:139640580466432 WARNING: ControlList::setSpace was called but ... it currently isn't defined to do anything.
-15:30:13 T:139639636989696  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:30:13 T:139641421313984   ERROR: GetDirectory - Error getting plugin://plugin.program.radioFM/
-15:30:13 T:139641421313984   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.program.radioFM/) failed
-15:30:13 T:139640580466432  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:30:35 T:139640580466432  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:30:35 T:139640580466432  NOTICE: -->Python Interpreter Initialized<--
-15:30:35 T:139640580466432 WARNING: ControlList::setSpace was called but ... it currently isn't defined to do anything.
-15:30:53 T:139639636989696  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:30:53 T:139641421313984   ERROR: GetDirectory - Error getting plugin://plugin.program.radioFM/
-15:30:53 T:139641421313984   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.program.radioFM/) failed
-15:30:53 T:139640580466432  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:40:19 T:139640562632448  NOTICE: Thread JobWorker start, auto delete: true
-15:40:19 T:139640571025152  NOTICE: Thread LanguageInvoker start, auto delete: false
-15:40:19 T:139640571025152  NOTICE: -->Python Interpreter Initialized<--
-15:40:47 T:139640048707328  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:40:47 T:139640048707328  NOTICE: Thread JobWorker start, auto delete: true
-15:40:47 T:139641421313984  NOTICE: Previous line repeats 1 times.
-15:40:47 T:139641421313984   ERROR: GetDirectory - Error getting plugin://plugin.program.radioFM/
-15:40:47 T:139641421313984   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.program.radioFM/) failed
-15:40:47 T:139640571025152  NOTICE: Thread BackgroundLoader start, auto delete: false
-15:41:27 T:139640048707328  NOTICE: Thread JobWorker start, auto delete: true
-15:41:27 T:139640545847040  NOTICE: Thread BackgroundLoader start, auto delete: false
-16:06:07 T:139640048707328  NOTICE: Thread LanguageInvoker start, auto delete: false
-16:06:07 T:139640048707328  NOTICE: -->Python Interpreter Initialized<--
-16:06:10 T:139640048707328   ERROR: EXCEPTION Thrown (PythonToCppException) : -->Python callback/script returned the following error<--
+﻿11:56:56 T:139748974540736  NOTICE: special://profile/ is mapped to: special://masterprofile/
+11:56:56 T:139748974540736  NOTICE: -----------------------------------------------------------------------
+11:56:56 T:139748974540736  NOTICE: Starting Kodi (14.2 Git:7cc53a9). Platform: Linux x86 64-bit
+11:56:56 T:139748974540736  NOTICE: Using Release Kodi x64 build
+11:56:56 T:139748974540736  NOTICE: Kodi compiled Mar 27 2015 by GCC 4.8.2 for Linux x86 64-bit version 3.13.11 (199947)
+11:56:56 T:139748974540736  NOTICE: Running on Ubuntu 14.04.2 LTS, kernel: Linux x86 64-bit version 3.13.0-57-generic
+11:56:56 T:139748974540736  NOTICE: FFmpeg statically linked, version: 2.4.6-xbmc-2.4.6-Helix
+11:56:56 T:139748974540736  NOTICE: Host CPU: Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz, 8 cores available
+11:56:56 T:139748974540736  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
+11:56:56 T:139748974540736  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/kodi
+11:56:56 T:139748974540736  NOTICE: special://masterprofile/ is mapped to: /home/dave/.kodi/userdata
+11:56:56 T:139748974540736  NOTICE: special://home/ is mapped to: /home/dave/.kodi
+11:56:56 T:139748974540736  NOTICE: special://temp/ is mapped to: /home/dave/.kodi/temp
+11:56:56 T:139748974540736  NOTICE: The executable running is: /usr/lib/kodi/kodi.bin
+11:56:56 T:139748974540736  NOTICE: Local hostname: HPFreeman
+11:56:56 T:139748974540736  NOTICE: Log File is located: /home/dave/.kodi/temp/kodi.log
+11:56:56 T:139748974540736  NOTICE: -----------------------------------------------------------------------
+11:56:57 T:139748974540736  NOTICE: load settings...
+11:56:57 T:139748974540736  NOTICE: Found 1 Lists of Devices
+11:56:57 T:139748974540736  NOTICE: Enumerated PULSE devices:
+11:56:57 T:139748974540736  NOTICE:     Device 1
+11:56:57 T:139748974540736  NOTICE:         m_deviceName      : Default
+11:56:57 T:139748974540736  NOTICE:         m_displayName     : Default
+11:56:57 T:139748974540736  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
+11:56:57 T:139748974540736  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+11:56:57 T:139748974540736  NOTICE:         m_channels        : FL,FR
+11:56:57 T:139748974540736  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+11:56:57 T:139748974540736  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+11:56:57 T:139748974540736  NOTICE:     Device 2
+11:56:57 T:139748974540736  NOTICE:         m_deviceName      : alsa_output.pci-0000_01_00.1.hdmi-stereo
+11:56:57 T:139748974540736  NOTICE:         m_displayName     : GK107 HDMI Audio Controller Digital Stereo (HDMI)
+11:56:57 T:139748974540736  NOTICE:         m_displayNameExtra: HDMI / DisplayPort (PULSEAUDIO)
+11:56:57 T:139748974540736  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+11:56:57 T:139748974540736  NOTICE:         m_channels        : FL,FR
+11:56:57 T:139748974540736  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+11:56:57 T:139748974540736  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+11:56:57 T:139748974540736  NOTICE:     Device 3
+11:56:57 T:139748974540736  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_1b.0.analog-stereo
+11:56:57 T:139748974540736  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
+11:56:57 T:139748974540736  NOTICE:         m_displayNameExtra: Headphones (PULSEAUDIO)
+11:56:57 T:139748974540736  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+11:56:57 T:139748974540736  NOTICE:         m_channels        : FL,FR
+11:56:57 T:139748974540736  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+11:56:57 T:139748974540736  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+11:56:57 T:139748974540736  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+11:56:57 T:139748974540736  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+11:56:57 T:139748974540736  NOTICE: Default DVD Player: dvdplayer
+11:56:57 T:139748974540736  NOTICE: Default Video Player: dvdplayer
+11:56:57 T:139748974540736  NOTICE: Default Audio Player: paplayer
+11:56:57 T:139748974540736  NOTICE: Disabled debug logging due to GUI setting. Level 0.
+11:56:57 T:139748974540736  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
+11:56:57 T:139748974540736  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
+11:56:57 T:139748974540736  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+11:56:57 T:139748974540736  NOTICE: Loaded playercorefactory configuration
+11:56:57 T:139748974540736  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+11:56:57 T:139748974540736  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+11:56:57 T:139748478142208  NOTICE: Thread ActiveAE start, auto delete: false
+11:56:57 T:139748538038016  NOTICE: Thread AESink start, auto delete: false
+11:56:57 T:139748538038016  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
+11:56:57 T:139748974540736  NOTICE: Running database version Addons16
+11:56:57 T:139748974540736  NOTICE: ADDONS: Using repository repository.xbmc.org
+11:56:58 T:139748512036608  NOTICE: Thread PeripBusCEC start, auto delete: false
+11:56:58 T:139748503643904  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
+11:56:58 T:139748974540736  NOTICE: Setup SDL
+11:56:58 T:139748974540736  NOTICE: Checking resolution 15
+11:56:58 T:139748974540736  NOTICE: Using visual 0x28
+11:56:58 T:139748974540736  NOTICE: GL_VENDOR = NVIDIA Corporation
+11:56:58 T:139748974540736  NOTICE: GL_RENDERER = Quadro K1000M/PCIe/SSE2
+11:56:58 T:139748974540736  NOTICE: GL_VERSION = 4.2.0 NVIDIA 304.125
+11:56:58 T:139748974540736  NOTICE: GL_SHADING_LANGUAGE_VERSION = 4.20 NVIDIA via Cg compiler
+11:56:58 T:139748974540736  NOTICE: GL_GPU_MEMORY_INFO_TOTAL_AVAILABLE_MEMORY_NVX = 2097152
+11:56:58 T:139748974540736  NOTICE: GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX = 2097152
+11:56:58 T:139748974540736  NOTICE: GL_EXTENSIONS = GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_provoking_vertex GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_image_load_store GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_texture_type_2_10_10_10_REV GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KTX_buffer_region GL_NV_alpha_test GL_NV_bindless_texture GL_NV_blend_minmax GL_NV_blend_square GL_NV_complex_primitives GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_deep_texture3D GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_ES1_1_compatibility GL_NV_explicit_multisample GL_NV_fbo_color_attachments GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragdepth GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_expand_normal GL_NV_texture_lod_clamp GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_video_capture GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_OES_compressed_paletted_texture GL_OES_depth24 GL_OES_depth32 GL_OES_depth_texture GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_rgb8_rgba8 GL_OES_read_format GL_OES_standard_derivatives GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_array_object GL_OES_vertex_half_float GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+11:56:58 T:139748974540736  NOTICE: Running database version Addons16
+11:56:58 T:139748974540736  NOTICE: Running database version ViewModes6
+11:56:58 T:139748974540736  NOTICE: Running database version Textures13
+11:56:58 T:139748974540736  NOTICE: Running database version MyMusic48
+11:56:58 T:139748974540736  NOTICE: Running database version MyVideos90
+11:56:58 T:139748974540736  NOTICE: Running database version TV26
+11:56:58 T:139748974540736  NOTICE: Running database version Epg8
+11:56:58 T:139748974540736  NOTICE: start dvd mediatype detection
+11:56:58 T:139748972988160  NOTICE: Thread DetectDVDMedia start, auto delete: false
+11:56:59 T:139748974540736 WARNING: JSONRPC: Could not parse type "PVR.Details.Channel"
+11:56:59 T:139748974540736 WARNING: JSONRPC: Could not parse type "PVR.Details.ChannelGroup.Extended"
+11:56:59 T:139748974540736 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
+11:56:59 T:139748974540736 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
+11:56:59 T:139748134135552  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:56:59 T:139748974540736  NOTICE: initialize done
+11:56:59 T:139748974540736  NOTICE: Running the application...
+11:56:59 T:139748125742848  NOTICE: Thread JobWorker start, auto delete: true
+11:56:59 T:139748117088000  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:56:59 T:139748974540736  NOTICE: starting zeroconf publishing
+11:56:59 T:139748974540736  NOTICE: Webserver: Starting...
+11:56:59 T:139747758434048  NOTICE: Thread JobWorker start, auto delete: true
+11:56:59 T:139748974540736  NOTICE: WebServer: Started the webserver
+11:56:59 T:139748974540736  NOTICE: ES: Starting event server
+11:56:59 T:139747733255936  NOTICE: Thread JobWorker start, auto delete: true
+11:56:59 T:139747724863232  NOTICE: Thread EventServer start, auto delete: false
+11:56:59 T:139747724863232  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
+11:56:59 T:139747724863232  NOTICE: UDP: Listening on port 9777
+11:56:59 T:139747716470528  NOTICE: Thread TCPServer start, auto delete: false
+11:56:59 T:139747288672000  NOTICE: Thread AirPlayServer start, auto delete: false
+11:56:59 T:139748134135552  NOTICE: -->Python Interpreter Initialized<--
+11:56:59 T:139748117088000  NOTICE: Previous line repeats 1 times.
+11:56:59 T:139748117088000 WARNING: CPythonInvoker(1): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+11:56:59 T:139748117088000  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:56:59 T:139748117088000  NOTICE: -->Python Interpreter Initialized<--
+11:57:00 T:139747251943168  NOTICE: Thread FileCache start, auto delete: false
+11:57:06 T:139748134135552  NOTICE: Previous line repeats 2 times.
+11:57:06 T:139748134135552  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:09 T:139747251943168  NOTICE: Previous line repeats 1 times.
+11:57:09 T:139747251943168  NOTICE: Thread FileCache start, auto delete: false
+11:57:10 T:139748134135552  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:10 T:139748134135552  NOTICE: Thread JobWorker start, auto delete: true
+11:57:11 T:139747251943168  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:12 T:139747251943168  NOTICE: Previous line repeats 1 times.
+11:57:12 T:139747251943168  NOTICE: Thread FileCache start, auto delete: false
+11:57:13 T:139747251943168  NOTICE: Previous line repeats 1 times.
+11:57:13 T:139747251943168  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:14 T:139747251943168  NOTICE: Previous line repeats 1 times.
+11:57:14 T:139747251943168  NOTICE: Thread PAPlayer start, auto delete: false
+11:57:14 T:139747278161664  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:57:14 T:139747278161664  NOTICE: -->Python Interpreter Initialized<--
+11:57:14 T:139747269768960  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:16 T:139748117088000  NOTICE: Previous line repeats 1 times.
+11:57:16 T:139748117088000  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:57:16 T:139748117088000  NOTICE: -->Python Interpreter Initialized<--
+11:57:16 T:139748117088000 WARNING: CPythonInvoker(4): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+11:57:31 T:139747251943168  NOTICE: Thread PAPlayer start, auto delete: false
+11:57:39 T:139747251943168  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:57:39 T:139747251943168  NOTICE: -->Python Interpreter Initialized<--
+11:57:42 T:139747251943168  NOTICE: plugin.audio.pandoki Auth  OK
+11:57:43 T:139747251943168  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+11:57:43 T:139747251943168  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+11:57:44 T:139747278161664  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:44 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+11:57:44 T:139747278161664  NOTICE: Thread PAPlayer start, auto delete: false
+11:57:44 T:139748117088000  NOTICE: plugin.audio.pandoki Song PAN 6634 'Buck Owens - Pick Me Up On Your Way Down'
+11:57:44 T:139748117088000  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:45 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK 6634 'Buck Owens - Pick Me Up On Your Way Down'
+11:57:45 T:139748117088000  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:47 T:139747278161664  NOTICE: Thread FileCache start, auto delete: false
+11:57:52 T:139748117088000  NOTICE: Previous line repeats 1 times.
+11:57:52 T:139748117088000  NOTICE: Thread PAPlayer start, auto delete: false
+11:57:53 T:139747269768960  NOTICE: plugin.audio.pandoki Song PAN 9c34 'Gene Watson - Farewell Party'
+11:57:54 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK 9c34 'Gene Watson - Farewell Party'
+11:57:54 T:139747269768960  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:57:55 T:139747028629248  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:57:55 T:139747028629248  NOTICE: -->Python Interpreter Initialized<--
+11:57:55 T:139747028629248 WARNING: CPythonInvoker(6): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+11:58:00 T:139748974540736   ERROR: Window Translator: Can't find window 
+                                            screenvideo
+11:58:04 T:139747028629248  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:58:04 T:139747028629248  NOTICE: -->Python Interpreter Initialized<--
+11:58:04 T:139747028629248 WARNING: CPythonInvoker(7): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+11:58:53 T:139747733255936  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:58:53 T:139748134135552  NOTICE: Thread JobWorker start, auto delete: true
+11:58:53 T:139747733255936  NOTICE: -->Python Interpreter Initialized<--
+11:58:53 T:139747733255936 WARNING: CPythonInvoker(8): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+11:58:57 T:139747733255936  NOTICE: Thread BackgroundLoader start, auto delete: false
+11:59:01 T:139747758434048  NOTICE: Previous line repeats 2 times.
+11:59:01 T:139747758434048  NOTICE: Thread JobWorker start, auto delete: true
+11:59:17 T:139747733255936  NOTICE: Thread LanguageInvoker start, auto delete: false
+11:59:17 T:139747733255936  NOTICE: -->Python Interpreter Initialized<--
+11:59:17 T:139747733255936 WARNING: CPythonInvoker(9): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+11:59:25 T:139747733255936  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:00:16 T:139748134135552  NOTICE: Previous line repeats 2 times.
+12:00:16 T:139748134135552  NOTICE: Thread JobWorker start, auto delete: true
+12:00:18 T:139747758434048  NOTICE: Thread FileCache start, auto delete: false
+12:00:22 T:139747278161664  NOTICE: Previous line repeats 1 times.
+12:00:22 T:139747278161664  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:00:22 T:139748125742848  NOTICE: Thread JobWorker start, auto delete: true
+12:00:22 T:139747278161664  NOTICE: -->Python Interpreter Initialized<--
+12:00:22 T:139747278161664 WARNING: CPythonInvoker(10): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:00:23 T:139747733255936  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:00:23 T:139747733255936  NOTICE: -->Python Interpreter Initialized<--
+12:00:24 T:139747278161664  NOTICE: plugin.audio.pandoki Song PAN 8110 'Johnny Lee - If You're Ever Down In Dallas'
+12:00:24 T:139747278161664  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:00:24 T:139748974540736   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+12:00:24 T:139748974540736   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+12:00:24 T:139747733255936  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:00:25 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK 8110 'Johnny Lee - If You're Ever Down In Dallas'
+12:00:25 T:139747733255936  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:00:39 T:139748117088000  NOTICE: Thread PAPlayer start, auto delete: false
+12:00:40 T:139748117088000  NOTICE: Thread FileCache start, auto delete: false
+12:00:46 T:139747758434048  NOTICE: Previous line repeats 1 times.
+12:00:46 T:139747758434048  NOTICE: Thread PAPlayer start, auto delete: false
+12:03:10 T:139748134135552  NOTICE: Thread JobWorker start, auto delete: true
+12:03:11 T:139748125742848  NOTICE: Thread FileCache start, auto delete: false
+12:04:54 T:139747758434048  NOTICE: Previous line repeats 1 times.
+12:04:54 T:139747758434048  NOTICE: Thread JobWorker start, auto delete: true
+12:04:54 T:139748125742848  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:04:55 T:139747251943168  NOTICE: plugin.audio.pandoki Exit  OK
+12:04:55 T:139748974540736   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+12:04:55 T:139748974540736   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+12:04:55 T:139747251943168  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:04:57 T:139747251943168  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:04:57 T:139747251943168  NOTICE: -->Python Interpreter Initialized<--
+12:04:57 T:139747251943168 WARNING: CPythonInvoker(12): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:05:01 T:139747251943168  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:05:01 T:139747251943168  NOTICE: -->Python Interpreter Initialized<--
+12:05:04 T:139747251943168  NOTICE: plugin.audio.pandoki Auth  OK
+12:05:06 T:139747251943168  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+12:05:06 T:139747251943168  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+12:05:06 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+12:05:06 T:139748125742848  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:05:06 T:139748125742848  NOTICE: Thread PAPlayer start, auto delete: false
+12:05:06 T:139748134135552  NOTICE: plugin.audio.pandoki Song PAN 965c 'George Jones - The One I Loved Back Then (The Corvette Song)'
+12:05:06 T:139748134135552  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:05:07 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK 965c 'George Jones - The One I Loved Back Then (The Corvette Song)'
+12:05:07 T:139748134135552  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:05:09 T:139748125742848  NOTICE: Thread FileCache start, auto delete: false
+12:05:17 T:139748134135552  NOTICE: Previous line repeats 1 times.
+12:05:17 T:139748134135552  NOTICE: Thread PAPlayer start, auto delete: false
+12:05:18 T:139747733255936  NOTICE: plugin.audio.pandoki Song PAN fdab 'Dwight Yoakam - It Only Hurts When I Cry'
+12:05:19 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK fdab 'Dwight Yoakam - It Only Hurts When I Cry'
+12:05:19 T:139747278161664  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:05:27 T:139747733255936  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:05:27 T:139747733255936  NOTICE: -->Python Interpreter Initialized<--
+12:05:27 T:139747733255936 WARNING: CPythonInvoker(14): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:05:33 T:139747733255936  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:06:02 T:139747733255936  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:06:02 T:139747733255936  NOTICE: -->Python Interpreter Initialized<--
+12:06:02 T:139747733255936 WARNING: CPythonInvoker(15): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:06:04 T:139747251943168  NOTICE: plugin.audio.pandoki Exit  OK
+12:06:04 T:139748974540736   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+12:06:04 T:139748974540736   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+12:06:04 T:139747251943168  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:06:05 T:139747251943168  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:06:05 T:139747251943168  NOTICE: -->Python Interpreter Initialized<--
+12:06:08 T:139748134135552  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:06:09 T:139747251943168  NOTICE: plugin.audio.pandoki Auth  OK
+12:06:15 T:139748134135552  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:06:15 T:139748134135552  NOTICE: -->Python Interpreter Initialized<--
+12:06:15 T:139747251943168  NOTICE: plugin.audio.pandoki Fill  OK 5158 'Johnny Bush Radio'
+12:06:15 T:139747251943168  NOTICE: plugin.audio.pandoki Play  OK 5158 'Johnny Bush Radio'
+12:06:15 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing Johnny Bush Radio'
+12:06:16 T:139748125742848  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:06:16 T:139748125742848  NOTICE: Thread PAPlayer start, auto delete: false
+12:06:16 T:139747733255936  NOTICE: plugin.audio.pandoki Song PAN f732 'Asleep At The Wheel - Bob's Breakdown'
+12:06:16 T:139747733255936  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:06:17 T:139747251943168  NOTICE: plugin.audio.pandoki Add   OK f732 'Asleep At The Wheel - Bob's Breakdown'
+12:06:17 T:139747251943168  NOTICE: plugin.audio.pandoki Exit  OK
+12:06:17 T:139747733255936  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:06:19 T:139747278161664  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:06:19 T:139747251943168  NOTICE: Thread JobWorker start, auto delete: true
+12:06:19 T:139747278161664  NOTICE: -->Python Interpreter Initialized<--
+12:06:19 T:139747278161664 WARNING: CPythonInvoker(18): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:07:40 T:139748974540736 WARNING: Cleanup: Having to cleanup texture floor_button_t.png
+12:07:40 T:139748974540736 WARNING: Cleanup: Having to cleanup texture icon_refresh_w.png
+12:07:40 T:139748974540736 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
+12:07:40 T:139748974540736 WARNING: Cleanup: Having to cleanup texture floor_buttonfo.png
+12:07:40 T:139748529645312  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:07:40 T:139748529645312  NOTICE: -->Python Interpreter Initialized<--
+12:07:40 T:139748529645312 WARNING: CPythonInvoker(19): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:07:40 T:139748974540736 WARNING: ReleaseTexture: Unable to release texture floor_button_t.png
+12:07:40 T:139748974540736 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+12:07:40 T:139748974540736 WARNING: ReleaseTexture: Unable to release texture floor_buttonfo.png
+12:07:40 T:139748974540736 WARNING: ReleaseTexture: Unable to release texture icon_refresh_w.png
+12:07:40 T:139748529645312  NOTICE: Thread JobWorker start, auto delete: true
+12:07:41 T:139747758434048  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:07:41 T:139747758434048  NOTICE: -->Python Interpreter Initialized<--
+12:07:43 T:139748134135552  NOTICE: plugin.audio.pandoki Auth  OK
+12:07:44 T:139748134135552  NOTICE: plugin.audio.pandoki Dir   OK    6
+12:07:44 T:139747251943168  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:07:44 T:139748125742848  NOTICE: Thread JobWorker start, auto delete: true
+12:07:49 T:139747251943168  NOTICE: Previous line repeats 2 times.
+12:07:49 T:139747251943168  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:07:49 T:139747251943168  NOTICE: -->Python Interpreter Initialized<--
+12:07:50 T:139748134135552  NOTICE: plugin.audio.pandoki Fill  OK 1366 'QuickMix'
+12:07:50 T:139748134135552  NOTICE: plugin.audio.pandoki Play  OK 1366 'QuickMix'
+12:07:50 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing QuickMix'
+12:07:51 T:139748188591872  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:07:51 T:139748188591872  NOTICE: Thread PAPlayer start, auto delete: false
+12:07:51 T:139747758434048  NOTICE: plugin.audio.pandoki Song PAN 3bec 'Eric Church - Sinners Like Me'
+12:07:51 T:139748538038016  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
+12:07:51 T:139747758434048  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:07:52 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK 3bec 'Eric Church - Sinners Like Me'
+12:07:52 T:139747251943168  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:07:54 T:139748188591872  NOTICE: Thread FileCache start, auto delete: false
+12:08:01 T:139747251943168  NOTICE: Previous line repeats 1 times.
+12:08:01 T:139747251943168  NOTICE: Thread PAPlayer start, auto delete: false
+12:08:02 T:139748180199168  NOTICE: plugin.audio.pandoki Song PAN 7a2d 'Trace Adkins - Ride'
+12:08:03 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK 7a2d 'Trace Adkins - Ride'
+12:08:03 T:139747758434048  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:08:39 T:139748529645312  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:08:39 T:139748205377280  NOTICE: Thread JobWorker start, auto delete: true
+12:08:39 T:139748529645312  NOTICE: -->Python Interpreter Initialized<--
+12:08:39 T:139748529645312 WARNING: CPythonInvoker(22): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:09:36 T:139748205377280  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:09:36 T:139748205377280  NOTICE: -->Python Interpreter Initialized<--
+12:09:42 T:139748529645312  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:09:42 T:139748196984576  NOTICE: Thread JobWorker start, auto delete: true
+12:09:42 T:139748205377280   ERROR: EXCEPTION Thrown (PythonToCppException) : -->Python callback/script returned the following error<--
                                              - NOTE: IGNORING THIS CAN LEAD TO MEMORY LEAKS!
                                             Error Type: <type 'exceptions.NameError'>
                                             Error Contents: global name 'buttonPB' is not defined
@@ -149,61 +300,72 @@
                                                 if controlID == buttonPB:
                                             NameError: global name 'buttonPB' is not defined
                                             -->End of Python script error report<--
-16:06:19 T:139640545847040   ERROR: Previous line repeats 4 times.
-16:06:19 T:139640545847040  NOTICE: Thread BackgroundLoader start, auto delete: false
-16:06:19 T:139640048707328   ERROR: EXCEPTION Thrown (PythonToCppException) : -->Python callback/script returned the following error<--
-                                             - NOTE: IGNORING THIS CAN LEAD TO MEMORY LEAKS!
-                                            Error Type: <type 'exceptions.NameError'>
-                                            Error Contents: global name 'buttonPB' is not defined
-                                            Traceback (most recent call last):
-                                              File "/home/dave/.kodi/addons/script.audio.BT_BC127_HFP/addon.py", line 322, in onControl
-                                                if controlID == buttonPB:
-                                            NameError: global name 'buttonPB' is not defined
-                                            -->End of Python script error report<--
-16:06:19 T:139640545847040  NOTICE: Thread JobWorker start, auto delete: true
-16:07:44 T:139640562632448  NOTICE: Previous line repeats 3 times.
-16:07:44 T:139640562632448  NOTICE: Thread LanguageInvoker start, auto delete: false
-16:07:44 T:139640048707328  NOTICE: Previous line repeats 1 times.
-16:07:44 T:139640048707328  NOTICE: Thread JobWorker start, auto delete: true
-16:07:44 T:139640562632448  NOTICE: -->Python Interpreter Initialized<--
-16:07:44 T:139640562632448 WARNING: CPythonInvoker(9): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-16:07:44 T:139640571025152  NOTICE: -->Python Interpreter Initialized<--
-16:07:46 T:139640571025152  NOTICE: Thread LanguageInvoker start, auto delete: false
-16:07:46 T:139640571025152  NOTICE: -->Python Interpreter Initialized<--
-16:07:46 T:139640571025152 WARNING: CPythonInvoker(10): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
-16:07:46 T:139641421313984  NOTICE: Storing total System Uptime
-16:07:46 T:139641421313984  NOTICE: Saving settings
-16:07:46 T:139641421313984  NOTICE: stop all
-16:07:46 T:139641421313984  NOTICE: stop player
-16:07:46 T:139641421313984  NOTICE: ES: Stopping event server
-16:07:46 T:139640040314624  NOTICE: ES: UDP Event server stopped
-16:07:47 T:139641421313984  NOTICE: stopping zeroconf publishing
-16:07:47 T:139641421313984  NOTICE: Webserver: Stopping...
-16:07:47 T:139641421313984  NOTICE: WebServer: Stopped the webserver
-16:07:47 T:139641421313984  NOTICE: Webserver: Stopped...
-16:07:47 T:139641421313984  NOTICE: stop dvd detect media
-16:07:47 T:139641421313984  NOTICE: stop sap announcement listener
-16:07:47 T:139641421313984  NOTICE: clean cached files!
-16:07:47 T:139641421313984  NOTICE: unload skin
-16:07:47 T:139641421313984 WARNING: Cleanup: Having to cleanup texture button-nofocus.png
-16:07:47 T:139641421313984 WARNING: Cleanup: Having to cleanup texture button-focus2.png
-16:07:47 T:139641421313984  NOTICE: stopped
-16:07:47 T:139641421313984  NOTICE: destroy
-16:07:47 T:139641421313984  NOTICE: closing down remote control service
-16:07:47 T:139641421313984  NOTICE: unload sections
-16:07:47 T:139641421313984  NOTICE: special://profile/ is mapped to: special://masterprofile/
-16:07:47 T:139641421313984  NOTICE: destroy
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
-16:07:47 T:139641421313984 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
-16:07:47 T:139641421313984  NOTICE: closing down remote control service
-16:07:47 T:139641421313984  NOTICE: unload sections
-16:07:47 T:139641421313984  NOTICE: application stopped...
+12:09:42 T:139748529645312  NOTICE: -->Python Interpreter Initialized<--
+12:09:42 T:139748529645312 WARNING: CPythonInvoker(24): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:10:39 T:139747251943168  NOTICE: Thread JobWorker start, auto delete: true
+12:10:40 T:139748134135552  NOTICE: plugin.audio.pandoki Exit  OK
+12:10:40 T:139748974540736   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+12:10:40 T:139748974540736   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+12:10:40 T:139748134135552  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:10:40 T:139748134135552  NOTICE: -->Python Interpreter Initialized<--
+12:10:43 T:139748134135552  NOTICE: plugin.audio.pandoki Auth  OK
+12:10:43 T:139748134135552  NOTICE: plugin.audio.pandoki Dir   OK    7
+12:10:43 T:139748188591872  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:10:43 T:139748974540736   ERROR: GetDirectory - Error getting plugin://plugin.audio.pandoki/?play=5158
+12:10:43 T:139748974540736   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.audio.pandoki/?play=5158) failed
+12:10:43 T:139748188591872  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:10:55 T:139748188591872  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:10:55 T:139748188591872  NOTICE: -->Python Interpreter Initialized<--
+12:10:55 T:139748134135552  NOTICE: plugin.audio.pandoki Dir   OK    8
+12:10:55 T:139748196984576  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:10:55 T:139748529645312  NOTICE: Thread JobWorker start, auto delete: true
+12:11:14 T:139748150576896  NOTICE: Previous line repeats 2 times.
+12:11:14 T:139748150576896  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:11:14 T:139748150576896  NOTICE: -->Python Interpreter Initialized<--
+12:11:14 T:139748134135552  NOTICE: plugin.audio.pandoki Dir   OK    9
+12:11:14 T:139748125742848  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:15 T:139748134135552  NOTICE: plugin.audio.pandoki Fill  OK 1366 'QuickMix'
+12:11:15 T:139748134135552  NOTICE: plugin.audio.pandoki Play  OK 1366 'QuickMix'
+12:11:15 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing QuickMix'
+12:11:16 T:139748125742848  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:16 T:139748125742848  NOTICE: Thread PAPlayer start, auto delete: false
+12:11:16 T:139748196984576  NOTICE: plugin.audio.pandoki Song PAN 7528 'Ray Price - Don't You Ever Get Tired Of Hurting Me'
+12:11:16 T:139748196984576  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:17 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK 7528 'Ray Price - Don't You Ever Get Tired Of Hurting Me'
+12:11:17 T:139748150576896  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:19 T:139748125742848  NOTICE: Thread FileCache start, auto delete: false
+12:11:27 T:139748150576896  NOTICE: Previous line repeats 1 times.
+12:11:27 T:139748150576896  NOTICE: Thread PAPlayer start, auto delete: false
+12:11:27 T:139747758434048  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:11:27 T:139747758434048  NOTICE: -->Python Interpreter Initialized<--
+12:11:27 T:139747758434048 WARNING: CPythonInvoker(28): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:11:28 T:139747758434048  NOTICE: plugin.audio.pandoki Song PAN 3061 'Jason Aldean - The Truth'
+12:11:29 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK 3061 'Jason Aldean - The Truth'
+12:11:32 T:139748134135552  NOTICE: plugin.audio.pandoki Exit  OK
+12:11:33 T:139748134135552  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:11:33 T:139748134135552  NOTICE: -->Python Interpreter Initialized<--
+12:11:36 T:139748134135552  NOTICE: plugin.audio.pandoki Auth  OK
+12:11:36 T:139748134135552  NOTICE: plugin.audio.pandoki Dir   OK   10
+12:11:37 T:139748150576896  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:38 T:139748134135552  NOTICE: plugin.audio.pandoki Fill  OK 1366 'QuickMix'
+12:11:38 T:139748134135552  NOTICE: plugin.audio.pandoki Play  OK 1366 'QuickMix'
+12:11:38 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK mesg 'Pandoki - Queuing QuickMix'
+12:11:39 T:139748125742848  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:39 T:139748125742848  NOTICE: Thread PAPlayer start, auto delete: false
+12:11:39 T:139748196984576  NOTICE: plugin.audio.pandoki Song PAN 6a28 'Rodney Atkins - Take A Back Road'
+12:11:40 T:139748196984576  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:41 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK 6a28 'Rodney Atkins - Take A Back Road'
+12:11:41 T:139748196984576  NOTICE: Thread BackgroundLoader start, auto delete: false
+12:11:43 T:139748125742848  NOTICE: Thread FileCache start, auto delete: false
+12:11:47 T:139748196984576  NOTICE: Previous line repeats 1 times.
+12:11:47 T:139748196984576  NOTICE: Thread PAPlayer start, auto delete: false
+12:11:47 T:139748205377280  NOTICE: Thread LanguageInvoker start, auto delete: false
+12:11:47 T:139748205377280  NOTICE: -->Python Interpreter Initialized<--
+12:11:47 T:139748205377280 WARNING: CPythonInvoker(30): Script invoked without an addon. Adding all addon modules installed to python path as fallback. This behaviour will be removed in future version.
+12:11:48 T:139748150576896  NOTICE: plugin.audio.pandoki Song PAN 6c84 'Hank Locklin - Please Help Me I'm Falling'
+12:11:49 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK 6c84 'Hank Locklin - Please Help Me I'm Falling'
+12:15:11 T:139748158969600  NOTICE: Thread JobWorker start, auto delete: true
+12:15:14 T:139747251943168  NOTICE: Thread FileCache start, auto delete: false
+12:15:17 T:139748125742848  NOTICE: Previous line repeats 1 times.
+12:15:17 T:139748125742848  NOTICE: plugin.audio.pandoki Song PAN 3bec 'Jason Aldean - Good To Go'
+12:15:18 T:139748134135552  NOTICE: plugin.audio.pandoki Add   OK 3bec 'Jason Aldean - Good To Go'

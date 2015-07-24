@@ -1,0 +1,4 @@
+<settings>
+    <setting id="baud" value="115200" />
+    <setting id="port" value="/dev/pts/8" />
+</settings>
